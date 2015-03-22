@@ -1,0 +1,21 @@
+{
+  "name": "archrc",
+  "version": "0.0.1",
+  "authors": [
+    "Evan Sosenko <razorx@evansosenko.com>"
+  ],
+  "description": "Arch Linux Configuration.",
+  "main": "manifest.yml",
+  "keywords": [
+    "config"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/razor-x/archrc",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "bower_components"
+  ],
+  "dependencies": {
+  }
+}

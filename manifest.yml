@@ -1,0 +1,7 @@
+root: "/"
+
+defaults:
+  owner: root
+  group: root
+  fmode: 0644
+  dmode: 0755
