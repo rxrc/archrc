@@ -17,5 +17,6 @@
     "bower_components"
   ],
   "dependencies": {
+    "archutil": "razor-x/archutil"
   }
 }

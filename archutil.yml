@@ -1,0 +1,21 @@
+---
+# Non-standard repositories required to install packages.
+# repos:
+#   - multilib
+
+# Use a package manager other than pacman.
+# pacman: aura
+
+# Use a package manager for aur packages.
+aur: "aura -A"
+
+# Collect categories together into sets.
+sets:
+  main:
+    - archutil
+
+# List the packages with their categories below.
+packages:
+  archutil:
+    - python
+    - python-yaml

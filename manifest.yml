@@ -5,3 +5,11 @@ defaults:
   group: root
   fmode: 0644
   dmode: 0755
+
+config_files:
+  - src: bower_components/archutil/bin/archutil
+    dst: usr/local/bin/archutil
+    fmode: 0755
+
+  - src: archutil.yml
+    dst: usr/local/etc/archutil.yml
