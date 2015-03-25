@@ -15,3 +15,7 @@ config_files:
     dst: usr/local/etc/archutil.yml
 
   - src: etc/locale.gen
+
+symlinks:
+  - src: /usr/share/zoneinfo/America/Los_Angeles
+    dst: etc/localtime
