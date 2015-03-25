@@ -71,6 +71,7 @@ fi
 puts 'Running' 'locale-gen'
 
 locale-gen
+export $(cat /etc/locale.conf)
 
 puts 'Done'
 
