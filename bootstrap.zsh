@@ -68,7 +68,7 @@ if [[ -e /usr/local/bin/archutil ]]; then
   puts 'Installed' 'archutil'
 fi
 
-puts 'Running' 'locale-gen'
+puts 'Setting' 'Locale'
 
 locale-gen
 export $(cat /etc/locale.conf)
