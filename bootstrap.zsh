@@ -68,6 +68,10 @@ if [[ -e /usr/local/bin/archutil ]]; then
   puts 'Installed' 'archutil'
 fi
 
+puts 'Running' 'locale-gen'
+
+locale-gen
+
 puts 'Done'
 
 exit 0

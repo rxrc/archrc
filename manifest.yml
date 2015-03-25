@@ -13,3 +13,5 @@ config_files:
 
   - src: archutil.yml
     dst: usr/local/etc/archutil.yml
+
+  - src: etc/locale.gen
