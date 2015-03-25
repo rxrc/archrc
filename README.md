@@ -25,13 +25,24 @@ a very minimal configuration.
 
 ### Bootstrapping a new system
 
-Install zsh
+After chroot, install some required packages
 
 ````bash
-$ pacman -S zsh
+$ pacman -S git reflector zsh
 ````
 
-Bootstrap with
+Update the mirrorlist with reflector, e.g.,
+
+````bash
+$ reflector -l 5 -c US --sort rate --save /etc/pacman.d/mirrorlist
+$ pacman -Syy
+$ pacman -Su
+````
+
+If this repository or any of the Bower dependencies are private,
+generate an ssh key pair with `ssh-keygen` and grant read access.
+
+Clone this and bootstrap with
 
 ````bash
 $ ./bootstrap.zsh Hostname
