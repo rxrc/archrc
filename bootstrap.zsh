@@ -20,24 +20,6 @@ fi
 echo $1 > /etc/hostname
 puts 'Hostname' $1
 
-puts 'Installing' 'archutil requirements'
-
-pacin curl
-pacin python
-pacin python-yaml
-
-puts 'Installed' 'archutil requirements'
-
-if ! [[ -e /usr/local/bin/archutil ]]; then
-  puts 'Installing' 'archutil'
-  curl -L -o /usr/local/bin/archutil https://io.evansosenko.com/archutil/archutil
-fi
-
-if [[ -e /usr/local/bin/archutil ]]; then
-  chmod +x /usr/local/bin/archutil
-  puts 'Installed' 'archutil'
-fi
-
 puts 'Installing' 'Config Curator requirements'
 
 pacin ruby
@@ -66,6 +48,24 @@ curate -v
 if [[ -d bower_components ]]; then
   rm -rf bower_components
   puts 'Cleaned' 'Bower components'
+fi
+
+puts 'Installing' 'archutil requirements'
+
+pacin curl
+pacin python
+pacin python-yaml
+
+puts 'Installed' 'archutil requirements'
+
+if ! [[ -e /usr/local/bin/archutil ]]; then
+  puts 'Installing' 'archutil'
+  curl -L -o /usr/local/bin/archutil https://io.evansosenko.com/archutil/archutil
+fi
+
+if [[ -e /usr/local/bin/archutil ]]; then
+  chmod +x /usr/local/bin/archutil
+  puts 'Installed' 'archutil'
 fi
 
 puts 'Done'
