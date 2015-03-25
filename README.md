@@ -27,26 +27,26 @@ a very minimal configuration.
 
 After chroot, install some required packages
 
-````bash
+```bash
 $ pacman -S git reflector zsh
-````
+```
 
 Update the mirrorlist with reflector, e.g.,
 
-````bash
+```bash
 $ reflector -l 5 -c US --sort rate --save /etc/pacman.d/mirrorlist
 $ pacman -Syy
 $ pacman -Su
-````
+```
 
 If this repository or any of the Bower dependencies are private,
 generate an ssh key pair with `ssh-keygen` and grant read access.
 
 Clone this and bootstrap with
 
-````bash
+```bash
 $ ./bootstrap.zsh Hostname
-````
+```
 
 This will set the hostname to Hostname,
 install archutil and Config Curator,
@@ -54,30 +54,30 @@ and install the configuration.
 
 Install packages with
 
-````bash
+```bash
 $ archutil install --sets Hostname
-````
+```
 
 ### Updating configuration
 
 Install dependencies with
 
-````bash
+```bash
 $ bower update
 $ bundle update
-````
+```
 
 Install the configuration with
 
-````bash
+```bash
 $ curate
-````
+```
 
 Install packages with
 
-````bash
+```bash
 $ archutil install --sets Hostname
-````
+```
 
 ## Contributing
 
