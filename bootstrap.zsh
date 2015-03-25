@@ -73,6 +73,10 @@ puts 'Setting' 'Locale'
 locale-gen
 export $(cat /etc/locale.conf)
 
+puts 'Setting' 'Hardware clock to UTC'
+
+hwclock --systohc --utc
+
 puts 'Done'
 
 exit 0
