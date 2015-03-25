@@ -2,6 +2,72 @@
 
 [![MIT License](https://img.shields.io/badge/license-MIT-red.svg)](./LICENSE.txt)
 
+My Arch Linux configuration managed with [Config Curator] and [archutil].
+
+[archutil]: https://github.com/razor-x/archutil
+[Config Curator]: https://github.com/razor-x/config_curator
+
+## Requirements
+
+* [Bower]
+* [Ruby]
+* [Zsh]
+
+[Bower]: http://bower.io/
+[Ruby]: https://www.ruby-lang.org/
+[Zsh]: http://www.zsh.org/
+
+## Installation and Usage
+
+If you prefer a clean start, clone the `minimal` branch:
+it has the same structure and tools but with
+a very minimal configuration.
+
+### Bootstrapping a new system
+
+Install zsh
+
+````bash
+$ pacman -S zsh
+````
+
+Bootstrap with
+
+````bash
+$ ./bootstrap.zsh Hostname
+````
+
+This will set the hostname to Hostname,
+install archutil and Config Curator,
+and install the configuration.
+
+Install packages with
+
+````bash
+$ archutil install --sets Hostname
+````
+
+### Updating configuration
+
+Install dependencies with
+
+````bash
+$ bower update
+$ bundle update
+````
+
+Install the configuration with
+
+````bash
+$ curate
+````
+
+Install packages with
+
+````bash
+$ archutil install --sets Hostname
+````
+
 ## Contributing
 
 Please submit and comment on bug reports and feature requests.
