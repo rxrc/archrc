@@ -12,6 +12,14 @@ function pacin () {
   fi
 }
 
+if [[ -z "$1" ]]; then
+  echo 'Must give hostname as first argument.'
+  exit 1
+fi
+
+echo $1 > /etc/hostname
+puts 'Hostname' $1
+
 puts 'Installing' 'archutil requirements'
 
 pacin curl
