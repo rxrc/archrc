@@ -17,6 +17,15 @@ if [[ -z "$1" ]]; then
   exit 1
 fi
 
+puts 'Setting' 'Clock with NTP'
+
+pacin ntp
+ntpd -q -g
+
+puts 'Setting' 'Hardware clock to UTC'
+
+hwclock --systohc --utc
+
 echo $1 > /etc/hostname
 puts 'Hostname' $1
 
@@ -72,10 +81,6 @@ puts 'Setting' 'Locale'
 
 locale-gen
 export $(cat /etc/locale.conf)
-
-puts 'Setting' 'Hardware clock to UTC'
-
-hwclock --systohc --utc
 
 puts 'Done'
 
