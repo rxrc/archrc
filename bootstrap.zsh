@@ -2,6 +2,8 @@
 
 set -e
 
+CURATE_STR="puts Gem.bin_path('config_curator', 'curate')"
+
 function puts () {
   echo "\n-- [$1] $2"
 }
@@ -34,10 +36,10 @@ puts 'Installing' 'Config Curator requirements'
 pacin ruby
 pacin nodejs
 
-command -v curate >/dev/null 2>&1 || gem install config_curator
+ruby -e $CURATE_STR >/dev/null 2>&1 || gem install config_curator
 command -v bower  >/dev/null 2>&1 || npm install -g bower
 
-command -v curate >/dev/null 2>&1 && \
+ruby -e $CURATE_STR >/dev/null 2>&1 && \
 command -v bower  >/dev/null 2>&1 && \
 puts 'Installed' 'Config Curator requirements'
 
@@ -52,7 +54,7 @@ fi
 
 puts 'Installing' 'Config'
 
-curate -v
+$(ruby -e $CURATE_STR) -v
 
 if [[ -d bower_components ]]; then
   rm -rf bower_components
