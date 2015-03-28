@@ -45,7 +45,7 @@ puts 'Installed' 'Config Curator requirements'
 
 if ! [[ -d bower_components ]]; then
   puts 'Installing' 'Bower components'
-  bower --allow-root install
+  bower --config.analytics=false --allow-root install
 fi
 
 if [[ -d bower_components ]]; then
