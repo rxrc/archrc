@@ -58,7 +58,7 @@ if [[ -d bower_components ]]; then
 fi
 
 if [[ -z "$SUDO_COMMAND" && -d /root/.gem ]]; then
-  gem uninstall --all --force
+  gem uninstall --all --force --executables
   rm -rf /root/.gem
   puts 'Cleaned' 'Ruby gems'
 fi
