@@ -13,9 +13,13 @@ aur: "aura -A"
 sets:
   main:
     - archutil
+    - core
 
 # List the packages with their categories below.
 packages:
   archutil:
     - python
     - python-yaml
+
+  core:
+    - ntp
