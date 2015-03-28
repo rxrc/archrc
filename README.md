@@ -66,7 +66,13 @@ and install the configuration.
 Install packages with
 
 ```bash
-$ archutil install --sets Hostname
+$ /usr/local/bin/archutil install --sets main
+```
+
+Setup systemd units with
+
+```bash
+$ ./units.zsh
 ```
 
 ### Updating configuration
