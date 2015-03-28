@@ -57,6 +57,12 @@ if [[ -d bower_components ]]; then
   puts 'Cleaned' 'Bower components'
 fi
 
+if [[ -z "$SUDO_COMMAND" && -d /root/.gem ]]; then
+  gem uninstall --all --force
+  rm -rf /root/.gem
+  puts 'Cleaned' 'Ruby gems'
+fi
+
 puts 'Installing' 'archutil requirements'
 
 pacin curl
