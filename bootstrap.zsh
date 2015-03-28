@@ -32,7 +32,7 @@ puts 'Installing' 'Config Curator requirements'
 pacin ruby
 pacin nodejs
 
-ruby -e $curate_str >/dev/null 2>&1 || gem install config_curator
+ruby -e $curate_str >/dev/null 2>&1 || gem install --no-document config_curator
 command -v bower  >/dev/null 2>&1 || npm install -g bower
 
 ruby -e $curate_str >/dev/null 2>&1 && \
