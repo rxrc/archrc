@@ -54,6 +54,8 @@ generate an ssh key pair with `ssh-keygen` and grant read access.
 Clone this and bootstrap with
 
 ```bash
+$ git clone https://github.com/razor-x/archrc.git /root/archrc
+$ cd /root/archrc
 $ ./bootstrap.zsh Hostname
 ```
 
@@ -85,7 +87,7 @@ $ curate
 Install packages with
 
 ```bash
-$ archutil install --sets Hostname
+$ /usr/local/bin/archutil install --sets Hostname
 ```
 
 ## Contributing
