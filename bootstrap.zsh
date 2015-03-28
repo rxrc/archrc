@@ -33,10 +33,10 @@ pacin ruby
 pacin nodejs
 
 ruby -e $curate_str >/dev/null 2>&1 || gem install --no-document config_curator
-command -v bower  >/dev/null 2>&1 || npm install -g bower
+command -v bower >/dev/null 2>&1 || npm install -g bower
 
 ruby -e $curate_str >/dev/null 2>&1 && \
-command -v bower  >/dev/null 2>&1 && \
+command -v bower >/dev/null 2>&1 && \
 puts 'Installed' 'Config Curator requirements'
 
 if ! [[ -d bower_components ]]; then

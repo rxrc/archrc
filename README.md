@@ -63,6 +63,11 @@ This will set the hostname to Hostname,
 install archutil and Config Curator,
 and install the configuration.
 
+Install Aura with
+
+```bash
+$ ./aura.zsh
+```
 Install packages with
 
 ```bash
