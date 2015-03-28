@@ -19,6 +19,11 @@ if [[ -z "$1" ]]; then
   exit 1
 fi
 
+if [[ $(id -u) -ne 0 ]]; then
+  echo 'Must run as root.'
+  exit 1
+fi
+
 echo $1 > /etc/hostname
 puts 'Hostname' $1
 
