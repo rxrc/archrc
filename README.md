@@ -25,6 +25,15 @@ a very minimal configuration.
 
 ### Bootstrapping a new system
 
+Follow the normal install process.
+Be sure to set the Hardware clock first
+
+```bash
+ntpd -qg
+hwclock --systohc --utc
+```
+
+Prepare disks, mount partitions, run pacstrap and genfstab.
 After chroot, install some required packages
 
 ```bash
