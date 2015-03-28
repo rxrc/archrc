@@ -89,6 +89,11 @@ Install packages with
 ```bash
 $ /usr/local/bin/archutil install --sets main
 ```
+
+Setup systemd units with
+
+```bash
+$ ./units.zsh
 ```
 
 ## Contributing
