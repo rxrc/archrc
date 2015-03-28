@@ -87,7 +87,8 @@ $ curate
 Install packages with
 
 ```bash
-$ /usr/local/bin/archutil install --sets Hostname
+$ /usr/local/bin/archutil install --sets main
+```
 ```
 
 ## Contributing
