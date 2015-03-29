@@ -22,6 +22,7 @@ My Arch Linux configuration managed with [Config Curator] and [archutil].
 If you prefer a clean start, clone the `minimal` branch:
 it has the same structure and tools but with
 a very minimal configuration.
+Tagged releases are based on that branch.
 
 ### Bootstrapping a new system
 
