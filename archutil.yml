@@ -18,9 +18,9 @@ sets:
 # List the packages with their categories below.
 packages:
   archutil:
+    - aura-bin
     - python
     - python-yaml
-    - aura-bin
 
   core:
     - ntp
