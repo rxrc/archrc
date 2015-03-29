@@ -20,6 +20,7 @@ packages:
   archutil:
     - python
     - python-yaml
+    - aura-bin
 
   core:
     - ntp
