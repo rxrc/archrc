@@ -84,6 +84,14 @@ $ ./aura.zsh
 ```
 
 At this point you need to create and switch to a non-root user.
+For example
+
+```bash
+$ useradd -m -G wheel not-root
+$ passwd not-root
+$ su -l not-root
+```
+
 This user must have sudo privileges.
 
 #### As non-root user
@@ -108,7 +116,13 @@ Setup systemd units with
 $ ./units.zsh
 ```
 
+Before first reboot, complete any final tasks, e.g.,
+set the root password and configure anything needed to boot.
+
 ### Updating configuration
+
+After the initial bootstrapping,
+configuration should be managed by a normal user.
 
 Install dependencies with
 
