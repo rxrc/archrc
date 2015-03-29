@@ -58,13 +58,14 @@ Clone this with
 
 ```bash
 $ curl -L https://git.io/jguX | sh
+$ cd ~/archrc
 ```
 
 or
 
 ```bash
 $ git clone https://github.com/razor-x/archrc.git /root/archrc
-$ cd /root/archrc
+$ cd ~/archrc
 ```
 
 Bootstrap with
@@ -93,6 +94,7 @@ Remove root's archrc clone and create your own with
 ```bash
 $ sudo rm -rf /root/archrc
 $ curl -L https://git.io/jguX | sh
+$ cd ~/archrc
 ```
 
 Install packages with
