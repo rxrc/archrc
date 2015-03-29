@@ -1,5 +1,6 @@
 set -e
 
-git clone https://github.com/razor-x/archrc.git /root/archrc
+cd
+git clone https://github.com/razor-x/archrc.git
 
 exit 0
