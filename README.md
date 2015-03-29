@@ -84,6 +84,7 @@ $ ./aura.zsh
 ```
 
 At this point you need to create and switch to a non-root user.
+This user must have sudo privileges.
 For example
 
 ```bash
@@ -91,8 +92,6 @@ $ useradd -m -G wheel not-root
 $ passwd not-root
 $ su -l not-root
 ```
-
-This user must have sudo privileges.
 
 #### As non-root user
 
