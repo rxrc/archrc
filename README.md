@@ -58,19 +58,18 @@ Clone this with
 
 ```bash
 $ curl -L https://git.io/jguX | sh
-$ cd ~/archrc
 ```
 
 or
 
 ```bash
 $ git clone https://github.com/razor-x/archrc.git /root/archrc
-$ cd ~/archrc
 ```
 
 Bootstrap with
 
 ```bash
+$ cd ~/archrc
 $ ./bootstrap.zsh Hostname
 ```
 
