@@ -34,6 +34,9 @@ hwclock --systohc --utc
 ```
 
 Prepare disks, mount partitions, run pacstrap and genfstab.
+
+#### As root
+
 After chroot, install some required packages
 
 ```bash
@@ -61,12 +64,12 @@ or
 
 ```bash
 $ git clone https://github.com/razor-x/archrc.git /root/archrc
+$ cd /root/archrc
 ```
 
 Bootstrap with
 
 ```bash
-$ cd /root/archrc
 $ ./bootstrap.zsh Hostname
 ```
 
@@ -79,6 +82,19 @@ Install Aura with
 ```bash
 $ ./aura.zsh
 ```
+
+At this point you need to create and switch to a non-root user.
+This user must have sudo privileges.
+
+#### As non-root user
+
+Remove root's archrc clone and create your own with
+
+```bash
+$ sudo rm -rf /root/archrc
+$ curl -L https://git.io/jguX | sh
+```
+
 Install packages with
 
 ```bash
