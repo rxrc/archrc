@@ -51,10 +51,21 @@ $ pacman -Su
 If this repository or any of the Bower dependencies are private,
 generate an ssh key pair with `ssh-keygen` and grant read access.
 
-Clone this and bootstrap with
+Clone this with
+
+```bash
+$ curl -L https://git.io/jguX | sh
+```
+
+or
 
 ```bash
 $ git clone https://github.com/razor-x/archrc.git /root/archrc
+```
+
+Bootstrap with
+
+```bash
 $ cd /root/archrc
 $ ./bootstrap.zsh Hostname
 ```
