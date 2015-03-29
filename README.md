@@ -145,6 +145,12 @@ Install the configuration with
 $ curate
 ```
 
+Alternatively, run all of these commands with
+
+```bash
+$ ./install.zsh
+```
+
 Install packages with
 
 ```bash
@@ -155,12 +161,6 @@ Setup systemd units with
 
 ```bash
 $ ./units.zsh
-```
-
-Alternatively, run all of these commands with
-
-```bash
-$ ./install.zsh
 ```
 
 [rbenv]: https://github.com/sstephenson/rbenv
