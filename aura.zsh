@@ -7,11 +7,7 @@ tar_file='aura-bin.tar.gz'
 
 function pacin () {
   if ! (pacman -Q $1 >/dev/null); then
-    if [[ $(id -u) -ne 0 ]]; then
-      sudo pacman -S --noconfirm $1
-    else
-      pacman -S --noconfirm $1
-    fi
+    sudo pacman -S --noconfirm $1
   fi
 }
 
@@ -39,27 +35,13 @@ for p in $depends; do
   pacin $(echo $p | sed 's/\((\|)\)//' | sed "s/'//g")
 done
 
-if [[ $(id -u) -ne 0 ]]; then
-  sudo chgrp -R nobody $build_dir
-  sudo chmod -R g+rwX $build_dir
-else
-  chgrp -R nobody $build_dir
-  chmod -R g+rwX -R $build_dir
-fi
-
+sudo chgrp -R nobody $build_dir
+sudo chmod -R g+rwX $build_dir
 sudo -u nobody makepkg
 
 aura_bin=$(ls aura-bin-*.xz)
-if [[ $(id -u) -ne 0 ]]; then
-  sudo pacman -U --noconfirm $aura_bin
-else
-  pacman -U --noconfirm $aura_bin
-fi
+sudo pacman -U --noconfirm $aura_bin
 
-if [[ $(id -u) -ne 0 ]]; then
-  sudo rm -rf $build_dir
-else
-  rm -rf $build_dir
-fi
+sudo rm -rf $build_dir
 
 exit 0
