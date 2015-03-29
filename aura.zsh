@@ -22,6 +22,7 @@ pacin curl
 pacin grep
 pacin tar
 pacin sed
+pacin sudo
 
 build_dir=$(mktemp -d)
 cd $build_dir
@@ -38,7 +39,15 @@ for p in $depends; do
   pacin $(echo $p | sed 's/\((\|)\)//' | sed "s/'//g")
 done
 
-makepkg
+if [[ $(id -u) -ne 0 ]]; then
+  sudo chgrp -R nobody $build_dir
+  sudo chmod -R g+rwX $build_dir
+else
+  chgrp -R nobody $build_dir
+  chmod -R g+rwX -R $build_dir
+fi
+
+sudo -u nobody makepkg
 
 aura_bin=$(ls aura-bin-*.xz)
 if [[ $(id -u) -ne 0 ]]; then
@@ -47,6 +56,10 @@ else
   pacman -U --noconfirm $aura_bin
 fi
 
-rm -rf $build_dir
+if [[ $(id -u) -ne 0 ]]; then
+  sudo rm -rf $build_dir
+else
+  rm -rf $build_dir
+fi
 
 exit 0
