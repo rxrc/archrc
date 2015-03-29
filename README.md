@@ -123,6 +123,15 @@ set the root password and configure anything needed to boot.
 After the initial bootstrapping,
 configuration should be managed by a normal user.
 
+You can continue using the system Ruby,
+or install Ruby with [rbenv] or [RVM].
+
+Install [Bundler] with
+
+```bash
+$ gem install bundler
+```
+
 Install dependencies with
 
 ```bash
@@ -147,6 +156,16 @@ Setup systemd units with
 ```bash
 $ ./units.zsh
 ```
+
+Alternatively, run all of these commands with
+
+```bash
+$ ./install.zsh
+```
+
+[rbenv]: https://github.com/sstephenson/rbenv
+[RVM]: https://rvm.io/
+[Bundler]: http://bundler.io/
 
 ## Contributing
 
