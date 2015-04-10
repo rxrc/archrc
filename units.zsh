@@ -1,7 +1,5 @@
 #!/usr/bin/env zsh
 
-set -e
-
 enabled=()
 disabled=()
 
