@@ -1,0 +1,8 @@
+# This file managed by Config Curator.
+#
+PermitRootLogin no
+PasswordAuthentication no
+ChallengeResponseAuthentication no
+TCPKeepAlive yes
+
+Subsystem sftp /usr/lib/ssh/sftp-server

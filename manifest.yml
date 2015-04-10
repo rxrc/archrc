@@ -18,6 +18,9 @@ config_files:
   - src: etc/locale.conf
   - src: etc/sysctl.d/99-sysctl.conf
 
+  - src: etc/ssh/sshd_config
+    packages: [ openssh ]
+
   - src: etc/sudoers
     fmode: 0440
 
