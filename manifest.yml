@@ -16,6 +16,7 @@ config_files:
 
   - src: etc/locale.gen
   - src: etc/locale.conf
+  - src: etc/sysctl.d/99-sysctl.conf
 
   - src: etc/sudoers
     fmode: 0440
