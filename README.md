@@ -146,6 +146,12 @@ Install the configuration with
 $ curate
 ```
 
+Setup systemd units with
+
+```bash
+$ ./units.zsh
+```
+
 Alternatively, run all of these commands with
 
 ```bash

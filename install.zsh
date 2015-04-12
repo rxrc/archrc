@@ -11,4 +11,7 @@ bundle update
 echo '\n$ curate -v\n'
 sudo curate -v
 
+echo '\n$ ./units.zsh\n'
+./units.zsh
+
 exit 0
