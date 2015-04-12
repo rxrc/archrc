@@ -3,6 +3,9 @@
 enabled=()
 disabled=()
 
+echo 'Enable: dbus.socket'
+sudo systemctl --global enable dbus.socket
+
 for unit in $enabled; do
   echo "[Enable] $unit"
   sudo systemctl enable $unit
