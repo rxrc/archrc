@@ -11,7 +11,7 @@ components:
     dst: etc/systemd/user
 
   - src: bower_components/systemd-units/user@.service.d
-    dst: etc/systemd/user@.service.d
+    dst: etc/systemd/system/user@.service.d
 
 config_files:
   - src: bower_components/archutil/bin/archutil
