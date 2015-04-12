@@ -17,6 +17,7 @@
     "bower_components"
   ],
   "dependencies": {
-    "archutil": "razor-x/archutil"
+    "archutil": "razor-x/archutil",
+    "systemd-units": "git@bitbucket.org:razorx/systemd-units.git"
   }
 }

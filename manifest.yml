@@ -6,6 +6,13 @@ defaults:
   fmode: 0644
   dmode: 0755
 
+components:
+  - src: bower_components/systemd-units/user
+    dst: etc/systemd/user
+
+  - src: bower_components/systemd-units/user@.service.d
+    dst: etc/systemd/user@.service.d
+
 config_files:
   - src: bower_components/archutil/bin/archutil
     dst: usr/local/bin/archutil
