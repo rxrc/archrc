@@ -6,12 +6,12 @@ disabled=()
 enabled+=( 'ntpd.service' )
 
 for unit in $enabled; do
-  echo "Enable: $unit"
+  echo "[Enable] $unit"
   sudo systemctl enable $unit
 done
 
 for unit in $disabled; do
-  echo "Disable: $unit"
+  echo "[Disable] $unit"
   sudo systemctl disable $unit
 done
 
