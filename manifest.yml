@@ -10,8 +10,8 @@ components:
   - src: bower_components/systemd-units/system/user@.service.d
     dst: etc/systemd/system/user@.service.d
 
-  - src: bower_components/systemd-units/system/getty@tty1.service.d
-    dst: etc/systemd/system/getty@tty1.service.d
+  - src: bower_components/systemd-units/system/getty@tty6.service.d
+    dst: etc/systemd/system/getty@tty6.service.d
 
 config_files:
   - src: bower_components/archutil/bin/archutil
