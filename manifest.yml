@@ -10,7 +10,7 @@ components:
   - src: bower_components/systemd-units/user
     dst: etc/systemd/user
 
-  - src: bower_components/systemd-units/user@.service.d
+  - src: bower_components/systemd-units/system/user@.service.d
     dst: etc/systemd/system/user@.service.d
 
 config_files:
@@ -30,6 +30,8 @@ config_files:
 
   - src: etc/sudoers
     fmode: 0440
+
+  - src: etc/X11/Xwrapper.config
 
   - src: etc/X11/xorg.conf.d/20-intel.conf
     packages: [ xf86-video-intel ]
