@@ -7,9 +7,6 @@ defaults:
   dmode: 0755
 
 components:
-  - src: bower_components/systemd-units/user
-    dst: etc/systemd/user
-
   - src: bower_components/systemd-units/system/user@.service.d
     dst: etc/systemd/system/user@.service.d
 
