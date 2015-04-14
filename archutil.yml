@@ -13,7 +13,21 @@ aur: "aura -A"
 sets:
   main:
     - archutil
+    - system
     - core
+
+  user:
+    - tools
+    - terminal
+    - fonts
+    - devel
+    - development
+    - print
+
+  gui:
+    - xorg
+    - window-manager
+    - graphical
 
 # List the packages with their categories below.
 packages:
@@ -22,5 +36,115 @@ packages:
     - python
     - python-yaml
 
+  system:
+    - acpi
+    - gptfdisk
+    - lsof
+    - ntfs-3g
+    - smbclient
+    - sshfs
+
+  intel:
+    - xf86-video-intel
+
   core:
+    - cups
+    - openssh
     - sudo
+    - zsh
+
+  tools:
+    - ack
+    - curl
+    - dnsutils
+    - dos2unix
+    - net-tools
+    - p7zip
+    - reflector
+    - rsync
+    - the_silver_searcher
+    - unrar
+    - unzip
+    - wget
+    - wol
+    - zip
+
+  terminal:
+    - archey
+    - bc
+    - glances
+    - ipbt
+    - ponysay
+    - ranger
+    - tmux
+    - ttyrec
+
+  fonts:
+    - otf-font-awesome
+    - powerline-fonts-git
+    - ttf-bitstream-vera
+    - ttf-dejavu
+    - ttf-inconsolata-g
+    - ttf-opensans
+    - ttf-ubuntu-font-family
+
+  devel:
+    - base-devel
+    - libffi
+    - libgit2
+    - libyaml
+    - openssl
+    - sqlite
+    - watchman
+    - zlib
+
+  development:
+    - android-tools
+    - android-udev
+    - git
+    - nodejs
+    - python-pip
+    - python-virtualenvwrapper
+    - vim-systemd
+
+  print:
+    - kindlegen
+    - texlive-most
+
+  xorg:
+    - xorg-server
+    - xorg-server-utils
+    - xorg-xinit
+
+  window-manager:
+    - archlinux-themes-slim
+    - awesome
+    - gnome-keyring
+    - gtk3
+    - gtk-theme-numix
+    - lain-git
+    - network-manager-applet
+    - redshift
+    - slimlock
+    - unclutter
+    - vicious
+
+  graphical:
+    - firefox
+    - flashplugin
+    - google-chrome
+    - gimp
+    - gvim
+    - inkscape
+    - insync
+    - keepassx2
+    - mumble
+    - terminator
+    - thunderbird
+    - transmission-gtk
+    - vlc
+
+  # Must be built manually.
+  build:
+    - mathematica
+    - ttf-ms-win8
