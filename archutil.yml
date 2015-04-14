@@ -121,7 +121,7 @@ packages:
     - awesome
     - gnome-keyring
     - gtk3
-    - gtk-theme-numix
+    - numix-themes
     - lain-git
     - network-manager-applet
     - redshift
