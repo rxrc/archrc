@@ -47,7 +47,7 @@ $ pacman -S git reflector zsh
 Update the mirrorlist with reflector, e.g.,
 
 ```bash
-$ reflector -l 5 -c US --sort rate --save /etc/pacman.d/mirrorlist
+$ reflector -l 5 -c US -p https --sort rate --save /etc/pacman.d/mirrorlist
 $ pacman -Syy
 $ pacman -Su
 ```
