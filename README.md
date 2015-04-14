@@ -17,6 +17,7 @@ Note: these requirements are handled automatically
 when bootstrapping a new system (see the instructions below).
 
 [Bower]: http://bower.io/
+[Bundler]: http://bundler.io/
 [Ruby]: https://www.ruby-lang.org/
 [Zsh]: http://www.zsh.org/
 
