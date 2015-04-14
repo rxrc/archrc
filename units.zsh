@@ -4,6 +4,7 @@ enabled=()
 disabled=()
 
 enabled+=('getty@tty6')
+enabled+=('NetworkManager')
 enabled+=("slimlock@$USER")
 
 for unit in $enabled; do
