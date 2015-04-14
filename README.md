@@ -10,8 +10,11 @@ My Arch Linux configuration managed with [Config Curator] and [archutil].
 ## Requirements
 
 * [Bower]
-* [Ruby]
+* [Ruby] with [Bundler]
 * [Zsh]
+
+Note: these requirements are handled automatically
+when bootstrapping a new system (see the instructions below).
 
 [Bower]: http://bower.io/
 [Ruby]: https://www.ruby-lang.org/
@@ -172,7 +175,6 @@ $ ./units.zsh
 
 [rbenv]: https://github.com/sstephenson/rbenv
 [RVM]: https://rvm.io/
-[Bundler]: http://bundler.io/
 
 ## Contributing
 
