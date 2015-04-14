@@ -3,7 +3,7 @@
 enabled=()
 disabled=()
 
-enabled+=( 'ntpd' )
+enabled+=('ntpd')
 
 for unit in $enabled; do
   echo "[Enable] $unit"
