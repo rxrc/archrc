@@ -34,5 +34,7 @@ config_files:
   - src: etc/X11/xorg.conf.d/20-intel.conf
     packages: [ xf86-video-intel ]
 
+  - src: etc/slim.conf
+
   # Only needed if starting xorg with systemd/User.
   # - src: etc/X11/Xwrapper.config
