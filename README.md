@@ -33,7 +33,7 @@ Tagged releases are based on that branch.
 Follow the normal install process.
 Be sure to set the Hardware clock first
 
-```bash
+```
 # ntpd -qg
 # hwclock --systohc --utc
 ```
@@ -44,13 +44,13 @@ Prepare disks, mount partitions, run pacstrap and genfstab.
 
 After chroot, install some required packages
 
-```bash
+```
 # pacman -S git reflector zsh
 ```
 
 Update the mirrorlist with reflector, e.g.,
 
-```bash
+```
 # reflector -l 5 -c US -p https --sort rate --save /etc/pacman.d/mirrorlist
 # pacman -Syy
 # pacman -Su
@@ -61,19 +61,19 @@ generate an ssh key pair with `ssh-keygen` and grant read access.
 
 Clone this with
 
-```bash
+```
 # curl -L https://git.io/jguX | sh
 ```
 
 or
 
-```bash
+```
 # git clone https://github.com/razor-x/archrc.git /root/archrc
 ```
 
 Bootstrap with
 
-```bash
+```
 # cd ~/archrc
 # ./bootstrap.zsh Hostname
 ```
@@ -84,7 +84,7 @@ and install the configuration.
 
 Install Aura with
 
-```bash
+```
 # ./aura.zsh
 ```
 
@@ -92,7 +92,7 @@ At this point you need to create and switch to a non-root user.
 This user must have sudo privileges.
 For example
 
-```bash
+```
 # useradd -m -G wheel not-root
 # passwd not-root
 # su -l not-root
