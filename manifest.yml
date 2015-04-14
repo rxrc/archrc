@@ -31,7 +31,8 @@ config_files:
   - src: etc/sudoers
     fmode: 0440
 
-  - src: etc/X11/Xwrapper.config
+  # Only needed if starting xorg with systemd/User.
+  # - src: etc/X11/Xwrapper.config
 
   - src: etc/X11/xorg.conf.d/20-intel.conf
     packages: [ xf86-video-intel ]
