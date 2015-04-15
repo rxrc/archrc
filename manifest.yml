@@ -38,6 +38,7 @@ config_files:
     packages: [ xf86-video-intel ]
 
   - src: etc/slim.conf
+    packages: [ slimlock ]
 
   # Only needed if starting xorg with systemd/User.
   # - src: etc/X11/Xwrapper.config
