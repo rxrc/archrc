@@ -17,6 +17,7 @@
     "bower_components"
   ],
   "dependencies": {
+    "archrc-boot": "git@bitbucket.org:razorx/archrc-boot.git",
     "archutil": "razor-x/archutil",
     "systemd-units": "razor-x/systemd-units"
   }
