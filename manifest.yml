@@ -19,7 +19,3 @@ config_files:
 
   - src: etc/sudoers
     fmode: 0440
-
-symlinks:
-  - src: /usr/share/zoneinfo/America/Los_Angeles
-    dst: etc/localtime
