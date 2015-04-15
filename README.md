@@ -108,6 +108,9 @@ $ curl -L https://git.io/jguX | sh
 $ cd ~/archrc
 ```
 
+Again, if this repository or any of the Bower dependencies are private,
+generate an ssh key pair with `ssh-keygen` and grant read access.
+
 Install packages with
 
 ```bash
@@ -120,8 +123,25 @@ Setup systemd units with
 $ ./units.zsh
 ```
 
+#### Final tasks
+
 Before first reboot, complete any final tasks, e.g.,
 set the root password and configure anything needed to boot.
+
+#### First boot
+
+Set the hardware clock to UTC and enable systemd-timesyncd sync with
+
+```bash
+$ timedatectl set-local-rtc 0
+$ timedatectl set-ntp true
+```
+
+Set the local timezone, for example
+
+```bash
+$ timedatectl set-timezone America/Los_Angeles
+```
 
 ### Updating configuration
 
@@ -130,6 +150,8 @@ configuration should be managed by a normal user.
 
 You can continue using the system Ruby,
 or install Ruby with [rbenv] or [RVM].
+Bower should be installed manually using [npm].
+
 
 Install [Bundler] with
 
@@ -174,6 +196,7 @@ Setup systemd units with
 $ ./units.zsh
 ```
 
+[npm]: https://www.npmjs.com/
 [rbenv]: https://github.com/sstephenson/rbenv
 [RVM]: https://rvm.io/
 
