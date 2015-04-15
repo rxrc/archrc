@@ -51,6 +51,9 @@ packages:
   efi:
     - refind-efi
 
+  bios:
+    - grub
+
   core:
     - cups
     - openssh
