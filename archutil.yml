@@ -48,6 +48,9 @@ packages:
   intel:
     - xf86-video-intel
 
+  efi:
+    - refind-efi
+
   core:
     - cups
     - openssh
