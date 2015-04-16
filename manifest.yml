@@ -46,17 +46,15 @@ config_files:
   - src: etc/slim.conf
     packages: [ slimlock ]
 
-  - src: bower_components/archrc-boot/etc/fstab
+  - src: bower_components/archrc-private/etc/fstab
     dst: etc/fstab
     hosts: [ Gungnir ]
 
-  - src: bower_components/archrc-boot/etc/mkinitcpio.conf
-    dst: etc/mkinitcpio.conf
-    hosts: [ Gungnir ]
+  - src: etc/mkinitcpio.conf
+    packages: [ mkinitcpio ]
 
-  - src: bower_components/archrc-boot/etc/default/grub
-    dst: etc/default/grub
-    hosts: [ Gungnir ]
+  - src: etc/default/grub
+    packages: [ grub ]
 
   # Only needed if starting xorg with systemd/User.
   # - src: etc/X11/Xwrapper.config
