@@ -46,6 +46,7 @@ packages:
     - gptfdisk
     - lsof
     - networkmanager
+    - nftables
     - ntfs-3g
     - smbclient
     - sshfs

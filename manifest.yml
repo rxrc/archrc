@@ -28,6 +28,9 @@ config_files:
   - src: etc/locale.conf
   - src: etc/sysctl.d/99-sysctl.conf
 
+  - src: etc/nftables.conf
+    packages: [ nftables ]
+
   - src: etc/ssh/sshd_config
     packages: [ openssh ]
 
