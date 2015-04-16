@@ -44,5 +44,9 @@ config_files:
     dst: etc/mkinitcpio.conf
     hosts: [ Gungnir ]
 
+  - src: bower_components/archrc-boot/etc/default/grub
+    dst: etc/default/grub
+    hosts: [ Gungnir ]
+
   # Only needed if starting xorg with systemd/User.
   # - src: etc/X11/Xwrapper.config
