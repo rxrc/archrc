@@ -100,10 +100,9 @@ For example
 
 #### As non-root user
 
-Remove root's archrc clone and create your own with
+Create your own archrc with
 
 ```bash
-$ sudo rm -rf /root/archrc
 $ curl -L https://git.io/jguX | sh
 $ cd ~/archrc
 ```
@@ -124,6 +123,23 @@ $ ./units.zsh
 ```
 
 #### Final tasks
+
+Switch back to root and run the bootstrap script one more time.
+This will be needed if you have configuration
+that only installs when certain packages are installed.
+
+```
+$ logout
+# cd ~/archrc
+# ./bootstrap.zsh Hostname
+# ./units.zsh
+```
+
+Remove root's archrc clone with
+
+```
+# rm -rf ~/archrc
+```
 
 Before first reboot, complete any final tasks, e.g.,
 set the root password and configure anything needed to boot.
