@@ -145,6 +145,11 @@ packages:
     - unclutter
     - vicious
 
+    # For redshift
+    - librsvg
+    - python-gobject
+    - python-xdg
+
   graphical:
     - firefox
     - flashplugin
