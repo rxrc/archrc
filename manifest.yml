@@ -23,6 +23,7 @@ config_files:
 
   - src: bower_components/systemd-units/system/slimlock@.service
     dst: etc/systemd/system/slimlock@.service
+    packages: [ slimlock ]
 
   - src: etc/locale.gen
   - src: etc/locale.conf
@@ -36,11 +37,13 @@ config_files:
 
   - src: etc/sudoers
     fmode: 0440
+    packages: [ sudo ]
 
   - src: etc/X11/xorg.conf.d/20-intel.conf
     packages: [ xf86-video-intel ]
 
   - src: etc/X11/xorg.conf.d/20-synaptics.conf
+    packages: [ xf86-input-synaptics ]
     hosts: [ Gungnir ]
 
   - src: etc/slim.conf
