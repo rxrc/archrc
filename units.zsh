@@ -6,6 +6,7 @@ disabled=()
 enabled+=('getty@tty6')
 enabled+=('NetworkManager')
 enabled+=("slimlock@$USER")
+enabled+=('sshd')
 
 for unit in $enabled; do
   echo "[Enable] $unit"
