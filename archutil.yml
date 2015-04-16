@@ -30,6 +30,7 @@ sets:
     - graphical
 
   gungnir:
+    - samus
     - bios
     - intel
 
@@ -57,6 +58,9 @@ packages:
 
   bios:
     - grub
+
+  samus:
+    - linux-samus
 
   core:
     - cups
