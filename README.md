@@ -71,6 +71,11 @@ or
 # git clone https://github.com/razor-x/archrc.git /root/archrc
 ```
 
+If you manage `/etc/fstab` with archrc,
+and your partitions have changed with a fresh install,
+you need to backup the working fstab before bootstrapping
+and restore it afterwards.
+
 Bootstrap with
 
 ```
