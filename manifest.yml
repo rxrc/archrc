@@ -40,5 +40,9 @@ config_files:
   - src: etc/slim.conf
     packages: [ slimlock ]
 
+  - src: bower_components/archrc-boot/etc/mkinitcpio.conf
+    dst: etc/mkinitcpio.conf
+    hosts: [ Gungnir ]
+
   # Only needed if starting xorg with systemd/User.
   # - src: etc/X11/Xwrapper.config
