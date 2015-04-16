@@ -37,6 +37,9 @@ config_files:
   - src: etc/X11/xorg.conf.d/20-intel.conf
     packages: [ xf86-video-intel ]
 
+  - src: etc/X11/xorg.conf.d/20-synaptics.conf
+    hosts: [ Gungnir ]
+
   - src: etc/slim.conf
     packages: [ slimlock ]
 
