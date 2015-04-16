@@ -114,6 +114,8 @@ packages:
     - libgit2
     - libyaml
     - openssl
+    - python
+    - ruby
     - sqlite
     - watchman
     - zlib
