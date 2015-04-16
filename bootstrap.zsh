@@ -25,6 +25,7 @@ if [[ $(id -u) -ne 0 ]]; then
 fi
 
 echo $1 > /etc/hostname
+hostname $1
 puts 'Hostname' $1
 
 puts 'Installing' 'Config Curator requirements'
