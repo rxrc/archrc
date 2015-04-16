@@ -29,6 +29,10 @@ sets:
     - window-manager
     - graphical
 
+  gungnir:
+    - bios
+    - intel
+
 # List the packages with their categories below.
 packages:
   archutil:
