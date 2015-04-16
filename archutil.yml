@@ -137,6 +137,7 @@ packages:
   xorg:
     - xorg-server
     - xorg-server-utils
+    - xorg-xev
     - xorg-xinit
 
   window-manager:
