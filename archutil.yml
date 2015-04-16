@@ -61,6 +61,9 @@ packages:
 
   samus:
     - linux-samus
+    - linux-samus-docs
+    - linux-samus-headers
+    - xf86-input-synaptics
 
   core:
     - cups
