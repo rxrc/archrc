@@ -29,7 +29,7 @@ sets:
     - window-manager
     - graphical
 
-  gungnir:
+  samus:
     - samus
     - bios
     - intel
