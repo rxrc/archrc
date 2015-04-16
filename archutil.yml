@@ -95,6 +95,7 @@ packages:
     - ttyrec
 
   fonts:
+    - fontforge
     - otf-font-awesome
     - powerline-fonts-git
     - ttf-bitstream-vera
