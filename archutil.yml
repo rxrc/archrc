@@ -108,6 +108,7 @@ packages:
     - ttf-ubuntu-font-family
 
   devel:
+    - abs
     - base-devel
     - libffi
     - libgit2
