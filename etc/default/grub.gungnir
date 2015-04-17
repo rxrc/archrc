@@ -17,8 +17,3 @@ GRUB_CMDLINE_LINUX="cryptdevice=/dev/sda3:ssd:allow-discards"
 
 # Force console mode.
 GRUB_TERMINAL=console
-
-# Hide GRUB menu and boot immediately.
-GRUB_TIMEOUT=0
-GRUB_HIDDEN_TIMEOUT=0
-GRUB_HIDDEN_TIMEOUT_QUIET=true

@@ -26,8 +26,7 @@ config_files:
     fmode: 0600
     hosts: [ Mimir ]
 
-  - src: etc/default/grub.conf
-    dst: etc/default/grub
+  - src: etc/default/grub
     packages: [ grub ]
 
   - src: etc/locale.gen
