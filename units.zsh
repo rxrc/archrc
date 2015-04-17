@@ -6,6 +6,7 @@ disabled=()
 enabled+=('getty@tty6')
 enabled+=('nftables')
 enabled+=('NetworkManager')
+enabled+=('numlock')
 enabled+=("slimlock@$USER")
 enabled+=('sshd')
 

@@ -57,6 +57,9 @@ config_files:
   - src: bower_components/systemd-units/logind.conf.d/acpi.conf
     dst: etc/systemd/logind.conf.d/acpi.conf
 
+  - src: bower_components/systemd-units/system/numlock.service
+    dst: etc/systemd/system/numlock.service
+
   - src: bower_components/systemd-units/system/slimlock@.service
     dst: etc/systemd/system/slimlock@.service
     packages: [ slimlock ]
