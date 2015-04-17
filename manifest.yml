@@ -19,7 +19,7 @@ config_files:
 
   - src: bower_components/archrc-private/etc/fstab
     dst: etc/fstab
-    hosts: [ Gungnir, Mimir ]
+    hosts: [ Gungnir, Gungnir-x60, Mimir ]
 
   - src: bower_components/archrc-private/etc/crypttab
     dst: etc/crypttab
