@@ -21,7 +21,8 @@ config_files:
     dst: etc/fstab
     hosts: [ Gungnir ]
 
-  - src: etc/default/grub
+  - src: etc/default/grub.conf
+    dst: etc/default/grub
     packages: [ grub ]
 
   - src: etc/locale.gen
