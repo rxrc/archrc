@@ -38,6 +38,9 @@ config_files:
   - src: etc/ssh/sshd_config
     packages: [ openssh ]
 
+  - src: etc/modprobe.d/alsa-base.conf
+    packages: [ linux-samus ]
+
   - src: etc/X11/xorg.conf.d/20-intel.conf
     packages: [ xf86-video-intel ]
 

@@ -26,6 +26,7 @@ sets:
 
   gui:
     - xorg
+    - audio
     - window-manager
     - graphical
 
@@ -139,6 +140,12 @@ packages:
     - xorg-server-utils
     - xorg-xev
     - xorg-xinit
+
+  audio:
+    - alsa-utils
+    - pavucontrol
+    - pulseaudio
+    - pulseaudio-alsa
 
   window-manager:
     - gnome-keyring
