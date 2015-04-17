@@ -35,6 +35,10 @@ sets:
     - bios
     - intel
 
+  x60:
+    - bios
+    - intel
+
 # List the packages with their categories below.
 packages:
   archutil:
