@@ -152,6 +152,7 @@ packages:
     - gnome-keyring
     - maim
     - network-manager-applet
+    - numlockx
     - unclutter
 
     # Slimlock
