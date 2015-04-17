@@ -142,6 +142,7 @@ packages:
 
   window-manager:
     - gnome-keyring
+    - maim
     - network-manager-applet
     - unclutter
 
