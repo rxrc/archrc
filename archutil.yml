@@ -53,6 +53,7 @@ packages:
     - sshfs
 
   intel:
+    - libva-intel-driver
     - xf86-video-intel
 
   efi:
