@@ -19,7 +19,12 @@ config_files:
 
   - src: bower_components/archrc-private/etc/fstab
     dst: etc/fstab
-    hosts: [ Gungnir ]
+    hosts: [ Gungnir, Mimir ]
+
+  - src: bower_components/archrc-private/etc/crypttab
+    dst: etc/crypttab
+    fmode: 0600
+    hosts: [ Mimir ]
 
   - src: etc/default/grub.conf
     dst: etc/default/grub
