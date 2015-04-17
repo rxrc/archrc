@@ -44,6 +44,9 @@ config_files:
   - src: etc/ssh/sshd_config
     packages: [ openssh ]
 
+  - src: etc/udev/rules.d/99-lowbat.rules
+    hosts: [ Gungnir, Gungnir-x60 ]
+
   - src: etc/modprobe.d/alsa-base.conf
     packages: [ linux-samus ]
 
