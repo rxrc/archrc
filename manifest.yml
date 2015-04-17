@@ -14,16 +14,15 @@ components:
     dst: etc/systemd/system/getty@tty6.service.d
 
 config_files:
-  - src: bower_components/archutil/bin/archutil
-    dst: usr/local/bin/archutil
-    fmode: 0755
+  - src: etc/mkinitcpio.conf
+    packages: [ mkinitcpio ]
 
-  - src: archutil.yml
-    dst: usr/local/etc/archutil.yml
+  - src: bower_components/archrc-private/etc/fstab
+    dst: etc/fstab
+    hosts: [ Gungnir ]
 
-  - src: bower_components/systemd-units/system/slimlock@.service
-    dst: etc/systemd/system/slimlock@.service
-    packages: [ slimlock ]
+  - src: etc/default/grub
+    packages: [ grub ]
 
   - src: etc/locale.gen
   - src: etc/locale.conf
@@ -32,12 +31,12 @@ config_files:
   - src: etc/nftables.conf
     packages: [ nftables ]
 
-  - src: etc/ssh/sshd_config
-    packages: [ openssh ]
-
   - src: etc/sudoers
     fmode: 0440
     packages: [ sudo ]
+
+  - src: etc/ssh/sshd_config
+    packages: [ openssh ]
 
   - src: etc/X11/xorg.conf.d/20-intel.conf
     packages: [ xf86-video-intel ]
@@ -46,18 +45,19 @@ config_files:
     packages: [ xf86-input-synaptics ]
     hosts: [ Gungnir ]
 
+  - src: bower_components/systemd-units/system/slimlock@.service
+    dst: etc/systemd/system/slimlock@.service
+    packages: [ slimlock ]
+
   - src: etc/slim.conf
     packages: [ slimlock ]
 
-  - src: bower_components/archrc-private/etc/fstab
-    dst: etc/fstab
-    hosts: [ Gungnir ]
+  - src: bower_components/archutil/bin/archutil
+    dst: usr/local/bin/archutil
+    fmode: 0755
 
-  - src: etc/mkinitcpio.conf
-    packages: [ mkinitcpio ]
-
-  - src: etc/default/grub
-    packages: [ grub ]
+  - src: archutil.yml
+    dst: usr/local/etc/archutil.yml
 
   # Only needed if starting xorg with systemd/User.
   # - src: etc/X11/Xwrapper.config
