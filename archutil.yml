@@ -141,19 +141,25 @@ packages:
     - xorg-xinit
 
   window-manager:
-    - archlinux-themes-slim
-    - awesome
     - gnome-keyring
+    - network-manager-applet
+    - unclutter
+
+    # Slimlock
+    - slimlock
+    - archlinux-themes-slim
+
+    # GTK
     - gtk3
     - numix-themes
+
+    # Awesome.
+    - awesome
     - lain-git
-    - network-manager-applet
-    - redshift
-    - slimlock
-    - unclutter
     - vicious
 
-    # For redshift
+    # Redshift.
+    - redshift
     - librsvg
     - python-gobject
     - python-xdg
