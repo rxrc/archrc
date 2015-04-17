@@ -184,3 +184,8 @@ packages:
   build:
     - mathematica
     - ttf-ms-win8
+
+    # Only for samus.
+    # Use chromebook_redirect_key branch:
+    # https://github.com/dhead666/archlinux-pkgbuilds/tree/chromebook_redirect_key/xkeyboard-config-chromebook
+    - xkeyboard-config-chromebook
