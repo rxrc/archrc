@@ -25,4 +25,6 @@ read -r cur < "$file"
 if ((val <   0)); then ((val =   0)); fi
 if ((val > 100)); then ((val = 100)); fi
 
+printf '%d' "$val" > "$file"
+
 exit
