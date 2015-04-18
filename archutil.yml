@@ -111,6 +111,7 @@ packages:
     - ttf-bitstream-vera
     - ttf-dejavu
     - ttf-inconsolata-g
+    - ttf-liberation
     - ttf-opensans
     - ttf-ubuntu-font-family
 
