@@ -1,0 +1,14 @@
+#!/bin/bash
+
+set -e
+
+device=0
+active_sink=$(pacmd list-sinks | grep 'active port' | awk '{ print $3 }')
+
+if [[ "$active_sink" = "<analog-output-speaker>" ]]; then
+  pacmd set-sink-port $device analog-output-headphones
+else
+	pacmd set-sink-port $device analog-output-speaker
+fi
+
+exit 0
