@@ -145,6 +145,8 @@ packages:
     - xorg-server-utils
     - xorg-xev
     - xorg-xinit
+    - xbindkeys
+    - xte
 
   audio:
     - alsa-utils
