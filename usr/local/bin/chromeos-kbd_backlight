@@ -2,6 +2,8 @@
 
 # Adapted from https://askubuntu.com/a/289870.
 
+set -e
+
 file=/sys/class/leds/chromeos\:\:kbd_backlight/brightness
 step=$2
 : ${step:=20}
