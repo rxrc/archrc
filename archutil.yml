@@ -109,6 +109,7 @@ packages:
     - fontforge
     - otf-font-awesome
     - powerline-fonts-git
+    - terminus-font
     - ttf-bitstream-vera
     - ttf-dejavu
     - ttf-inconsolata-g
@@ -193,6 +194,7 @@ packages:
     - insync
     - keepassx2
     - mumble
+    - rxvt-unicode
     - terminator
     - thunderbird
     - transmission-gtk
