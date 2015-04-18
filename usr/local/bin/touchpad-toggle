@@ -1,0 +1,22 @@
+#!/bin/bash
+
+set -e
+
+declare -i id
+declare -i state
+
+id=$(xinput list | grep -Eo 'ouchpad\s*id\=[0-9]{1,2}' | grep -Eo '[0-9]{1,2}')
+state=$(xinput list-props $id | grep 'Device Enabled' | awk '{print $4}')
+icon=/usr/share/icons/Adwaita/48x48/devices/input-touchpad.png
+
+if [[ $state -eq 1 ]]; then
+  xinput disable $id
+  echo "Touchpad disabled."
+  notify-send 'Touchpad' 'Disabled' -i $icon
+else
+  xinput enable $id
+  echo "Touchpad enabled."
+  notify-send 'Touchpad' 'Enabled' -i $icon
+fi
+
+exit

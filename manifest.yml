@@ -80,5 +80,9 @@ config_files:
     fmode: 0755
     packages: [ linux-samus ]
 
+  - src: usr/local/bin/touchpad-toggle
+    fmode: 0755
+    packages: [ xf86-input-synaptics ]
+
   # Only needed if starting xorg with systemd/User.
   # - src: etc/X11/Xwrapper.config
