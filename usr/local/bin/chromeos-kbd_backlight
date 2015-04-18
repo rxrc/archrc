@@ -16,7 +16,7 @@ esac
 if !((val)); then
   echo "Increase or decrease screen brighness."
   echo "Usage: ${0##*/} --increase num | --decrease num"
-  exit
+  exit 0
 fi
 
 read -r cur < "$file"
@@ -27,4 +27,4 @@ if ((val > 100)); then ((val = 100)); fi
 
 printf '%d' "$val" > "$file"
 
-exit
+exit 0

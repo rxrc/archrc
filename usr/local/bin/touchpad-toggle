@@ -19,4 +19,4 @@ else
   notify-send 'Touchpad' 'Enabled' -i $icon
 fi
 
-exit
+exit 0
