@@ -145,6 +145,7 @@ packages:
     - xorg-server-utils
     - xorg-xev
     - xorg-xinit
+    - xautomation
     - xbindkeys
     - xte
 
