@@ -45,6 +45,8 @@ Prepare disks, mount partitions, run pacstrap and genfstab.
 After chroot, install some required packages
 
 ```
+# pacman-key --init
+# pacman-key --populate archlinux
 # pacman -S git reflector zsh
 ```
 
