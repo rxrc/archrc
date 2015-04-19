@@ -29,6 +29,9 @@ config_files:
   - src: etc/default/grub
     packages: [ grub ]
 
+  - src: etc/pacman.conf
+    packages: [ pacman ]
+
   - src: etc/locale.gen
   - src: etc/locale.conf
   - src: etc/sysctl.d/99-sysctl.conf
