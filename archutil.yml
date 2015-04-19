@@ -150,7 +150,6 @@ packages:
     - xorg-xinit
     - xautomation
     - xbindkeys
-    - xte
 
   audio:
     - alsa-utils
