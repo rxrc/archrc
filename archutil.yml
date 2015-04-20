@@ -136,11 +136,13 @@ packages:
     - libyaml
     - linux-headers
     - openssl
+    - python-jinja
     - python-matplotlib
     - python-pygments
     - python-scipy
     - python-sphinx
     - python-sympy
+    - python-tornado
     - sqlite
     - watchman
     - zlib
