@@ -127,6 +127,8 @@ packages:
   devel:
     - abs
     - base-devel
+    - cabal-install
+    - ghc
     - libffi
     - libgit2
     - libyaml
