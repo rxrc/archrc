@@ -126,15 +126,11 @@ packages:
   devel:
     - abs
     - base-devel
-    - cabal-install
-    - ghc
     - libffi
     - libgit2
     - libyaml
     - linux-headers
     - openssl
-    - python
-    - ruby
     - sqlite
     - watchman
     - zlib
@@ -142,10 +138,15 @@ packages:
   development:
     - android-tools
     - android-udev
+    - cabal-install
+    - ghc
     - git
     - nodejs
+    - python
     - python-pip
     - python-virtualenvwrapper
+    - ruby
+    - vagrant
     - vim-systemd
 
   print:
