@@ -120,6 +120,7 @@ packages:
     - ttf-computer-modern-fonts
     - ttf-bitstream-vera
     - ttf-dejavu
+    - ttf-freefont
     - ttf-inconsolata-g
     - ttf-liberation
     - ttf-mathtype
