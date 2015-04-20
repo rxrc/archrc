@@ -120,7 +120,7 @@ generate an ssh key pair with `ssh-keygen` and grant read access.
 Install packages with
 
 ```bash
-$ /usr/local/bin/archutil install --sets main
+$ /usr/local/bin/archutil install --sets main user gui
 ```
 
 Setup systemd units with
@@ -210,7 +210,7 @@ $ ./install.zsh
 Install packages with
 
 ```bash
-$ /usr/local/bin/archutil install --sets main
+$ /usr/local/bin/archutil install --sets main user gui
 ```
 
 Setup systemd units with
