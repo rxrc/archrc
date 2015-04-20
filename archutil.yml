@@ -110,14 +110,18 @@ packages:
 
   fonts:
     - fontforge
+    - font-mathematica
     - otf-font-awesome
     - powerline-fonts-git
     - terminus-font
+    - ttf-computer-modern-fonts
     - ttf-bitstream-vera
     - ttf-dejavu
     - ttf-inconsolata-g
     - ttf-liberation
+    - ttf-mathtype
     - ttf-opensans
+    - ttf-roboto
     - ttf-ubuntu-font-family
 
   devel:
