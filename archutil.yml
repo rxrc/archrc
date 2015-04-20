@@ -196,6 +196,7 @@ packages:
     - python-xdg
 
   graphical:
+    - calibre
     - firefox
     - flashplugin
     - google-chrome
