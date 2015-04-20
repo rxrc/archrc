@@ -10,6 +10,10 @@ enabled+=('numlock')
 enabled+=("slimlock@$USER")
 enabled+=('sshd')
 
+if [[ -e /etc/ddclient/ddclient.conf ]]; then
+  enabled+=('ddclient')
+fi
+
 for unit in $enabled; do
   echo "[Enable] $unit"
   sudo systemctl enable $unit

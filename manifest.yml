@@ -46,6 +46,11 @@ config_files:
   - src: etc/ssh/sshd_config
     packages: [ openssh ]
 
+  - src: bower_components/archrc-private/etc/ddclient/ddclient.conf
+    dst: etc/ddclient/ddclient.conf
+    fmode: 0640
+    packages: [ ddclient ]
+
   - src: etc/udev/rules.d/99-lowbat.rules
     hosts: [ Gungnir, Gungnir-x60 ]
 

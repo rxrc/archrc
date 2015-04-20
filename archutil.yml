@@ -72,6 +72,9 @@ packages:
     - linux-samus-headers
     - xf86-input-synaptics
 
+  dyndns:
+    - ddclient
+
   core:
     - cups
     - openssh
