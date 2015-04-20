@@ -76,7 +76,6 @@ packages:
     - ddclient
 
   core:
-    - cups
     - openssh
     - sudo
     - zsh
@@ -150,6 +149,8 @@ packages:
     - vim-systemd
 
   print:
+    - cups
+    - hplip
     - kindlegen
     - texlive-most
 
