@@ -132,6 +132,7 @@ packages:
     - libffi
     - libgit2
     - libyaml
+    - linux-headers
     - openssl
     - python
     - ruby
