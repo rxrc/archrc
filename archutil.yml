@@ -104,7 +104,6 @@ packages:
     - archey
     - bc
     - glances
-    - hangups-git
     - ipbt
     - ponysay
     - ranger
