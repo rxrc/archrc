@@ -165,6 +165,7 @@ packages:
     - cups
     - hplip
     - kindlegen
+    - pandoc-static
     - texlive-most
 
   xorg:
