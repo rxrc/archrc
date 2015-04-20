@@ -75,6 +75,9 @@ packages:
   dyndns:
     - ddclient
 
+  backup:
+    - bacula-client
+
   core:
     - openssh
     - sudo
