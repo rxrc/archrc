@@ -226,6 +226,10 @@ packages:
     - transmission-gtk
     - viewnior
     - vlc
+    - zathura
+    - zathura-djvu
+    - zathura-pdf-mupdf
+    - zathura-ps
 
   # Must be built manually.
   build:
