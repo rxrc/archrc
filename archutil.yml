@@ -223,6 +223,7 @@ packages:
     - terminator
     - thunderbird
     - transmission-gtk
+    - viewnior
     - vlc
 
   # Must be built manually.
