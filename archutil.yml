@@ -138,6 +138,7 @@ packages:
     - python-jinja
     - python-matplotlib
     - python-pygments
+    - python-pyqt4
     - python-scipy
     - python-sphinx
     - python-sympy
