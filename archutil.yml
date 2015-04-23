@@ -195,7 +195,8 @@ packages:
 
     # GTK
     - gtk3
-    - numix-themes
+    - paper-gtk-theme-git
+    - paper-icon-theme-git
 
     # Awesome.
     - awesome
