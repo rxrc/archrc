@@ -59,7 +59,14 @@ Update the mirrorlist with reflector, e.g.,
 ```
 
 If this repository or any of the Bower dependencies are private,
-generate an ssh key pair with `ssh-keygen` and grant read access.
+generate an ssh key pair with
+
+```
+# pacman -S openssh
+# ssh-keygen -C "$(whoami)@$(hostname)-$(date -I)"
+```
+
+and grant read access through the public key.
 
 Clone this with
 
@@ -115,7 +122,13 @@ $ cd ~/archrc
 ```
 
 Again, if this repository or any of the Bower dependencies are private,
-generate an ssh key pair with `ssh-keygen` and grant read access.
+generate an ssh key pair with
+
+```bash
+$ ssh-keygen -C "$(whoami)@$(hostname)-$(date -I)"
+```
+
+and grant read access through the public key.
 
 Install packages with
 
