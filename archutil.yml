@@ -182,6 +182,7 @@ packages:
     - pavucontrol
     - pulseaudio
     - pulseaudio-alsa
+    - pulseaudio-equalizer
 
   window-manager:
     - gnome-keyring
