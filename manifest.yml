@@ -99,5 +99,10 @@ config_files:
     fmode: 0755
     packages: [ linux-samus ]
 
+  - src: bower_components/archrc-private/usr/local/bin/mntxd
+    dst: usr/local/bin/mntxd
+    fmode: 0755
+    hosts: [ Sleipnir ]
+
   # Only needed if starting xorg with systemd/User.
   # - src: etc/X11/Xwrapper.config
