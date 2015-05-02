@@ -89,6 +89,8 @@ packages:
     - curl
     - dnsutils
     - dos2unix
+    - hunspell
+    - hunspell-en
     - net-tools
     - p7zip
     - reflector
