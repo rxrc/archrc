@@ -220,6 +220,7 @@ packages:
     - firefox
     - flashplugin
     - google-chrome
+    - google-talkplugin
     - gimp
     - gvim
     - inkscape
