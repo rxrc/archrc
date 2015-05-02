@@ -71,6 +71,7 @@ packages:
     - linux-samus-docs
     - linux-samus-headers
     - xf86-input-synaptics
+    - virtualbox-host-dkms
 
   dyndns:
     - ddclient
@@ -162,6 +163,7 @@ packages:
     - ruby
     - vagrant
     - vim-systemd
+    - virtualbox
 
   print:
     - cups

@@ -54,6 +54,9 @@ config_files:
   - src: etc/udev/rules.d/99-lowbat.rules
     hosts: [ Gungnir, Gungnir-x60 ]
 
+  - src: etc/modules-load.d/virtualbox.conf
+    pacman: [ virtualbox ]
+
   - src: etc/modprobe.d/alsa-base.conf
     packages: [ linux-samus ]
 

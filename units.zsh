@@ -14,6 +14,10 @@ if [[ -e /etc/ddclient/ddclient.conf ]]; then
   enabled+=('ddclient')
 fi
 
+if (pacman -Q dkms >/dev/null); then
+  enabled+=('dkms')
+fi
+
 for unit in $enabled; do
   echo "[Enable] $unit"
   sudo systemctl enable $unit
