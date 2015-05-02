@@ -195,11 +195,11 @@ packages:
     - numlockx
     - unclutter
 
-    # Slimlock
+    # Slimlock.
     - slimlock
     - archlinux-themes-slim
 
-    # GTK
+    # GTK.
     - gtk3
     - paper-gtk-theme-git
     - paper-icon-theme-git
