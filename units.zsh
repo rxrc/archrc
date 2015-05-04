@@ -14,7 +14,7 @@ if [[ -e /etc/ddclient/ddclient.conf ]]; then
   enabled+=('ddclient')
 fi
 
-if (pacman -Q dkms >/dev/null); then
+if (pacman -Q dkms &>/dev/null); then
   enabled+=('dkms')
 fi
 
