@@ -71,13 +71,13 @@ and grant read access through the public key.
 Clone this with
 
 ```
-# curl -L https://git.io/jguX | sh
+# curl -L https://git.io/vJARg | sh
 ```
 
 or
 
 ```
-# git clone https://github.com/razor-x/archrc.git /root/archrc
+# git clone https://github.com/rxrc/archrc.git /root/archrc
 ```
 
 If you manage `/etc/fstab` with archrc,
@@ -117,7 +117,7 @@ For example
 Create your own archrc with
 
 ```bash
-$ curl -L https://git.io/jguX | sh
+$ curl -L https://git.io/vJARg | sh
 $ cd ~/archrc
 ```
 
@@ -242,7 +242,7 @@ Please submit and comment on bug reports and feature requests.
 
 To submit a patch:
 
-1. Fork it (https://github.com/razor-x/archrc/fork).
+1. Fork it (https://github.com/rxrc/archrc/fork).
 2. Create your feature branch (`git checkout -b my-new-feature`).
 3. Make changes.
 4. Commit your changes (`git commit -am 'Add some feature'`).

@@ -10,7 +10,7 @@
     "config"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/razor-x/archrc",
+  "homepage": "https://github.com/rxrc/archrc",
   "private": true,
   "ignore": [
     "**/.*",
