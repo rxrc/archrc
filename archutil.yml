@@ -223,6 +223,7 @@ packages:
     - google-talkplugin
     - gimp
     - gvim
+    - hexchat
     - inkscape
     - insync
     - keepassx2
