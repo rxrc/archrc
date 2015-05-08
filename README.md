@@ -1,5 +1,6 @@
 # Arch Linux Configuration
 
+[![Release](https://img.shields.io/github/release/rxrc/archrc.svg)](https://github.com/rxrc/archrc/releases)
 [![MIT License](https://img.shields.io/github/license/rxrc/archrc.svg)](./LICENSE.txt)
 
 My Arch Linux configuration managed with [Config Curator] and [archutil].
