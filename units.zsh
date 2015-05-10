@@ -7,6 +7,7 @@ enabled+=('getty@tty6')
 enabled+=('nftables')
 enabled+=('NetworkManager')
 enabled+=('numlock')
+enabled+=('org.cups.cupsd')
 enabled+=("slimlock@$USER")
 enabled+=('sshd')
 
