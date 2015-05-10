@@ -3,6 +3,8 @@
 enabled=()
 disabled=()
 
+command -v systemctl >/dev/null 2>&1 || exit 0
+
 enabled+=('getty@tty6')
 enabled+=('nftables')
 enabled+=('NetworkManager')
