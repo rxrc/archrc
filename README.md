@@ -227,12 +227,6 @@ Install packages with
 $ /usr/local/bin/archutil install --sets main user gui
 ```
 
-Setup systemd units with
-
-```bash
-$ ./units.zsh
-```
-
 [npm]: https://www.npmjs.com/
 [rbenv]: https://github.com/sstephenson/rbenv
 [RVM]: https://rvm.io/
