@@ -1,5 +1,9 @@
 # Changelog
 
+## HEAD
+
+- Update bootstrap script to install npm modules locally.
+
 ## 1.0.1
 
 - Minor updates to documentation.

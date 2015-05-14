@@ -31,19 +31,17 @@ puts 'Hostname' $1
 puts 'Installing' 'Config Curator requirements'
 
 pacin ruby
-pacin nodejs
+pacin npm
 
 ruby -e $curate_str >/dev/null 2>&1 || gem install --no-document config_curator
-command -v bower >/dev/null 2>&1 || npm install -g bower
+npm install bower
 
 ruby -e $curate_str >/dev/null 2>&1 && \
-command -v bower >/dev/null 2>&1 && \
-puts 'Installed' 'Config Curator requirements'
+  [[ -e node_modules/bower/bin/bower ]] && \
+  puts 'Installed' 'Config Curator requirements'
 
-if ! [[ -d bower_components ]]; then
-  puts 'Installing' 'Bower components'
-  bower --config.analytics=false --allow-root install
-fi
+puts 'Installing' 'Bower components'
+./node_modules/bower/bin/bower --config.analytics=false --allow-root install
 
 if [[ -d bower_components ]]; then
   puts 'Installed' 'Bower components'
@@ -56,6 +54,11 @@ $(ruby -e $curate_str) -v
 if [[ -d bower_components ]]; then
   rm -rf bower_components
   puts 'Cleaned' 'Bower components'
+fi
+
+if [[ -d node_modules ]]; then
+  rm -rf node_modules
+  puts 'Cleaned' 'npm modules'
 fi
 
 if [[ -z "$SUDO_COMMAND" && -d /root/.gem ]]; then
