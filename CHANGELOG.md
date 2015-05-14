@@ -1,6 +1,6 @@
 # Changelog
 
-## HEAD
+## 1.0.1
 
 - Minor updates to documentation.
 - Check for systemctl in units.zsh.
