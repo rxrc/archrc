@@ -61,6 +61,7 @@ packages:
     - xf86-video-intel
 
   efi:
+    - efibootmgr
     - refind-efi
 
   bios:
