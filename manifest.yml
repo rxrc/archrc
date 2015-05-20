@@ -19,7 +19,6 @@ config_files:
 
   - src: bower_components/archrc-private/etc/fstab
     dst: etc/fstab
-    hosts: [ Gungnir, Gungnir-x60, Mimir ]
 
   - src: etc/default/grub
     packages: [ grub ]
