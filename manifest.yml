@@ -23,6 +23,14 @@ config_files:
   - src: etc/default/grub
     packages: [ grub ]
 
+  - src: bower_components/systemd-units/system/efistub-update.path
+    dst: etc/systemd/system/efistub-update.path
+    packages: [ efibootmgr ]
+
+  - src: bower_components/systemd-units/system/efistub-update.service
+    dst: etc/systemd/system/efistub-update.service
+    packages: [ efibootmgr ]
+
   - src: etc/pacman.conf
     packages: [ pacman ]
 

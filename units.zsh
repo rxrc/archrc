@@ -13,6 +13,10 @@ enabled+=('org.cups.cupsd')
 enabled+=("slimlock@$USER")
 enabled+=('sshd')
 
+if [[ -d /boot/efi ]]; then
+  enabled+=('efistub-update.path')
+fi
+
 if [[ -e /etc/ddclient/ddclient.conf ]]; then
   enabled+=('ddclient')
 fi
