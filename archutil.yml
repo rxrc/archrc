@@ -39,6 +39,10 @@ sets:
     - bios
     - intel
 
+  mimir:
+    - efi
+    - intel
+
 # List the packages with their categories below.
 packages:
   archutil:
