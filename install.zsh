@@ -2,11 +2,17 @@
 
 set -e
 
-echo '\n$ bower update\n'
-bower update
+if [[ "$1" == 'update' ]]; then
+  cmd='update'
+else
+  cmd='install'
+fi
 
-echo '\n$ bundle update\n'
-bundle update
+echo "\n$ bower ${cmd}\n"
+bower $cmd
+
+echo "\n$ bundle ${cmd}\n"
+bundle $cmd
 
 echo '\n$ curate -v\n'
 sudo curate -v
