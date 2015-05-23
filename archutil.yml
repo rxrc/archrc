@@ -161,8 +161,6 @@ packages:
     - cabal-install
     - ghc
     - git
-    - nodejs
-    - npm
     - python
     - python-pip
     - python-virtualenvwrapper
