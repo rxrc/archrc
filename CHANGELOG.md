@@ -1,5 +1,9 @@
 # Changelog
 
+## HEAD
+
+- Update archutil to v1.1.0.
+
 ## 1.0.2
 
 - Update bootstrap script to install npm modules locally.
