@@ -161,6 +161,7 @@ packages:
 
   print:
     - cups
+    - cups-pdf
     - hplip
     - kindlegen
     - pandoc-static
