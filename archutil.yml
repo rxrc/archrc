@@ -193,7 +193,6 @@ packages:
     - pulseaudio-equalizer
 
   window-manager:
-    - gnome-keyring
     - maim
     - network-manager-applet
     - numlockx
