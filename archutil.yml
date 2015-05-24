@@ -156,6 +156,7 @@ packages:
     - ghc
     - git
     - go
+    - leiningen
     - jdk8-openjdk
     - vagrant
     - vim-systemd
