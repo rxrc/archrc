@@ -1,6 +1,6 @@
 # Changelog
 
-## HEAD
+## 1.0.3
 
 - Update archutil to v1.1.0.
 
