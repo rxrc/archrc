@@ -114,9 +114,13 @@ packages:
     - glances
     - ipbt
     - ponysay
-    - ranger
     - tmux
     - ttyrec
+
+    # ranger
+    - ranger
+    - w3m
+    - perl-image-exiftool
 
   fonts:
     - fontforge
@@ -143,6 +147,7 @@ packages:
     - libyaml
     - linux-headers
     - openssl
+    - perl-libwww
     - python-pygments
     - python-tornado
     - sqlite
