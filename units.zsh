@@ -10,7 +10,6 @@ enabled+=('nftables')
 enabled+=('NetworkManager')
 enabled+=('numlock')
 enabled+=('org.cups.cupsd')
-enabled+=("slimlock@$USER")
 enabled+=('sshd')
 
 if [[ -d /boot/efi ]]; then
@@ -19,6 +18,10 @@ fi
 
 if [[ -e /etc/ddclient/ddclient.conf ]]; then
   enabled+=('ddclient')
+fi
+
+if [[ "$USER" != 'root' ]]; then
+  enabled+=("slimlock@$USER")
 fi
 
 if (pacman -Q dkms &>/dev/null); then
