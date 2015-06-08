@@ -142,6 +142,9 @@ packages:
   devel:
     - abs
     - base-devel
+    - blas
+    - gcc-fortran
+    - lapack
     - libffi
     - libgit2
     - libyaml
