@@ -52,6 +52,8 @@ packages:
 
   system:
     - acpi
+    - bluez
+    - bluez-utils
     - gptfdisk
     - lsof
     - networkmanager
