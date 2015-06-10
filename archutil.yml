@@ -193,6 +193,7 @@ packages:
     - pavucontrol
     - pulseaudio
     - pulseaudio-alsa
+    - pulseaudio-bluetooth
     - pulseaudio-equalizer
 
   window-manager:
