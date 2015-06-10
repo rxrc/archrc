@@ -145,6 +145,7 @@ packages:
     - abs
     - base-devel
     - blas
+    - ctags
     - gcc-fortran
     - lapack
     - libffi
