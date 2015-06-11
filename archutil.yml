@@ -117,6 +117,7 @@ packages:
     - ipbt
     - ponysay
     - tmux
+    - tmuxinator
     - ttyrec
 
     # ranger
