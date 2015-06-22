@@ -111,14 +111,13 @@ packages:
     - zip
 
   terminal:
+    - asciinema
     - archey
     - bc
     - glances
-    - ipbt
     - ponysay
     - tmux
     - tmuxinator
-    - ttyrec
 
     # ranger
     - ranger
