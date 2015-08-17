@@ -250,7 +250,7 @@ packages:
     - vlc
     - zathura
     - zathura-djvu
-    - zathura-pdf-mupdf
+    - zathura-pdf-poppler
     - zathura-ps
 
   # Must be built manually.
