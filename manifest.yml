@@ -63,6 +63,8 @@ config_files:
   - src: etc/X11/xorg.conf.d/10-monitor.conf
     hosts: [ Mimir ]
 
+  - src: etc/X11/xorg.conf.d/15-dpms.conf
+
   - src: etc/X11/xorg.conf.d/20-intel.conf
     packages: [ xf86-video-intel ]
 
