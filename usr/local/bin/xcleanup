@@ -1,0 +1,14 @@
+#!/bin/bash
+
+set -e
+set -u
+
+close_apps () {
+  wmctrl -l | awk '{print $1}' | while read app; do
+    wmctrl -i -c $app || echo "$app not killed"
+  done
+}
+
+close_apps
+
+exit

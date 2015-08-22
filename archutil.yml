@@ -202,11 +202,14 @@ packages:
     - pulseaudio-equalizer
 
   window-manager:
-    - lightdm
     - maim
     - network-manager-applet
     - numlockx
     - unclutter
+
+    # LightDM
+    - lightdm
+    - wmctrl
 
     # Slimlock.
     - slimlock

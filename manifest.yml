@@ -98,6 +98,10 @@ config_files:
   - src: archutil.yml
     dst: usr/local/etc/archutil.yml
 
+  - src: usr/local/bin/xcleanup
+    fmode: 0755
+    packages: [ lightdm ]
+
   - src: usr/local/bin/touchpad-toggle
     fmode: 0755
     packages: [ xf86-input-synaptics ]
