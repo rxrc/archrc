@@ -202,6 +202,7 @@ packages:
     - pulseaudio-equalizer
 
   window-manager:
+    - lightdm
     - maim
     - network-manager-applet
     - numlockx

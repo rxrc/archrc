@@ -5,7 +5,7 @@ disabled=()
 
 command -v systemctl >/dev/null 2>&1 || exit 0
 
-enabled+=('getty@tty6')
+enabled+=('lightdm')
 enabled+=('nftables')
 enabled+=('NetworkManager')
 enabled+=('numlock')

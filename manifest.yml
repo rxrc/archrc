@@ -10,9 +10,6 @@ components:
   - src: bower_components/systemd-units/system/user@.service.d
     dst: etc/systemd/system/user@.service.d
 
-  - src: bower_components/systemd-units/system/getty@tty6.service.d
-    dst: etc/systemd/system/getty@tty6.service.d
-
 config_files:
   - src: etc/mkinitcpio.conf
     packages: [ mkinitcpio ]
@@ -87,6 +84,9 @@ config_files:
   - src: bower_components/systemd-units/system/slimlock@.service
     dst: etc/systemd/system/slimlock@.service
     packages: [ slimlock ]
+
+  - src: etc/lightdm/lightdm.conf
+    packages: [ lightdm ]
 
   - src: etc/slim.conf
     packages: [ slimlock ]
