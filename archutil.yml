@@ -74,9 +74,9 @@ packages:
     - grub
 
   samus:
-    - linux-samus
-    - linux-samus-docs
-    - linux-samus-headers
+    - linux-samus4
+    - linux-samus4-docs
+    - linux-samus4-headers
     - xf86-input-synaptics
     - virtualbox-host-dkms
 
