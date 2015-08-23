@@ -192,7 +192,6 @@ packages:
     - xbindkeys
     - xclip
     - xdotool
-    - xscreensaver
 
   audio:
     - alsa-utils
@@ -259,6 +258,9 @@ packages:
   build:
     - mathematica
     - ttf-ms-win8
+
+    # Must remove gdm make dependency.
+    - xscreensaver-arch-logo
 
     # Only for samus.
     # Use chromebook_redirect_key branch:
