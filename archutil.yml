@@ -192,6 +192,7 @@ packages:
     - xbindkeys
     - xclip
     - xdotool
+    - xscreensaver
 
   audio:
     - alsa-utils

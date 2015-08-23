@@ -81,6 +81,10 @@ config_files:
   - src: bower_components/systemd-units/system/numlock.service
     dst: etc/systemd/system/numlock.service
 
+  - src: bower_components/systemd-units/system/xscreensaver-lock@.service
+    dst: etc/systemd/system/xscreensaver-lock@.service
+    packages: [ xscreensaver ]
+
   - src: etc/lightdm/lightdm.conf
     packages: [ lightdm ]
 
