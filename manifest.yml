@@ -84,6 +84,9 @@ config_files:
   - src: etc/lightdm/lightdm.conf
     packages: [ lightdm ]
 
+  - src: etc/lightdm/lightdm-gtk-greeter.conf
+    packages: [ lightdm-gtk-greeter ]
+
   - src: bower_components/archutil/bin/archutil
     dst: usr/local/bin/archutil
     fmode: 0755

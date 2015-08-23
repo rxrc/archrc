@@ -209,6 +209,7 @@ packages:
 
     # LightDM
     - lightdm
+    - lightdm-gtk-greeter
     - wmctrl
 
     # GTK.
