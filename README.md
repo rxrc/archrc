@@ -113,6 +113,13 @@ For example
 # su -l not-root
 ```
 
+Optionally, add this user to the autologin group now,
+
+```
+# groupadd -r autologin
+# gpasswd -a not-root autologin
+```
+
 #### As non-root user
 
 Create your own archrc with
