@@ -211,10 +211,6 @@ packages:
     - lightdm
     - wmctrl
 
-    # Slimlock.
-    - slimlock
-    - archlinux-themes-slim
-
     # GTK.
     - gtk3
     - paper-gtk-theme-git

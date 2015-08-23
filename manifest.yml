@@ -81,15 +81,8 @@ config_files:
   - src: bower_components/systemd-units/system/numlock.service
     dst: etc/systemd/system/numlock.service
 
-  - src: bower_components/systemd-units/system/slimlock@.service
-    dst: etc/systemd/system/slimlock@.service
-    packages: [ slimlock ]
-
   - src: etc/lightdm/lightdm.conf
     packages: [ lightdm ]
-
-  - src: etc/slim.conf
-    packages: [ slimlock ]
 
   - src: bower_components/archutil/bin/archutil
     dst: usr/local/bin/archutil
