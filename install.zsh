@@ -1,6 +1,7 @@
 #!/usr/bin/env zsh
 
 set -e
+set -u
 
 if [[ "$1" == 'update' ]]; then
   cmd='update'
@@ -20,4 +21,4 @@ sudo curate -v
 echo '\n$ ./units.zsh\n'
 ./units.zsh
 
-exit 0
+exit

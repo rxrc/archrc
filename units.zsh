@@ -1,5 +1,8 @@
 #!/usr/bin/env zsh
 
+set -e
+set -u
+
 enabled=()
 disabled=()
 
@@ -38,4 +41,4 @@ for unit in $disabled; do
   sudo systemctl disable $unit
 done
 
-exit 0
+exit

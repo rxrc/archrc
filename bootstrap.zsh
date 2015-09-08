@@ -1,8 +1,10 @@
 #!/usr/bin/env zsh
 
 set -e
+set -u
 
 curate_str="puts Gem.bin_path('config_curator', 'curate')"
+hostname="${1:-}"
 
 function puts () {
   echo "\n-- [$1] $2"
@@ -14,7 +16,7 @@ function pacin () {
   fi
 }
 
-if [[ -z "$1" ]]; then
+if [[ -z ${hostname} ]]; then
   echo 'Must give hostname as first argument.'
   exit 1
 fi
@@ -24,9 +26,9 @@ if [[ $(id -u) -ne 0 ]]; then
   exit 1
 fi
 
-echo $1 > /etc/hostname
-hostname $1
-puts 'Hostname' $1
+echo $hostname > /etc/hostname
+hostname $hostname
+puts 'Hostname' $hostname
 
 puts 'Installing' 'Config Curator requirements'
 
@@ -61,7 +63,7 @@ if [[ -d node_modules ]]; then
   puts 'Cleaned' 'npm modules'
 fi
 
-if [[ -z "$SUDO_COMMAND" && -d /root/.gem ]]; then
+if [[ -z "${SUDO_COMMAND:-}" && -d /root/.gem ]]; then
   gem uninstall --all --force --executables
   rm -rf /root/.gem
   puts 'Cleaned' 'Ruby gems'
@@ -92,4 +94,4 @@ export $(cat /etc/locale.conf)
 
 puts 'Done'
 
-exit 0
+exit

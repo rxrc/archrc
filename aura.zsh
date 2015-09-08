@@ -1,6 +1,7 @@
 #!/usr/bin/env zsh
 
 set -e
+set -u
 
 url='https://aur.archlinux.org/packages/au/aura-bin/aura-bin.tar.gz'
 tar_file='aura-bin.tar.gz'
@@ -44,4 +45,4 @@ sudo pacman -U --noconfirm $aura_bin
 
 sudo rm -rf $build_dir
 
-exit 0
+exit
