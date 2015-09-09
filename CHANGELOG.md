@@ -1,5 +1,9 @@
 # Changelog
 
+## HEAD
+
+- Minor optimizations in scripts.
+
 ## 1.0.3
 
 - Update archutil to v1.1.0.
