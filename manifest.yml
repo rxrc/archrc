@@ -83,7 +83,7 @@ config_files:
 
   - src: bower_components/systemd-units/system/xscreensaver-lock@.service
     dst: etc/systemd/system/xscreensaver-lock@.service
-    packages: [ xscreensaver ]
+    packages: [ xscreensaver-arch-logo ]
 
   - src: etc/lightdm/lightdm.conf
     packages: [ lightdm ]
