@@ -10,7 +10,7 @@ else
 fi
 
 echo "\n$ bower ${cmd}\n"
-bower $cmd
+$(npm bin -g)/bower $cmd
 
 echo "\n$ bundle ${cmd}\n"
 $(rbenv which bundle) $cmd
