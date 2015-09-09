@@ -1,6 +1,6 @@
 # Changelog
 
-## HEAD
+## 1.0.4
 
 - Minor optimizations in scripts.
 
