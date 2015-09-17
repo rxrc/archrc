@@ -1,0 +1,8 @@
+[Unit]
+Description=Give all users permission to change keyboard backlight
+
+[Service]
+ExecStart=/bin/chmod 666 /sys/class/leds/chromeos::kbd_backlight/brightness
+
+[Install]
+WantedBy=multi-user.target

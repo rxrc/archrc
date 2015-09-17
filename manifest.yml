@@ -78,6 +78,9 @@ config_files:
   - src: bower_components/systemd-units/coredump.conf.d/disable.conf
     dst: etc/systemd/coredump.conf.d/disable.conf
 
+  - src: etc/systemd/system/chromeos-kbd_backlight.service
+    packages: [ linux-samus4 ]
+
   - src: bower_components/systemd-units/system/numlock.service
     dst: etc/systemd/system/numlock.service
 
