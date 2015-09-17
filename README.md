@@ -187,6 +187,9 @@ Set the local timezone, for example
 $ timedatectl set-timezone America/Los_Angeles
 ```
 
+Additional manual configuration is documented in
+[NOTES.md](./NOTES.md).
+
 ### Updating configuration
 
 After the initial bootstrapping,
