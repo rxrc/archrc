@@ -55,7 +55,7 @@ config_files:
     pacman: [ virtualbox ]
 
   - src: etc/modprobe.d/alsa-base.conf
-    packages: [ linux-samus ]
+    packages: [ linux-samus4 ]
 
   - src: etc/X11/xorg.conf.d/10-monitor.conf
     hosts: [ Mimir ]
@@ -108,11 +108,11 @@ config_files:
 
   - src: usr/local/bin/chromeos-kbd_backlight
     fmode: 0755
-    packages: [ linux-samus ]
+    packages: [ linux-samus4 ]
 
   - src: usr/local/bin/chromeos-sound-output-toggle
     fmode: 0755
-    packages: [ linux-samus ]
+    packages: [ linux-samus4 ]
 
   - src: bower_components/archrc-private/usr/local/bin/mntxd
     dst: usr/local/bin/mntxd
