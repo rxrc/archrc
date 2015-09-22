@@ -10,13 +10,30 @@ command -v systemctl >/dev/null 2>&1 || exit 0
 
 enabled+=('lightdm')
 enabled+=('nftables')
-enabled+=('NetworkManager')
 enabled+=('numlock')
 enabled+=('org.cups.cupsd')
 enabled+=('sshd')
 
 if [[ -d /boot/efi ]]; then
   enabled+=('efistub-update.path')
+fi
+
+if (pacman -Q networkmanager &>/dev/null); then
+  enabled+=('NetworkManager')
+  if [[ -h /etc/resolv.conf ]]; then
+    sudo rm /etc/resolv.conf
+    sudo touch /etc/resolv.conf
+  fi
+  sudo sed -i \
+    's/hosts: files resolve myhostname/hosts: files dns myhostname/' \
+    /etc/nsswitch.conf
+else
+  enabled+=('systemd-networkd')
+  enabled+=('systemd-resolved')
+  sudo ln -s -f /run/systemd/resolve/resolv.conf /etc/resolv.conf
+  sudo sed -i \
+    's/hosts: files dns myhostname/hosts: files resolve myhostname/' \
+    /etc/nsswitch.conf
 fi
 
 if [[ -e /etc/ddclient/ddclient.conf ]]; then

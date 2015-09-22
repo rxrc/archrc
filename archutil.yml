@@ -34,6 +34,7 @@ sets:
     - samus
     - bios
     - intel
+    - wifi
 
   x60:
     - bios
@@ -56,7 +57,6 @@ packages:
     - bluez-utils
     - gptfdisk
     - lsof
-    - networkmanager
     - nftables
     - ntfs-3g
     - smbclient
@@ -203,7 +203,6 @@ packages:
 
   window-manager:
     - maim
-    - network-manager-applet
     - numlockx
     - unclutter
 
@@ -253,6 +252,10 @@ packages:
     - zathura-djvu
     - zathura-pdf-poppler
     - zathura-ps
+
+  wifi:
+    - networkmanager
+    - network-manager-applet
 
   # Must be built manually.
   build:
