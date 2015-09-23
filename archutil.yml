@@ -243,6 +243,7 @@ packages:
     - mcomix
     - mumble
     - rxvt-unicode
+    - screencloud
     - terminator
     - thunderbird
     - transmission-gtk
