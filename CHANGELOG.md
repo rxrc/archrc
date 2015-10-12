@@ -1,6 +1,6 @@
 # Changelog
 
-## HEAD
+## 1.0.5
 
 - Update aura-bin url.
 
