@@ -1,5 +1,9 @@
 # Changelog
 
+## HEAD
+
+- Update aura-bin url.
+
 ## 1.0.4
 
 - Minor optimizations in scripts.

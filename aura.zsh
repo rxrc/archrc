@@ -3,7 +3,7 @@
 set -e
 set -u
 
-url='https://aur.archlinux.org/packages/au/aura-bin/aura-bin.tar.gz'
+url='https://aur.archlinux.org/cgit/aur.git/snapshot/aura-bin.tar.gz'
 tar_file='aura-bin.tar.gz'
 
 function pacin () {
