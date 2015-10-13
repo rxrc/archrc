@@ -1,6 +1,6 @@
 # Changelog
 
-## HEAD
+## 1.0.6
 
 - Fix last puts statement in bootstrap.zsh.
 
