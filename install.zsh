@@ -16,7 +16,7 @@ echo "\n$ bundle ${cmd}\n"
 $(rbenv which bundle) $cmd
 
 echo '\n$ curate -v\n'
-sudo $(rbenv which bundle) exec curate -v
+sudo -S $(rbenv which bundle) exec curate -v
 
 echo '\n$ ./units.zsh\n'
 ./units.zsh

@@ -2,6 +2,7 @@
 
 ## HEAD
 
+- Use `sudo -S` in scripts.
 - Update config_curator to v0.4.0.
 - Use archutil v1.1.1.
 

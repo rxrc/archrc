@@ -22,17 +22,17 @@ fi
 if (pacman -Q networkmanager &>/dev/null); then
   enabled+=('NetworkManager')
   if [[ -h /etc/resolv.conf ]]; then
-    sudo rm /etc/resolv.conf
-    sudo touch /etc/resolv.conf
+    sudo -S rm /etc/resolv.conf
+    sudo -S touch /etc/resolv.conf
   fi
-  sudo sed -i \
+  sudo -S sed -i \
     's/hosts: files resolve myhostname/hosts: files dns myhostname/' \
     /etc/nsswitch.conf
 else
   enabled+=('systemd-networkd')
   enabled+=('systemd-resolved')
-  sudo ln -s -f /run/systemd/resolve/resolv.conf /etc/resolv.conf
-  sudo sed -i \
+  sudo -S ln -s -f /run/systemd/resolve/resolv.conf /etc/resolv.conf
+  sudo -S sed -i \
     's/hosts: files dns myhostname/hosts: files resolve myhostname/' \
     /etc/nsswitch.conf
 fi
@@ -55,12 +55,12 @@ fi
 
 for unit in $enabled; do
   echo "[Enable] $unit"
-  sudo systemctl enable $unit
+  sudo -S systemctl enable $unit
 done
 
 for unit in $disabled; do
   echo "[Disable] $unit"
-  sudo systemctl disable $unit
+  sudo -S systemctl disable $unit
 done
 
 exit
