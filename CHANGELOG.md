@@ -1,5 +1,9 @@
 # Changelog
 
+## HEAD
+
+- Fix last puts statement in bootstrap.zsh.
+
 ## 1.0.5
 
 - Update aura-bin url.

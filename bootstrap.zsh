@@ -92,6 +92,6 @@ puts 'Setting' 'Locale'
 locale-gen
 export $(cat /etc/locale.conf)
 
-puts 'Done'
+puts 'Done' ''
 
 exit
