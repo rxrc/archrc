@@ -16,6 +16,7 @@ enabled+=('sshd')
 
 if [[ -d /boot/efi ]]; then
   enabled+=('efistub-update.path')
+  enabled+=('efistub-ucode-update.path')
 fi
 
 if (pacman -Q networkmanager &>/dev/null); then

@@ -28,6 +28,14 @@ config_files:
     dst: etc/systemd/system/efistub-update.service
     packages: [ efibootmgr ]
 
+  - src: bower_components/systemd-units/system/efistub-ucode-update.path
+    dst: etc/systemd/system/efistub-ucode-update.path
+    packages: [ efibootmgr, intel-ucode ]
+
+  - src: bower_components/systemd-units/system/efistub-ucode-update.service
+    dst: etc/systemd/system/efistub-ucode-update.service
+    packages: [ efibootmgr, intel-ucode ]
+
   - src: etc/pacman.conf
     packages: [ pacman ]
 
