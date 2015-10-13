@@ -66,6 +66,7 @@ fi
 if [[ -z "${SUDO_COMMAND:-}" && -d /root/.gem ]]; then
   gem uninstall --all --force --executables
   rm -rf /root/.gem
+  rm -rf /usr/lib/ruby/gems/*/cache/*
   puts 'Cleaned' 'Ruby gems'
 fi
 
