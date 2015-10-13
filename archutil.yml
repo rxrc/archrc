@@ -44,6 +44,10 @@ sets:
     - efi
     - intel
 
+  sleipnir:
+    - efi
+    - nvidia
+
 # List the packages with their categories below.
 packages:
   archutil:
@@ -65,6 +69,9 @@ packages:
   intel:
     - libva-intel-driver
     - xf86-video-intel
+
+  nvidia:
+    - nvidia
 
   efi:
     - efibootmgr
