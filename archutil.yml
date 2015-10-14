@@ -60,6 +60,7 @@ packages:
     - bluez
     - bluez-utils
     - gptfdisk
+    - intel-ucode
     - lsof
     - nftables
     - ntfs-3g
@@ -67,7 +68,6 @@ packages:
     - sshfs
 
   intel:
-    - intel-ucode
     - libva-intel-driver
     - xf86-video-intel
 
