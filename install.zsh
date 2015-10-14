@@ -3,7 +3,9 @@
 set -e
 set -u
 
-if [[ "$1" == 'update' ]]; then
+cmd="${1:=install}"
+
+if [[ "$cmd" == 'update' ]]; then
   cmd='update'
 else
   cmd='install'
