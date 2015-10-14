@@ -40,6 +40,13 @@ config_files:
     dst: etc/systemd/system/efistub-ucode-update.service
     packages: [ efibootmgr, intel-ucode ]
 
+  - src: bower_components/systemd-units/system/refind-update.path
+    dst: etc/systemd/system/refind-update.path
+    packages: [ refind-efi ]
+
+  - src: bower_components/systemd-units/system/refind-update.service
+    dst: etc/systemd/system/refind-update.service
+
   - src: etc/pacman.conf
     packages: [ pacman ]
 

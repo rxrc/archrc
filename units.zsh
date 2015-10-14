@@ -19,6 +19,10 @@ if [[ -d /boot/efi ]]; then
   enabled+=('efistub-ucode-update.path')
 fi
 
+if [[ -d /boot/efi/EFI/refind ]]; then
+  enabled+=('refind-update.path')
+fi
+
 if (pacman -Q networkmanager &>/dev/null); then
   enabled+=('NetworkManager')
   if [[ -h /etc/resolv.conf ]]; then
