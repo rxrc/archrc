@@ -38,13 +38,11 @@ if (pacman -Q networkmanager &>/dev/null); then
 else
   enabled+=('systemd-networkd')
   enabled+=('systemd-resolved')
-  if lsof | grep -q /etc/resolv.conf; then
-    echo '[Error] Could not modify resolv.conf.'
-    echo '        This is expected if under inital arch-chroot.'
-    echo '        Rerun units.zsh after first boot.'
-  else
-    sudo -S ln -s -f /run/systemd/resolve/resolv.conf /etc/resolv.conf
-  fi
+
+  # TODO This will fail under initial arch-chroot.
+  #      Comment it out and run it after first boot.
+  sudo -S ln -s -f /run/systemd/resolve/resolv.conf /etc/resolv.conf
+
   sudo -S sed -i \
     's/hosts: files dns myhostname/hosts: files resolve myhostname/' \
     /etc/nsswitch.conf
