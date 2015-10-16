@@ -9,10 +9,13 @@ disabled=()
 command -v systemctl >/dev/null 2>&1 || exit 0
 
 enabled+=('lightdm')
-enabled+=('nftables')
 enabled+=('numlock')
 enabled+=('org.cups.cupsd')
 enabled+=('sshd')
+
+if [[ $(hostname) != 'Sleipnir' ]]; then
+  enabled+=('nftables')
+fi
 
 if [[ -d /boot/efi ]]; then
   enabled+=('efistub-update.path')
