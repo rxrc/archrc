@@ -17,7 +17,7 @@ if [[ $(hostname) != 'Sleipnir' ]]; then
   enabled+=('nftables')
 fi
 
-if [[ -d /boot/efi ]]; then
+if [[ -d /boot/efi/EFI/arch ]]; then
   enabled+=('efistub-update.path')
   enabled+=('efistub-ucode-update.path')
 fi
