@@ -116,6 +116,18 @@ config_files:
   - src: etc/lightdm/lightdm-gtk-greeter.conf
     packages: [ lightdm-gtk-greeter ]
 
+  - src: bower_components/archrc-private/etc/samba/smb.conf
+    dst: etc/samba/smb.conf
+    packages: [ samba ]
+
+  - src: bower_components/archrc-private/etc/samba/users.map
+    dst: /etc/samba/users.map
+    packages: [ samba ]
+
+  - src: bower_components/archrc-private/etc/nginx/nginx.conf
+    dst: etc/nginx/nginx.conf
+    packages: [ nginx ]
+
   - src: bower_components/archutil/bin/archutil
     dst: usr/local/bin/archutil
     fmode: 0755
