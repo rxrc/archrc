@@ -56,6 +56,10 @@ if [[ -e /etc/samba/smb.conf ]]; then
   enabled+=('smbd')
 fi
 
+if [[ -e /etc/nginx/nginx.conf ]]; then
+  enabled+=('nginx')
+fi
+
 if [[ "$USER" != 'root' ]]; then
   enabled+=("xscreensaver-lock@$USER")
 fi
