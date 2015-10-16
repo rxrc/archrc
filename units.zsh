@@ -52,6 +52,10 @@ if [[ -e /etc/ddclient/ddclient.conf ]]; then
   enabled+=('ddclient')
 fi
 
+if [[ -e /etc/samba/smb.conf ]]; then
+  enabled+=('smbd')
+fi
+
 if [[ "$USER" != 'root' ]]; then
   enabled+=("xscreensaver-lock@$USER")
 fi
