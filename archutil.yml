@@ -270,7 +270,7 @@ packages:
   # Must be built manually.
   build:
     - mathematica
-    - ttf-ms-win8
+    - ttf-ms-win10
 
     # Must remove gdm make dependency.
     - xscreensaver-arch-logo
