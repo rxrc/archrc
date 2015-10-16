@@ -47,6 +47,7 @@ sets:
   sleipnir:
     - efi
     - nvidia
+    - servers
 
 # List the packages with their categories below.
 packages:
@@ -266,6 +267,10 @@ packages:
   wifi:
     - networkmanager
     - network-manager-applet
+
+  servers:
+    - nginx
+    - samba
 
   # Must be built manually.
   build:
