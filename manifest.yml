@@ -17,6 +17,10 @@ config_files:
   - src: bower_components/archrc-private/etc/fstab
     dst: etc/fstab
 
+  - src: bower_components/archrc-private/refind/refind.conf
+    dst: boot/efi/EFI/refind/refind.conf
+    hosts: [ Sleipnir ]
+
   - src: bower_components/archrc-private/refind/refind_linux.conf
     dst: boot/refind_linux.conf
     hosts: [ Sleipnir ]
