@@ -11,8 +11,10 @@ else
   cmd='install'
 fi
 
-echo "\n$ bower ${cmd}\n"
-$(npm bin -g)/bower $cmd
+echo "\n $ npm install"
+npm install
+[[ "$cmd" = 'update' ]] && echo "\n $ npm run update"
+[[ "$cmd" = 'update' ]] && npm run update
 
 echo "\n$ bundle ${cmd}\n"
 $(rbenv which bundle) $cmd

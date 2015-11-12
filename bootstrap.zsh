@@ -36,7 +36,7 @@ pacin ruby
 pacin npm
 
 ruby -e $curate_str >/dev/null 2>&1 || gem install --no-document config_curator
-npm install bower
+npm install
 
 ruby -e $curate_str >/dev/null 2>&1 && \
   [[ -e node_modules/bower/bin/bower ]] && \

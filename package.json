@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "install": "bower install",
+    "update": "bower update"
+  },
+  "private": true,
+  "devDependencies": {
+    "bower": "^1.6.4"
+  }
+}
