@@ -123,6 +123,7 @@ packages:
     - asciinema
     - archey
     - bc
+    - fzf
     - glances
     - ponysay
     - tmux
