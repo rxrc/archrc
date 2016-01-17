@@ -146,6 +146,8 @@ packages:
     - ttf-freefont
     - ttf-inconsolata-g
     - ttf-liberation
+    - noto-fonts
+    - noto-fonts-emoji
     - ttf-mathtype
     - ttf-opensans
     - ttf-roboto
