@@ -193,7 +193,7 @@ packages:
     - cups-pdf
     - hplip
     - kindlegen
-    - pandoc-static
+    - pandoc
     - texlive-most
 
   xorg:
