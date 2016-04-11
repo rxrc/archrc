@@ -104,7 +104,6 @@ packages:
     - ack
     - aspell-en
     - curl
-    - dnsutils
     - dos2unix
     - hunspell
     - hunspell-en
@@ -121,7 +120,6 @@ packages:
 
   terminal:
     - asciinema
-    - archey
     - bc
     - fzf
     - glances
