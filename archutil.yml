@@ -225,7 +225,7 @@ packages:
 
     # GTK.
     - gtk3
-    - paper-gtk-theme-git
+    - adapta-gtk-theme
     - paper-icon-theme-git
 
     # Awesome.
