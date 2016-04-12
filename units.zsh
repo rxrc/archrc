@@ -64,10 +64,6 @@ if [[ "$USER" != 'root' ]]; then
   enabled+=("xscreensaver-lock@$USER")
 fi
 
-if (pacman -Q dkms &>/dev/null); then
-  enabled+=('dkms')
-fi
-
 if (pacman -Q linux-samus4 &>/dev/null); then
   enabled+=('chromeos-kbd_backlight')
 fi
