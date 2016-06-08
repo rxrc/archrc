@@ -255,6 +255,7 @@ packages:
     - mcomix
     - mumble
     - rxvt-unicode
+    - sakura
     - screencloud
     - terminator
     - thunderbird
