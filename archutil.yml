@@ -248,6 +248,7 @@ packages:
   graphical:
     - calibre
     - firefox
+    - firefox-developer
     - flashplugin
     - google-chrome
     - google-talkplugin
