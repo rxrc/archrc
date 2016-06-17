@@ -133,6 +133,11 @@ packages:
     - w3m
     - perl-image-exiftool
 
+    # neovim
+    - neovim
+    - python-neovim
+    - python2-neovim
+
   fonts:
     - fontforge
     - font-mathematica
@@ -255,6 +260,7 @@ packages:
     - livestreamer
     - mcomix
     - mumble
+    - neovim-qt-git
     - rxvt-unicode
     - sakura
     - screencloud
