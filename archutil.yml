@@ -116,6 +116,7 @@ packages:
     - unzip
     - wget
     - wol
+    - words
     - zip
 
   terminal:
