@@ -259,6 +259,7 @@ packages:
     - sakura
     - screencloud
     - terminator
+    - termite
     - thunderbird
     - transmission-gtk
     - viewnior
