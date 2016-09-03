@@ -261,6 +261,7 @@ packages:
 
   graphical:
     - calibre
+    - chromium
     - firefox
     - firefox-developer
     - flashplugin
