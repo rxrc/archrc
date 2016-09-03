@@ -279,6 +279,7 @@ packages:
 
   wifi:
     - networkmanager
+    - networkmanager-openvpn
     - network-manager-applet
 
   servers:
