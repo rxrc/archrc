@@ -112,6 +112,7 @@ packages:
     - dos2unix
     - hunspell
     - hunspell-en
+    - jq
     - net-tools
     - p7zip
     - reflector
