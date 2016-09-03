@@ -93,7 +93,6 @@ packages:
     - linux-samus4-docs
     - linux-samus4-headers
     - xf86-input-synaptics
-    - virtualbox-host-dkms
 
   dyndns:
     - ddclient
