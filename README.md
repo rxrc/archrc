@@ -171,6 +171,7 @@ Remove root's archrc clone with
 
 Before first reboot, complete any final tasks, e.g.,
 set the root password and configure anything needed to boot.
+Reinstall the `linux` package before rebooting.
 
 #### First boot
 
