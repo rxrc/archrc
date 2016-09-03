@@ -35,7 +35,7 @@ Follow the normal install process.
 Be sure to set the Hardware clock first
 
 ```
-# ntpd -qg
+# timedatectl set-ntp true
 # hwclock --systohc --utc
 ```
 
