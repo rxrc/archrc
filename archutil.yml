@@ -40,6 +40,11 @@ sets:
     - bios
     - intel
 
+  macbook:
+    - efi
+    - intel
+    - wifi
+
   mimir:
     - efi
     - intel
