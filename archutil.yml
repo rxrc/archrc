@@ -203,6 +203,7 @@ packages:
     - vagrant
     - vim-systemd
     - virtualbox
+    - virtualbox-host-dkms
 
   print:
     - cups
