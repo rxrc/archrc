@@ -58,6 +58,7 @@ packages:
 
   system:
     - acpi
+    - tlp
     - bluez
     - bluez-utils
     - gptfdisk
