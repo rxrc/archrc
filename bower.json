@@ -17,7 +17,7 @@
     "bower_components"
   ],
   "dependencies": {
-    "archrc-private": "git@bitbucket.org:razorx/archrc-private.git#v1.3.0",
+    "archrc-private": "git@bitbucket.org:razorx/archrc-private.git#v1.3.1",
     "archutil": "razor-x/archutil#v1.1.2",
     "systemd-units": "rxrc/systemd-units#v1.5.0"
   }
