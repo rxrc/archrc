@@ -25,6 +25,14 @@ config_files:
     dst: boot/refind_linux.conf
     hosts: [ Sleipnir ]
 
+  - src: bower_components/archrc-private/loader/loader.conf
+    dst: boot/efi/loader/loader.conf
+    hosts: [ Frigg ]
+
+  - src: bower_components/archrc-private/loader/entries/arch.conf
+    dst: boot/efi/loader/entries/arch.conf
+    hosts: [ Frigg ]
+
   - src: etc/default/grub
     packages: [ grub ]
 
