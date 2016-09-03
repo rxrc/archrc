@@ -108,8 +108,10 @@ packages:
   tools:
     - ack
     - aspell-en
+    - colordiff
     - curl
     - dos2unix
+    - figlet
     - hunspell
     - hunspell-en
     - jq
@@ -174,14 +176,18 @@ packages:
     - libgit2
     - libyaml
     - linux-headers
+    - npm
     - openssl
     - perl-libwww
+    - phantomjs
     - python-jedi
     - python2-jedi
     - python-pandocfilters
     - python-pygments
     - python-tornado
+    - r
     - sqlite
+    - typesafe-activator
     - watchman
     - zlib
 
