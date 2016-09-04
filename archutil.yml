@@ -110,6 +110,7 @@ packages:
     - aspell-en
     - colordiff
     - curl
+    - dialog
     - dos2unix
     - figlet
     - hunspell
