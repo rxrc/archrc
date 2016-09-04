@@ -41,6 +41,7 @@ sets:
     - intel
 
   macbook:
+    - macbook
     - efi
     - intel
     - wifi
@@ -93,6 +94,10 @@ packages:
     - linux-samus4-docs
     - linux-samus4-headers
     - xf86-input-synaptics
+
+  macbook:
+    - kbdlight
+    - xf86-input-mtrack-git
 
   dyndns:
     - ddclient
