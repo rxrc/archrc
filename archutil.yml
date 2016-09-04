@@ -143,6 +143,7 @@ packages:
 
     # neovim
     - neovim
+    - vim-spell-en
     - python-neovim
     - python2-neovim
 
