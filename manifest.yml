@@ -106,6 +106,10 @@ config_files:
     packages: [ xf86-input-synaptics ]
     hosts: [ Gungnir ]
 
+  - src: etc/X11/xorg.conf.d/50-mtrack.conf
+    packages: [ xf86-input-mtrack-git ]
+    hosts: [ Frigg ]
+
   - src: bower_components/systemd-units/logind.conf.d/acpi.conf
     dst: etc/systemd/logind.conf.d/acpi.conf
 
