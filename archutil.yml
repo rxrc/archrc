@@ -299,9 +299,8 @@ packages:
     - zathura-ps
 
   wifi:
-    - networkmanager
-    - networkmanager-openvpn
-    - network-manager-applet
+    - wpa_actiond
+    - wpa_supplicant
 
   servers:
     - nginx

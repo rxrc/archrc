@@ -26,16 +26,7 @@ if [[ -d /boot/efi/EFI/refind ]]; then
   enabled+=('refind-update.path')
 fi
 
-if (pacman -Q networkmanager &>/dev/null); then
-  enabled+=('NetworkManager')
-  if [[ -h /etc/resolv.conf ]]; then
-    sudo -S rm /etc/resolv.conf
-    sudo -S touch /etc/resolv.conf
-  fi
-  sudo -S sed -i \
-    's/hosts: files resolve myhostname/hosts: files dns myhostname/' \
-    /etc/nsswitch.conf
-else
+if [[ $(hostname) == 'Sleipnir' || $(hostname) == 'Mimir' ]]; then
   enabled+=('systemd-networkd')
   enabled+=('systemd-resolved')
 
@@ -46,6 +37,15 @@ else
   sudo -S sed -i \
     's/hosts: files dns myhostname/hosts: files resolve myhostname/' \
     /etc/nsswitch.conf
+else
+  sudo -S sed -i \
+    's/hosts: files resolve myhostname/hosts: files dns myhostname/' \
+    /etc/nsswitch.conf
+
+  if [[ -h /etc/resolv.conf ]]; then
+    sudo -S rm /etc/resolv.conf
+    sudo -S touch /etc/resolv.conf
+  fi
 fi
 
 if [[ -e /etc/ddclient/ddclient.conf ]]; then
