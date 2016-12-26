@@ -59,6 +59,9 @@ config_files:
   - src: bower_components/systemd-units/system/refind-update.service
     dst: etc/systemd/system/refind-update.service
 
+  - src: bower_components/systemd-units/system/netctl-auto-resume@.service
+    dst: etc/systemd/system/netctl-auto-resume@.service
+
   - src: etc/pacman.conf
     packages: [ pacman ]
 
