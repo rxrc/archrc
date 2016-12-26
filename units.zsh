@@ -50,6 +50,8 @@ else
     sudo -S rm /etc/resolv.conf
     sudo -S touch /etc/resolv.conf
   fi
+
+  enabled+=("netctl-auto@$(ls /sys/class/net | grep ^wl | head -1)")
 fi
 
 if [[ -e /etc/ddclient/ddclient.conf ]]; then
