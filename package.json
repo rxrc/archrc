@@ -1,6 +1,6 @@
 {
   "name": "@rxrc/archrc",
-  "version": "1.0.6",
+  "version": "2.0.0",
   "private": true,
   "description": "Arch Linux configuration.",
   "homepage": "https://github.com/rxrc/archrc",
