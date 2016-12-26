@@ -7,59 +7,59 @@ defaults:
   dmode: 0755
 
 components:
-  - src: bower_components/systemd-units/system/user@.service.d
+  - src: node_modules/@rxrc/systemd-units/system/user@.service.d
     dst: etc/systemd/system/user@.service.d
 
 config_files:
   - src: etc/mkinitcpio.conf
     packages: [ mkinitcpio ]
 
-  - src: bower_components/archrc-private/etc/fstab
+  - src: node_modules/@rxrc/archrc-private/etc/fstab
     dst: etc/fstab
 
-  - src: bower_components/archrc-private/refind/refind.conf
+  - src: node_modules/@rxrc/archrc-private/refind/refind.conf
     dst: boot/efi/EFI/refind/refind.conf
     hosts: [ Sleipnir ]
 
-  - src: bower_components/archrc-private/refind/refind_linux.conf
+  - src: node_modules/@rxrc/archrc-private/refind/refind_linux.conf
     dst: boot/refind_linux.conf
     hosts: [ Sleipnir ]
 
-  - src: bower_components/archrc-private/loader/loader.conf
+  - src: node_modules/@rxrc/archrc-private/loader/loader.conf
     dst: boot/efi/loader/loader.conf
     hosts: [ Frigg ]
 
-  - src: bower_components/archrc-private/loader/entries/arch.conf
+  - src: node_modules/@rxrc/archrc-private/loader/entries/arch.conf
     dst: boot/efi/loader/entries/arch.conf
     hosts: [ Frigg ]
 
   - src: etc/default/grub
     packages: [ grub ]
 
-  - src: bower_components/systemd-units/system/efistub-update@.path
+  - src: node_modules/@rxrc/systemd-units/system/efistub-update@.path
     dst: etc/systemd/system/efistub-update@.path
     packages: [ efibootmgr ]
 
-  - src: bower_components/systemd-units/system/efistub-update@.service
+  - src: node_modules/@rxrc/systemd-units/system/efistub-update@.service
     dst: etc/systemd/system/efistub-update@.service
     packages: [ efibootmgr ]
 
-  - src: bower_components/systemd-units/system/efistub-ucode-update@.path
+  - src: node_modules/@rxrc/systemd-units/system/efistub-ucode-update@.path
     dst: etc/systemd/system/efistub-ucode-update@.path
     packages: [ efibootmgr, intel-ucode ]
 
-  - src: bower_components/systemd-units/system/efistub-ucode-update@.service
+  - src: node_modules/@rxrc/systemd-units/system/efistub-ucode-update@.service
     dst: etc/systemd/system/efistub-ucode-update@.service
     packages: [ efibootmgr, intel-ucode ]
 
-  - src: bower_components/systemd-units/system/refind-update.path
+  - src: node_modules/@rxrc/systemd-units/system/refind-update.path
     dst: etc/systemd/system/refind-update.path
     packages: [ refind-efi ]
 
-  - src: bower_components/systemd-units/system/refind-update.service
+  - src: node_modules/@rxrc/systemd-units/system/refind-update.service
     dst: etc/systemd/system/refind-update.service
 
-  - src: bower_components/systemd-units/system/netctl-auto-resume@.service
+  - src: node_modules/@rxrc/systemd-units/system/netctl-auto-resume@.service
     dst: etc/systemd/system/netctl-auto-resume@.service
 
   - src: etc/pacman.conf
@@ -113,19 +113,19 @@ config_files:
     packages: [ xf86-input-mtrack-git ]
     hosts: [ Frigg ]
 
-  - src: bower_components/systemd-units/logind.conf.d/acpi.conf
+  - src: node_modules/@rxrc/systemd-units/logind.conf.d/acpi.conf
     dst: etc/systemd/logind.conf.d/acpi.conf
 
-  - src: bower_components/systemd-units/coredump.conf.d/disable.conf
+  - src: node_modules/@rxrc/systemd-units/coredump.conf.d/disable.conf
     dst: etc/systemd/coredump.conf.d/disable.conf
 
   - src: etc/systemd/system/chromeos-kbd_backlight.service
     packages: [ linux-samus4 ]
 
-  - src: bower_components/systemd-units/system/numlock.service
+  - src: node_modules/@rxrc/systemd-units/system/numlock.service
     dst: etc/systemd/system/numlock.service
 
-  - src: bower_components/systemd-units/system/xscreensaver-lock@.service
+  - src: node_modules/@rxrc/systemd-units/system/xscreensaver-lock@.service
     dst: etc/systemd/system/xscreensaver-lock@.service
     packages: [ xscreensaver-arch-logo ]
 
@@ -135,19 +135,19 @@ config_files:
   - src: etc/lightdm/lightdm-gtk-greeter.conf
     packages: [ lightdm-gtk-greeter ]
 
-  - src: bower_components/archrc-private/etc/samba/smb.conf
+  - src: node_modules/@rxrc/archrc-private/etc/samba/smb.conf
     dst: etc/samba/smb.conf
     packages: [ samba ]
 
-  - src: bower_components/archrc-private/etc/samba/users.map
+  - src: node_modules/@rxrc/archrc-private/etc/samba/users.map
     dst: /etc/samba/users.map
     packages: [ samba ]
 
-  - src: bower_components/archrc-private/etc/nginx/nginx.conf
+  - src: node_modules/@rxrc/archrc-private/etc/nginx/nginx.conf
     dst: etc/nginx/nginx.conf
     packages: [ nginx ]
 
-  - src: bower_components/archutil/bin/archutil
+  - src: node_modules/@razor-x/archutil/bin/archutil
     dst: usr/local/bin/archutil
     fmode: 0755
 

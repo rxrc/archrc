@@ -10,24 +10,20 @@ My Arch Linux configuration managed with [Config Curator] and [archutil].
 
 ## Requirements
 
-* [Bower]
-* [Ruby] with [Bundler]
-* [Zsh]
+* [Node.js] and [Yarn].
+* [Ruby] with [Bundler].
+* [Zsh].
 
 Note: these requirements are handled automatically
 when bootstrapping a new system (see the instructions below).
 
-[Bower]: http://bower.io/
-[Bundler]: http://bundler.io/
+[Yarn]: https://yarnpkg.com/
+[Bundler]: https://bundler.io/
+[Node.js]: https://nodejs.org/
 [Ruby]: https://www.ruby-lang.org/
-[Zsh]: http://www.zsh.org/
+[Zsh]: https://www.zsh.org/
 
 ## Installation and Usage
-
-If you prefer a clean start, clone the `minimal` branch:
-it has the same structure and tools but with
-a very minimal configuration.
-Tagged releases are based on that branch.
 
 ### Bootstrapping a new system
 
@@ -59,7 +55,7 @@ Update the mirrorlist with reflector, e.g.,
 # pacman -Su
 ```
 
-If this repository or any of the Bower dependencies are private,
+If this repository or any of the dependencies are private,
 generate an ssh key pair with
 
 ```
@@ -129,7 +125,7 @@ $ curl -L https://git.io/vJARg | sh
 $ cd ~/archrc
 ```
 
-Again, if this repository or any of the Bower dependencies are private,
+Again, if this repository or any of the dependencies are private,
 generate an ssh key pair with
 
 ```bash
@@ -198,8 +194,6 @@ configuration should be managed by a normal user.
 
 You can continue using the system Ruby,
 or install Ruby with [rbenv] or [RVM].
-Bower should be installed manually using [npm].
-
 
 Install [Bundler] with
 
@@ -210,7 +204,7 @@ $ gem install bundler
 Install dependencies with
 
 ```bash
-$ bower update
+$ yarn
 $ bundle update
 ```
 
@@ -238,7 +232,6 @@ Install packages with
 $ /usr/local/bin/archutil install --sets main user gui
 ```
 
-[npm]: https://www.npmjs.com/
 [rbenv]: https://github.com/sstephenson/rbenv
 [RVM]: https://rvm.io/
 

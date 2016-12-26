@@ -36,31 +36,23 @@ pacin ruby
 pacin npm
 
 ruby -e $curate_str >/dev/null 2>&1 || gem install --no-document config_curator
-npm install
+npm install yarn
+./node_modules/.bin/yarn
 
 ruby -e $curate_str >/dev/null 2>&1 && \
-  [[ -e node_modules/bower/bin/bower ]] && \
   puts 'Installed' 'Config Curator requirements'
 
-puts 'Installing' 'Bower components'
-./node_modules/bower/bin/bower --config.analytics=false --allow-root install
-
-if [[ -d bower_components ]]; then
-  puts 'Installed' 'Bower components'
-fi
+puts 'Installing' 'Node modules'
+./node_modules/.bin/yarn
+puts 'Installed' 'Node modules'
 
 puts 'Installing' 'Config'
 
 $(ruby -e $curate_str) -v
 
-if [[ -d bower_components ]]; then
-  rm -rf bower_components
-  puts 'Cleaned' 'Bower components'
-fi
-
 if [[ -d node_modules ]]; then
   rm -rf node_modules
-  puts 'Cleaned' 'npm modules'
+  puts 'Cleaned' 'Node modules'
 fi
 
 if [[ -z "${SUDO_COMMAND:-}" && -d /root/.gem ]]; then

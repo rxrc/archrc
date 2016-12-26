@@ -1,10 +1,29 @@
 {
-  "scripts": {
-    "install": "bower install",
-    "update": "bower update"
-  },
+  "name": "@rxrc/archrc",
+  "version": "1.0.6",
   "private": true,
-  "devDependencies": {
-    "bower": "^1.6.4"
+  "description": "Arch Linux configuration.",
+  "homepage": "https://github.com/rxrc/archrc",
+  "bugs": "https://github.com/rxrc/archrc/issues",
+  "repository": "rxrc/archrc",
+  "license": "MIT",
+  "author": {
+    "name": "Evan Sosenko",
+    "email": "razorx@evansosenko.com"
+  },
+  "files": [
+    "*.yml",
+    "NOTES.md",
+    "Gemfile",
+    "etc",
+    "usr"
+  ],
+  "scripts": {
+    "postversion": "git push && git push --tags"
+  },
+  "dependencies": {
+    "@razor-x/archutil": "razor-x/archutil",
+    "@rxrc/systemd-units": "rxrc/systemd-units",
+    "@rxrc/archrc-private": "bitbucket.org:razorx/archrc-private.git"
   }
 }

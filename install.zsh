@@ -11,10 +11,8 @@ else
   cmd='install'
 fi
 
-echo "\n $ npm install"
-npm install
-[[ "$cmd" = 'update' ]] && echo "\n $ npm run update"
-[[ "$cmd" = 'update' ]] && npm run update
+echo "\n $ yarn"
+yarn
 
 echo "\n$ bundle ${cmd}\n"
 $(rbenv which bundle) $cmd
