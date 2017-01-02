@@ -12,11 +12,23 @@
     "email": "razorx@evansosenko.com"
   },
   "scripts": {
+    "gulp": "gulp",
     "postversion": "git push && git push --tags"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
   },
   "dependencies": {
     "@razor-x/archutil": "razor-x/archutil",
-    "@rxrc/systemd-units": "rxrc/systemd-units",
-    "@rxrc/archrc-private": "bitbucket.org:razorx/archrc-private.git"
+    "@rxrc/archrc-private": "bitbucket:razorx/archrc-private",
+    "@rxrc/systemd-units": "rxrc/systemd-units"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.1.4",
+    "babel-register": "^6.18.0",
+    "gulp": "gulpjs/gulp#4.0",
+    "standard": "^8.6.0"
   }
 }
