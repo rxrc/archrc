@@ -16,49 +16,54 @@ function set_hostname () {
   fi
 
   puts 'Setting' 'Hostname'
-  echo $hostname > /etc/hostname
-  hostname $hostname
+  echo $hostname | sudo -S tee /etc/hostname
+  sudo -S hostname $hostname
   puts 'Hostname ' $hostname
 }
 
-function install_node_modules () {
+function install_config () {
   puts 'Installing' 'Node modules'
-  pacman -S --noconfirm npm
-  npm install yarn
-  ./node_modules/.bin/yarn
+  sudo -S pacman -S --noconfirm npm
+  sudo -S aura -A --noconfirm yarn
+  yarn
   puts 'Installed' 'Node modules'
 
   puts 'Installing' 'Config'
-  ./node_modules/.bin/gulp
+  yarn run gulp
   puts 'Installed' 'Config'
 }
 
 function install_archutil () {
+  archutil_url='https://io.evansosenko.com/archutil/archutil'
+
   puts 'Installing' 'archutil requirements'
-  pacman -S --noconfirm curl python python-yaml
+  sudo -S pacman -S --noconfirm curl python python-yaml
   puts 'Installed' 'archutil requirements'
 
   if ! [[ -e /usr/local/bin/archutil ]]; then
     puts 'Installing' 'archutil'
-    curl -L -o /usr/local/bin/archutil https://io.evansosenko.com/archutil/archutil
+    sudo -S curl -L -o /usr/local/bin/archutil $archutil_url
   fi
 
   if [[ -e /usr/local/bin/archutil ]]; then
-    chmod +x /usr/local/bin/archutil
+    sudo -S chmod +x /usr/local/bin/archutil
     puts 'Installed' 'archutil'
   fi
 }
 
 function set_locale () {
   puts 'Setting' 'Locale'
-  locale-gen
+  sudo -S locale-gen
   export $(cat /etc/locale.conf)
   puts 'Set' 'Locale'
 }
 
 function main () {
-  if [[ $(id -u) -ne 0 ]]; then
-    echo 'Must run as root.'
+  echo 'Preauthenticate for sudo.'
+  sudo -S echo
+
+  if [[ $(id -u) == 0 ]]; then
+    echo 'Must not run as root.'
     exit 1
   fi
 
