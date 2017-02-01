@@ -51,8 +51,11 @@ else
     sudo -S touch /etc/resolv.conf
   fi
 
-  enabled+=("netctl-auto@$(ls /sys/class/net | grep ^wl | head -1)")
-  enabled+=("netctl-auto-resume@$(ls /sys/class/net | grep ^wl | head -1)")
+  enabled+=("netctl-ifplugd@$(ls /sys/class/net | grep ^e | head -1)")
+  enabled+=("netctl-auto@$(ls /sys/class/net | grep ^w | head -1)")
+
+  enabled+=("netctl-auto-resume@$(ls /sys/class/net | grep ^w | head -1)")
+  enabled+=("netctl-auto-resume@$(ls /sys/class/net | grep ^e | head -1)")
 fi
 
 if [[ -e /etc/ddclient/ddclient.conf ]]; then
