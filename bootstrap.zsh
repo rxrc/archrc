@@ -36,14 +36,12 @@ pacin ruby
 pacin npm
 
 ruby -e $curate_str >/dev/null 2>&1 || gem install --no-document config_curator
-npm install yarn
-./node_modules/.bin/yarn
 
 ruby -e $curate_str >/dev/null 2>&1 && \
   puts 'Installed' 'Config Curator requirements'
 
 puts 'Installing' 'Node modules'
-./node_modules/.bin/yarn
+npm install
 puts 'Installed' 'Node modules'
 
 puts 'Installing' 'Config'
