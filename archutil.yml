@@ -90,9 +90,6 @@ packages:
     - grub
 
   samus:
-    - linux-samus4
-    - linux-samus4-docs
-    - linux-samus4-headers
     - xf86-input-synaptics
 
   macbook:
