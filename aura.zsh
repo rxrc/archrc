@@ -12,9 +12,6 @@ function pacin () {
   fi
 }
 
-command -v aura >/dev/null 2>&1 && \
-  echo 'Aura is already installed.' && exit 0
-
 pacin curl
 pacin grep
 pacin tar
