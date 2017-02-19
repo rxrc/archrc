@@ -257,6 +257,7 @@ packages:
 
     # Awesome.
     - awesome
+    - awesome-freedesktop-git
     - lain-git
     - vicious
 
