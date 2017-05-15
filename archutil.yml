@@ -194,7 +194,6 @@ packages:
     - python-tornado
     - r
     - sqlite
-    - typesafe-activator
     - watchman
     - zlib
 
@@ -281,7 +280,6 @@ packages:
     - inkscape
     - insync
     - keepassx2
-    - livestreamer
     - mcomix
     - mumble
     - neovim-qt-git
