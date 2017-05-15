@@ -24,6 +24,6 @@
   "dependencies": {
     "@razor-x/archutil": "razor-x/archutil",
     "@rxrc/systemd-units": "rxrc/systemd-units",
-    "@rxrc/archrc-private": "git@bitbucket.org:razorx/archrc-private.git"
+    "@rxrc/archrc-private": "git+ssh://git@bitbucket.org:razorx/archrc-private.git"
   }
 }

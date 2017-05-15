@@ -6,9 +6,9 @@
   version "1.2.0"
   resolved "https://codeload.github.com/razor-x/archutil/tar.gz/6d0331f3733b4eb2b84c452328e11296b9474522"
 
-"@rxrc/archrc-private@bitbucket.org:razorx/archrc-private.git":
-  version "1.4.0"
-  resolved "bitbucket.org:razorx/archrc-private.git#be642797974105917ba93f134985aabf148a2406"
+"@rxrc/archrc-private@git+ssh://git@bitbucket.org:razorx/archrc-private.git":
+  version "1.4.1"
+  resolved "git+ssh://git@bitbucket.org:razorx/archrc-private.git#ce7ae177c2b6637bdb487df15f6092833d86c23c"
 
 "@rxrc/systemd-units@rxrc/systemd-units":
   version "2.1.0"
