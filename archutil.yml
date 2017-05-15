@@ -195,6 +195,7 @@ packages:
     - r
     - sqlite
     - watchman
+    - yarn
     - zlib
 
   development:

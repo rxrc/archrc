@@ -33,7 +33,7 @@ puts 'Hostname' $hostname
 puts 'Installing' 'Config Curator requirements'
 
 pacin ruby
-pacin npm
+pacin yarn
 
 ruby -e $curate_str >/dev/null 2>&1 || gem install --no-document config_curator
 
@@ -41,7 +41,7 @@ ruby -e $curate_str >/dev/null 2>&1 && \
   puts 'Installed' 'Config Curator requirements'
 
 puts 'Installing' 'Node modules'
-npm install
+yarn
 puts 'Installed' 'Node modules'
 
 puts 'Installing' 'Config'
