@@ -12,6 +12,7 @@ enabled+=('lightdm')
 enabled+=('numlock')
 enabled+=('org.cups.cupsd')
 enabled+=('sshd')
+enabled+=('systemd-resolved')
 
 if [[ $(hostname) != 'Sleipnir' ]]; then
   enabled+=('nftables')
@@ -32,7 +33,6 @@ fi
 
 if [[ $(hostname) == 'Sleipnir' || $(hostname) == 'Mimir' ]]; then
   enabled+=('systemd-networkd')
-  enabled+=('systemd-resolved')
 
   # TODO This will fail under initial arch-chroot.
   #      Comment it out and run it after first boot.
