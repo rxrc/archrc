@@ -96,6 +96,7 @@ packages:
     - xf86-input-synaptics
 
   macbook:
+    - bcwc-pcie-git
     - kbdlight
     - xf86-input-mtrack-git
 
@@ -122,6 +123,8 @@ packages:
     - hunspell-en
     - jq
     - net-tools
+    - openvpn
+    - openvpn-update-systemd-resolved
     - p7zip
     - reflector
     - rsync
@@ -138,6 +141,7 @@ packages:
     - bc
     - fzf
     - glances
+    - httpie
     - ponysay
     - tmux
     - tmuxinator
@@ -201,12 +205,18 @@ packages:
   development:
     - android-tools
     - android-udev
+    - aws-cli
+    - docker
+    - docker-machine
     - cabal-install
     - ghc
     - git
     - go
+    - gradle
+    - heroku-toolbelt
     - leiningen
     - jdk8-openjdk
+    - terraform
     - vagrant
     - vim-systemd
     - virtualbox
