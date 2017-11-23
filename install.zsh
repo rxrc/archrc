@@ -3,13 +3,16 @@
 set -e
 set -u
 
-echo "\n$ npm install"
-npm install
+main () {
+  echo "\n$ npm install"
+  npm install
 
-echo "\n$ npm run archrc"
-npm run archrc
+  echo "\n$ npm run archrc"
+  npm run archrc
 
-echo '\n$ ./units.zsh\n'
-./units.zsh
+  echo '\n$ ./units.zsh\n'
+  ./units.zsh
+}
 
+main
 exit
