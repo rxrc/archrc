@@ -11,8 +11,8 @@ else
   cmd='install'
 fi
 
-echo "\n $ yarn"
-yarn
+echo "\n $ npm install"
+npm install
 
 echo "\n$ bundle ${cmd}\n"
 $(rbenv which bundle) $cmd

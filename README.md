@@ -10,16 +10,16 @@ My Arch Linux configuration managed with [Config Curator] and [archutil].
 
 ## Requirements
 
-* [Node.js] and [Yarn].
+* [Node.js] with [npm].
 * [Ruby] with [Bundler].
 * [Zsh].
 
 Note: these requirements are handled automatically
 when bootstrapping a new system (see the instructions below).
 
-[Yarn]: https://yarnpkg.com/
 [Bundler]: https://bundler.io/
 [Node.js]: https://nodejs.org/
+[npm]: https://www.npmjs.com/
 [Ruby]: https://www.ruby-lang.org/
 [Zsh]: https://www.zsh.org/
 
@@ -204,7 +204,7 @@ $ gem install bundler
 Install dependencies with
 
 ```bash
-$ yarn
+$ npm install
 $ bundle update
 ```
 
