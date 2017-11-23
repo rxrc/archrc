@@ -22,10 +22,6 @@ if [[ -d /boot/efi/EFI/arch || -d /boot/efi/loader ]]; then
   enabled+=('efistub-update@linux.path')
   enabled+=('efistub-ucode-update@linux.path')
 fi
-if [[ $(hostname) == 'Frigg' ]]; then
-  enabled+=('efistub-update@linux-macbook.path')
-  enabled+=('efistub-ucode-update@linux-macbook.path')
-fi
 
 if [[ -d /boot/efi/EFI/refind ]]; then
   enabled+=('refind-update.path')
