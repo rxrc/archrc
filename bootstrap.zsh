@@ -3,11 +3,11 @@
 set -e
 set -u
 
-function puts () {
+puts () {
   echo "\n-- [${1:-}] ${2:-}"
 }
 
-function set_hostname () {
+set_hostname () {
   hostname="${1:-}"
 
   if [[ -z ${hostname} ]]; then
@@ -21,7 +21,7 @@ function set_hostname () {
   puts 'Hostname ' $hostname
 }
 
-function install_config () {
+install_config () {
   puts 'Installing' 'Node modules'
   sudo -S pacman -S --noconfirm npm
   npm install
@@ -32,7 +32,7 @@ function install_config () {
   puts 'Installed' 'Config'
 }
 
-function install_archutil () {
+install_archutil () {
   archutil_url='https://raw.githubusercontent.com/razor-x/archutil/v1.2.0/bin/archutil'
 
   puts 'Installing' 'archutil requirements'
@@ -50,14 +50,14 @@ function install_archutil () {
   fi
 }
 
-function set_locale () {
+set_locale () {
   puts 'Setting' 'Locale'
   sudo -S locale-gen
   export $(cat /etc/locale.conf)
   puts 'Set' 'Locale'
 }
 
-function main () {
+main () {
   echo 'Preauthenticate for sudo.'
   sudo -S echo
 

@@ -3,7 +3,7 @@
 set -e
 set -u
 
-function main () {
+main () {
   url='https://aur.archlinux.org/cgit/aur.git/snapshot/aura-bin.tar.gz'
   tar_file='aura-bin.tar.gz'
 
