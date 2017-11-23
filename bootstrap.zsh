@@ -24,12 +24,11 @@ function set_hostname () {
 function install_config () {
   puts 'Installing' 'Node modules'
   sudo -S pacman -S --noconfirm npm
-  sudo -S aura -A --noconfirm yarn
-  yarn
+  npm install
   puts 'Installed' 'Node modules'
 
   puts 'Installing' 'Config'
-  yarn run gulp
+  npm run archrc
   puts 'Installed' 'Config'
 }
 
