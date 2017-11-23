@@ -34,7 +34,7 @@ function install_config () {
 }
 
 function install_archutil () {
-  archutil_url='https://io.evansosenko.com/archutil/archutil'
+  archutil_url='https://raw.githubusercontent.com/razor-x/archutil/v1.2.0/bin/archutil'
 
   puts 'Installing' 'archutil requirements'
   sudo -S pacman -S --noconfirm curl python python-yaml
