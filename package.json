@@ -15,11 +15,6 @@
     "gulp": "gulp",
     "postversion": "git push && git push --tags"
   },
-  "babel": {
-    "presets": [
-      "env"
-    ]
-  },
   "dependencies": {
     "@razor-x/archutil": "razor-x/archutil",
     "@rxrc/archrc-private": "bitbucket:razorx/archrc-private",
