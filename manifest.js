@@ -1,0 +1,326 @@
+const rxrc = 'node_modules/@rxrc'
+
+const directories = [{
+  src: `${rxrc}/systemd-units/system/user@.service.d`,
+  dst: 'etc/systemd/system/user@.service.d'
+}]
+
+const files = [{
+  src: 'etc/mkinitcpio.conf',
+  pkg: ['mkinitcpio']
+}, {
+  src: 'etc/locale.gen'
+}, {
+  src: 'etc/locale.conf'
+}, {
+  src: 'etc/sysctl.d/99-sysctl.conf'
+}, {
+  src: `${rxrc}/archrc-private/etc/fstab`,
+  dst: `etc/fstab`
+}, {
+  src: `${rxrc}/archrc-private/refind/refind.conf`,
+  dst: 'boot/efi/EFI/refind/refind.conf',
+  hst: ['Sleipnir']
+}, {
+  src: `${rxrc}/archrc-private/refind/refind_linux.conf`,
+  dst: 'boot/refind_linux.conf',
+  hst: ['Sleipnir']
+}, {
+  src: `${rxrc}/archrc-private/loader/loader.conf`,
+  dst: 'boot/efi/loader/loader.conf',
+  hst: ['Frigg']
+}, {
+  src: `${rxrc}/archrc-private/loader/entries/arch.conf`,
+  dst: 'boot/efi/loader/entries/arch.conf',
+  hst: ['Frigg']
+}, {
+  src: 'etc/default/grub',
+  pkg: ['grub']
+}, {
+  src: `${rxrc}/systemd-units/system/efistub-update@.path`,
+  dst: 'etc/systemd/system/efistub-update@.path',
+  pkg: ['efibootmgr']
+}, {
+  src: `${rxrc}/systemd-units/system/efistub-update@.service`,
+  dst: 'etc/systemd/system/efistub-update@.service',
+  pkg: ['efibootmgr']
+}, {
+  src: `${rxrc}/systemd-units/system/efistub-ucode-update@.path`,
+  dst: 'etc/systemd/system/efistub-ucode-update@.path',
+  pkg: ['efibootmgr', 'intel-ucode']
+}, {
+  src: `${rxrc}/systemd-units/system/efistub-ucode-update@.service`,
+  dst: 'etc/systemd/system/efistub-ucode-update@.service',
+  pkg: ['efibootmgr', 'intel-ucode']
+}, {
+  src: `${rxrc}/systemd-units/system/refind-update.path`,
+  dst: 'etc/systemd/system/refind-update.path',
+  pkg: ['refind-efi']
+}, {
+  src: `${rxrc}/systemd-units/system/refind-update.service`,
+  dst: 'etc/systemd/system/refind-update.service'
+}, {
+  src: `${rxrc}/systemd-units/system/netctl-auto-resume@.service`,
+  dst: 'etc/systemd/system/netctl-auto-resume@.service'
+}, {
+  src: 'etc/pacman.conf',
+  pkg: ['pacman']
+}, {
+  src: 'etc/nftables.conf',
+  pkg: ['nftables']
+}, {
+  src: 'etc/sudoers',
+  mod: '0440',
+  pkg: ['sudo']
+}, {
+  src: 'etc/ssh/sshd_config',
+  pkg: ['openssh']
+}, {
+  src: 'etc/systemd/network/wired.network',
+  hst: ['Mimir', 'Sleipnir']
+}, {
+  src: 'etc/systemd/journald.conf.d/size.conf',
+  hst: ['Gungnir']
+}, {
+  src: 'etc/udev/rules.d/99-lowbat.rules',
+  hst: ['Gungnir']
+}, {
+  src: 'etc/modules-load.d/virtualbox.conf',
+  pkg: ['virtualbox']
+}, {
+  src: 'etc/modprobe.d/alsa-base.conf',
+  pkg: ['linux-samus4']
+}, {
+  src: 'etc/X11/xorg.conf.d/10-monitor.conf',
+  hst: ['Mimir']
+}, {
+  src: 'etc/X11/xorg.conf.d/15-dpms.conf'
+}, {
+  src: 'etc/X11/xorg.conf.d/20-intel.conf',
+  pkg: ['xf86-video-intel']
+}, {
+  src: 'etc/X11/xorg.conf.d/10-keyboard.conf',
+  pkg: ['xkeyboard-config-chromebook']
+}, {
+  src: 'etc/X11/xorg.conf.d/50-synaptics.conf',
+  pkg: ['xf86-input-synaptics'],
+  hst: ['Gungnir']
+}, {
+  src: 'etc/X11/xorg.conf.d/50-mtrack.conf',
+  pkg: ['xf86-input-mtrack-git'],
+  hst: ['Frigg']
+}, {
+  src: `${rxrc}/systemd-units/logind.conf.d/acpi.conf`,
+  dst: 'etc/systemd/logind.conf.d/acpi.conf'
+}, {
+  src: `${rxrc}/systemd-units/coredump.conf.d/disable.conf`,
+  dst: 'etc/systemd/coredump.conf.d/disable.conf'
+}, {
+  src: 'etc/systemd/system/chromeos-kbd_backlight.service',
+  pkg: ['linux-samus4']
+}, {
+  src: `${rxrc}/systemd-units/system/numlock.service`,
+  dst: 'etc/systemd/system/numlock.service'
+}, {
+  src: `${rxrc}/systemd-units/system/xscreensaver-lock@.service`,
+  dst: 'etc/systemd/system/xscreensaver-lock@.service',
+  pkg: ['xscreensaver-arch-logo']
+}, {
+  src: 'etc/lightdm/lightdm.conf',
+  pkg: ['lightdm']
+}, {
+  src: 'etc/lightdm/lightdm-gtk-greeter.conf',
+  pkg: ['lightdm-gtk-greeter']
+}, {
+  src: `${rxrc}/archrc-private/etc/samba/smb.conf`,
+  dst: 'etc/samba/smb.conf',
+  pkg: ['samba']
+}, {
+  src: `${rxrc}/archrc-private/etc/samba/users.map`,
+  dst: 'etc/samba/users.map',
+  pkg: ['samba']
+}, {
+  src: `${rxrc}/archrc-private/etc/nginx/nginx.conf`,
+  dst: 'etc/nginx/nginx.conf',
+  pkg: ['nginx']
+}, {
+  src: `${rxrc}/archutil/bin/archutil`,
+  dst: 'usr/local/bin/archutil',
+  mod: '0755'
+}, {
+  src: 'archutil.yml',
+  dst: 'usr/local/etc/archutil.yml'
+}, {
+  src: 'usr/local/bin/xcleanup',
+  mod: '0755',
+  pkg: ['lightdm']
+}, {
+  src: 'usr/local/bin/touchpad-toggle',
+  mod: '0755',
+  pkg: ['xf86-input-synaptics']
+}, {
+  src: 'usr/local/bin/chromeos-kbd_backlight',
+  mod: '0755',
+  pkg: ['linux-samus4']
+}, {
+  src: 'usr/local/bin/chromeos-sound-output-toggle',
+  mod: '0755',
+  pkg: ['linux-samus4']
+}, {
+  src: `${rxrc}/archrc-private/refind/refind.conf`,
+  dst: 'boot/efi/EFI/refind/refind.conf',
+  hst: ['Sleipnir']
+}, {
+  src: `${rxrc}/archrc-private/refind/refind_linux.conf`,
+  dst: 'boot/refind_linux.conf',
+  hst: ['Sleipnir']
+}, {
+  src: `${rxrc}/archrc-private/loader/loader.conf`,
+  dst: 'boot/efi/loader/loader.conf',
+  hst: ['Frigg']
+}, {
+  src: `${rxrc}/archrc-private/loader/entries/arch.conf`,
+  dst: 'boot/efi/loader/entries/arch.conf',
+  hst: ['Frigg']
+}, {
+  src: 'etc/default/grub',
+  pkg: ['grub']
+}, {
+  src: `${rxrc}/systemd-units/system/efistub-update@.path`,
+  dst: 'etc/systemd/system/efistub-update@.path',
+  pkg: ['efibootmgr']
+}, {
+  src: `${rxrc}/systemd-units/system/efistub-update@.service`,
+  dst: 'etc/systemd/system/efistub-update@.service',
+  pkg: ['efibootmgr']
+}, {
+  src: `${rxrc}/systemd-units/system/efistub-ucode-update@.path`,
+  dst: 'etc/systemd/system/efistub-ucode-update@.path',
+  pkg: ['efibootmgr', 'intel-ucode']
+}, {
+  src: `${rxrc}/systemd-units/system/efistub-ucode-update@.service`,
+  dst: 'etc/systemd/system/efistub-ucode-update@.service',
+  pkg: ['efibootmgr', 'intel-ucode']
+}, {
+  src: `${rxrc}/systemd-units/system/refind-update.path`,
+  dst: 'etc/systemd/system/refind-update.path',
+  pkg: ['refind-efi']
+}, {
+  src: `${rxrc}/systemd-units/system/refind-update.service`,
+  dst: 'etc/systemd/system/refind-update.service'
+}, {
+  src: `${rxrc}/systemd-units/system/netctl-auto-resume@.service`,
+  dst: 'etc/systemd/system/netctl-auto-resume@.service'
+}, {
+  src: 'etc/pacman.conf',
+  pkg: ['pacman']
+}, {
+  src: 'etc/nftables.conf',
+  pkg: ['nftables']
+}, {
+  src: 'etc/sudoers',
+  mod: '0440',
+  pkg: ['sudo']
+}, {
+  src: 'etc/ssh/sshd_config',
+  pkg: ['openssh']
+}, {
+  src: 'etc/systemd/network/wired.network',
+  hst: ['Mimir', 'Sleipnir']
+}, {
+  src: 'etc/systemd/journald.conf.d/size.conf',
+  hst: ['Gungnir']
+}, {
+  src: 'etc/udev/rules.d/99-lowbat.rules',
+  hst: ['Gungnir']
+}, {
+  src: 'etc/modules-load.d/virtualbox.conf',
+  pkg: ['virtualbox']
+}, {
+  src: 'etc/modprobe.d/alsa-base.conf',
+  pkg: ['linux-samus4']
+}, {
+  src: 'etc/X11/xorg.conf.d/10-monitor.conf',
+  hst: ['Mimir']
+}, {
+  src: 'etc/X11/xorg.conf.d/15-dpms.conf'
+}, {
+  src: 'etc/X11/xorg.conf.d/20-intel.conf',
+  pkg: ['xf86-video-intel']
+}, {
+  src: 'etc/X11/xorg.conf.d/10-keyboard.conf',
+  pkg: ['xkeyboard-config-chromebook']
+}, {
+  src: 'etc/X11/xorg.conf.d/50-synaptics.conf',
+  pkg: ['xf86-input-synaptics'],
+  hst: ['Gungnir']
+}, {
+  src: 'etc/X11/xorg.conf.d/50-mtrack.conf',
+  pkg: ['xf86-input-mtrack-git'],
+  hst: ['Frigg']
+}, {
+  src: `${rxrc}/systemd-units/logind.conf.d/acpi.conf`,
+  dst: 'etc/systemd/logind.conf.d/acpi.conf'
+}, {
+  src: `${rxrc}/systemd-units/coredump.conf.d/disable.conf`,
+  dst: 'etc/systemd/coredump.conf.d/disable.conf'
+}, {
+  src: 'etc/systemd/system/chromeos-kbd_backlight.service',
+  pkg: ['linux-samus4']
+}, {
+  src: `${rxrc}/systemd-units/system/numlock.service`,
+  dst: 'etc/systemd/system/numlock.service'
+}, {
+  src: `${rxrc}/systemd-units/system/xscreensaver-lock@.service`,
+  dst: 'etc/systemd/system/xscreensaver-lock@.service',
+  pkg: ['xscreensaver-arch-logo']
+}, {
+  src: 'etc/lightdm/lightdm.conf',
+  pkg: ['lightdm']
+}, {
+  src: 'etc/lightdm/lightdm-gtk-greeter.conf',
+  pkg: ['lightdm-gtk-greeter']
+}, {
+  src: `${rxrc}/archrc-private/etc/samba/smb.conf`,
+  dst: 'etc/samba/smb.conf',
+  pkg: ['samba']
+}, {
+  src: `${rxrc}/archrc-private/etc/samba/users.map`,
+  dst: 'etc/samba/users.map',
+  pkg: ['samba']
+}, {
+  src: `${rxrc}/archrc-private/etc/nginx/nginx.conf`,
+  dst: 'etc/nginx/nginx.conf',
+  pkg: ['nginx']
+}, {
+  src: `${rxrc}/archutil/bin/archutil`,
+  dst: 'usr/local/bin/archutil',
+  mod: '0755'
+}, {
+  src: 'archutil.yml',
+  dst: 'usr/local/etc/archutil.yml'
+}, {
+  src: 'usr/local/bin/xcleanup',
+  mod: '0755',
+  pkg: ['lightdm']
+}, {
+  src: 'usr/local/bin/touchpad-toggle',
+  mod: '0755',
+  pkg: ['xf86-input-synaptics']
+}, {
+  src: 'usr/local/bin/chromeos-kbd_backlight',
+  mod: '0755',
+  pkg: ['linux-samus4']
+}, {
+  src: 'usr/local/bin/chromeos-sound-output-toggle',
+  mod: '0755',
+  pkg: ['linux-samus4']
+}]
+
+const symlinks = []
+
+module.exports = {
+  directories,
+  files,
+  symlinks
+}

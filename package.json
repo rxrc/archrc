@@ -3,6 +3,7 @@
   "version": "2.0.0",
   "private": true,
   "description": "Arch Linux configuration.",
+  "main": "manifest.js",
   "homepage": "https://github.com/rxrc/archrc",
   "bugs": "https://github.com/rxrc/archrc/issues",
   "repository": "rxrc/archrc",
@@ -12,7 +13,7 @@
     "email": "razorx@evansosenko.com"
   },
   "scripts": {
-    "gulp": "gulp",
+    "start": "curator",
     "postversion": "git push && git push --tags"
   },
   "dependencies": {
@@ -21,8 +22,6 @@
     "@rxrc/systemd-units": "rxrc/systemd-units"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-cli": "^1.4.0",
-    "standard": "^10.0.3"
+    "@rxrc/curator": "0.0.1-alpha.0"
   }
 }
