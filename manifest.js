@@ -15,6 +15,7 @@ const directories = [{
 
 const files = [{
   src: `etc/mkinitcpio.${host}.conf`,
+  dst: `etc/mkinitcpio.conf`,
   pkgs: ['mkinitcpio']
 }, {
   src: 'etc/locale.gen'
