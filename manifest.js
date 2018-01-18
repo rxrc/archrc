@@ -152,7 +152,7 @@ const files = [{
   dst: 'etc/nginx/nginx.conf',
   pkgs: ['nginx']
 }, {
-  src: `${rxrc}/archutil/bin/archutil`,
+  src: `node_modules/@razor-x/archutil/bin/archutil`,
   dst: 'usr/local/bin/archutil',
   mod: '0755'
 }, {
