@@ -79,7 +79,7 @@ const files = [{
   pkgs: ['nftables']
 }, {
   src: 'etc/sudoers',
-  mod: '0440',
+  fmode: '0440',
   pkgs: ['sudo']
 }, {
   src: 'etc/ssh/sshd_config',
@@ -155,25 +155,25 @@ const files = [{
 }, {
   src: `node_modules/@razor-x/archutil/bin/archutil`,
   dst: 'usr/local/bin/archutil',
-  mod: '0755'
+  fmode: '0755'
 }, {
   src: 'archutil.yml',
   dst: 'usr/local/etc/archutil.yml'
 }, {
   src: 'usr/local/bin/xcleanup',
-  mod: '0755',
+  fmode: '0755',
   pkgs: ['lightdm']
 }, {
   src: 'usr/local/bin/touchpad-toggle',
-  mod: '0755',
+  fmode: '0755',
   pkgs: ['xf86-input-synaptics']
 }, {
   src: 'usr/local/bin/chromeos-kbd_backlight',
-  mod: '0755',
+  fmode: '0755',
   pkgs: ['linux-samus4']
 }, {
   src: 'usr/local/bin/chromeos-sound-output-toggle',
-  mod: '0755',
+  fmode: '0755',
   pkgs: ['linux-samus4']
 }]
 
