@@ -6,6 +6,11 @@ const rxrc = 'node_modules/@rxrc'
 const io = 'linux'
 const pkg = 'pacman'
 
+const defaults = {
+  user: 'root',
+  group: 'root'
+}
+
 const unlinks = []
 
 const directories = [{
