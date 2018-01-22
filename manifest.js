@@ -190,5 +190,7 @@ module.exports = {
   files,
   symlinks,
   io,
-  pkg
+  pkg,
+  root,
+  defaults
 }
