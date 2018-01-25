@@ -47,10 +47,10 @@ const files = [{
   hosts: ['Frigg']
 }, {
   src: `${rxrc}/archrc-private/loader/entries/arch.conf`,
-  dst: 'boot/efi/loader/entries/arch.conf',
+  dst: `boot/efi/loader/entries/arch.${host}.conf`,
   hosts: ['Frigg']
 }, {
-  src: 'etc/default/grub',
+  src: `etc/default/grub.${host}`,
   pkgs: ['grub']
 }, {
   src: `${rxrc}/systemd-units/system/efistub-update@.path`,
@@ -92,7 +92,7 @@ const files = [{
   src: 'etc/ssh/sshd_config',
   pkgs: ['openssh']
 }, {
-  src: 'etc/systemd/network/wired.network',
+  src: `etc/systemd/network/wired.${host}.network`,
   hosts: ['Mimir', 'Sleipnir']
 }, {
   src: 'etc/systemd/journald.conf.d/size.conf',
@@ -107,13 +107,19 @@ const files = [{
   src: 'etc/modprobe.d/alsa-base.conf',
   pkgs: ['linux-samus4']
 }, {
-  src: 'etc/X11/xorg.conf.d/10-monitor.conf',
+  src: `etc/X11/xorg.conf.d/10-monitor.${host}.conf`,
   hosts: ['Mimir']
 }, {
   src: 'etc/X11/xorg.conf.d/15-dpms.conf'
 }, {
   src: 'etc/X11/xorg.conf.d/20-intel.conf',
-  pkgs: ['xf86-video-intel']
+  pkgs: ['xf86-video-intel'],
+  hosts: ['Frigg']
+}, {
+  src: `etc/X11/xorg.conf.d/20-intel.${host}.conf`,
+  dst: 'etc/X11/xorg.conf.d/20-intel.conf',
+  pkgs: ['xf86-video-intel'],
+  hosts: ['Gungnir']
 }, {
   src: 'etc/X11/xorg.conf.d/10-keyboard.conf',
   pkgs: ['xkeyboard-config-chromebook']
@@ -148,15 +154,15 @@ const files = [{
   src: 'etc/lightdm/lightdm-gtk-greeter.conf',
   pkgs: ['lightdm-gtk-greeter']
 }, {
-  src: `${rxrc}/archrc-private/etc/samba/smb.conf`,
+  src: `${rxrc}/archrc-private/etc/samba/smb.${host}.conf`,
   dst: 'etc/samba/smb.conf',
   pkgs: ['samba']
 }, {
-  src: `${rxrc}/archrc-private/etc/samba/users.map`,
+  src: `${rxrc}/archrc-private/etc/samba/users.${host}.map`,
   dst: 'etc/samba/users.map',
   pkgs: ['samba']
 }, {
-  src: `${rxrc}/archrc-private/etc/nginx/nginx.conf`,
+  src: `${rxrc}/archrc-private/etc/nginx/nginx.${host}.conf`,
   dst: 'etc/nginx/nginx.conf',
   pkgs: ['nginx']
 }, {
