@@ -7,6 +7,8 @@ const io = 'linux'
 const pkg = 'pacman'
 
 const defaults = {
+  dmode: '0755',
+  fmode: '0644',
   user: 'root',
   group: 'root'
 }
