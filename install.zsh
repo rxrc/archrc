@@ -7,8 +7,8 @@ main () {
   echo "\n$ npm install"
   npm install
 
-  echo "\n$ npm run archrc"
-  npm run archrc
+  echo "\n$ npm start archrc"
+  npm start
 
   echo '\n$ ./units.zsh\n'
   ./units.zsh

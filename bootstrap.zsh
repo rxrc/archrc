@@ -28,7 +28,7 @@ install_config () {
   puts 'Installed' 'Node modules'
 
   puts 'Installing' 'Config'
-  npm run archrc
+  npm start
   puts 'Installed' 'Config'
 }
 
