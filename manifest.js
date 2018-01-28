@@ -101,6 +101,7 @@ const files = [{
   pkgs: ['openssh']
 }, {
   src: `etc/systemd/network/wired.${host}.network`,
+  dst: 'etc/systemd/network/wired.network',
   hosts: ['mimir', 'sleipnir']
 }, {
   src: 'etc/systemd/journald.conf.d/size.conf',
