@@ -49,7 +49,7 @@ const files = [{
   hosts: ['Frigg']
 }, {
   src: `${rxrc}/archrc-private/loader/entries/arch.conf`,
-  dst: `boot/efi/loader/entries/arch.${host}.conf`,
+  dst: 'boot/efi/loader/entries/arch.conf',
   hosts: ['Frigg']
 }, {
   src: 'etc/default/grub',
