@@ -38,28 +38,28 @@ const files = [{
 }, {
   src: `${rxrc}/archrc-private/refind/refind.conf`,
   dst: 'boot/efi/EFI/refind/refind.conf',
-  hosts: ['Sleipnir']
+  hosts: ['sleipnir']
 }, {
   src: `${rxrc}/archrc-private/refind/refind_linux.${host}.conf`,
   dst: 'boot/refind_linux.conf',
-  hosts: ['Sleipnir']
+  hosts: ['sleipnir']
 }, {
   src: `${rxrc}/archrc-private/loader/loader.conf`,
   dst: 'boot/efi/loader/loader.conf',
-  hosts: ['Frigg']
+  hosts: ['frigg']
 }, {
   src: `${rxrc}/archrc-private/loader/entries/arch.conf`,
   dst: 'boot/efi/loader/entries/arch.conf',
-  hosts: ['Frigg']
+  hosts: ['frigg']
 }, {
   src: 'etc/default/grub',
   pkgs: ['grub'],
-  hosts: ['Frigg']
+  hosts: ['frigg']
 }, {
   src: `etc/default/grub.${host}`,
   dst: 'etc/default/grub',
   pkgs: ['grub'],
-  hosts: ['Gungnir']
+  hosts: ['gungnir']
 }, {
   src: `${rxrc}/systemd-units/system/efistub-update@.path`,
   dst: 'etc/systemd/system/efistub-update@.path',
@@ -101,13 +101,13 @@ const files = [{
   pkgs: ['openssh']
 }, {
   src: `etc/systemd/network/wired.${host}.network`,
-  hosts: ['Mimir', 'Sleipnir']
+  hosts: ['mimir', 'sleipnir']
 }, {
   src: 'etc/systemd/journald.conf.d/size.conf',
-  hosts: ['Gungnir']
+  hosts: ['gungnir']
 }, {
   src: 'etc/udev/rules.d/99-lowbat.rules',
-  hosts: ['Gungnir']
+  hosts: ['gungnir']
 }, {
   src: 'etc/modules-load.d/virtualbox.conf',
   pkgs: ['virtualbox']
@@ -117,29 +117,29 @@ const files = [{
 }, {
   src: `etc/X11/xorg.conf.d/10-monitor.${host}.conf`,
   dst: 'etc/X11/xorg.conf.d/10-monitor.conf',
-  hosts: ['Mimir']
+  hosts: ['mimir']
 }, {
   src: 'etc/X11/xorg.conf.d/15-dpms.conf'
 }, {
   src: 'etc/X11/xorg.conf.d/20-intel.conf',
   pkgs: ['xf86-video-intel'],
-  hosts: ['Frigg']
+  hosts: ['frigg']
 }, {
   src: `etc/X11/xorg.conf.d/20-intel.${host}.conf`,
   dst: 'etc/X11/xorg.conf.d/20-intel.conf',
   pkgs: ['xf86-video-intel'],
-  hosts: ['Gungnir']
+  hosts: ['gungnir']
 }, {
   src: 'etc/X11/xorg.conf.d/10-keyboard.conf',
   pkgs: ['xkeyboard-config-chromebook']
 }, {
   src: 'etc/X11/xorg.conf.d/50-synaptics.conf',
   pkgs: ['xf86-input-synaptics'],
-  hosts: ['Gungnir']
+  hosts: ['gungnir']
 }, {
   src: 'etc/X11/xorg.conf.d/50-mtrack.conf',
   pkgs: ['xf86-input-mtrack-git'],
-  hosts: ['Frigg']
+  hosts: ['frigg']
 }, {
   src: `${rxrc}/systemd-units/logind.conf.d/acpi.conf`,
   dst: 'etc/systemd/logind.conf.d/acpi.conf'
