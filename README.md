@@ -3,15 +3,14 @@
 [![Release](https://img.shields.io/github/release/rxrc/archrc.svg)](https://github.com/rxrc/archrc/releases)
 [![MIT License](https://img.shields.io/github/license/rxrc/archrc.svg)](./LICENSE.txt)
 
-My Arch Linux configuration managed with [Config Curator] and [archutil].
+My Arch Linux configuration managed with [Curator] and [archutil].
 
 [archutil]: https://github.com/razor-x/archutil
-[Config Curator]: https://github.com/razor-x/config_curator
+[Curator]: https://github.com/rxrc/curator
 
 ## Requirements
 
 * [Node.js] with [npm].
-* [Ruby] with [Bundler].
 * [Zsh].
 
 Note: these requirements are handled automatically
@@ -20,7 +19,6 @@ when bootstrapping a new system (see the instructions below).
 [Bundler]: https://bundler.io/
 [Node.js]: https://nodejs.org/
 [npm]: https://www.npmjs.com/
-[Ruby]: https://www.ruby-lang.org/
 [Zsh]: https://www.zsh.org/
 
 ## Installation and Usage
@@ -192,26 +190,16 @@ Additional manual configuration is documented in
 After the initial bootstrapping,
 configuration should be managed by a normal user.
 
-You can continue using the system Ruby,
-or install Ruby with [rbenv] or [RVM].
-
-Install [Bundler] with
-
-```bash
-$ gem install bundler
-```
-
 Install dependencies with
 
 ```bash
 $ npm install
-$ bundle update
 ```
 
 Install the configuration with
 
 ```bash
-$ curate
+$ npm start
 ```
 
 Setup systemd units with
