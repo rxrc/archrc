@@ -24,7 +24,7 @@ const directories = [{
 
 const files = [{
   src: `etc/mkinitcpio.${host}.conf`,
-  dst: `etc/mkinitcpio.conf`,
+  dst: 'etc/mkinitcpio.conf',
   pkgs: ['mkinitcpio']
 }, {
   src: 'etc/locale.gen'
@@ -34,7 +34,7 @@ const files = [{
   src: 'etc/sysctl.d/99-sysctl.conf'
 }, {
   src: `${rxrc}/archrc-private/etc/fstab.${host}`,
-  dst: `etc/fstab`
+  dst: 'etc/fstab'
 }, {
   src: `${rxrc}/archrc-private/refind/refind.conf`,
   dst: 'boot/efi/EFI/refind/refind.conf',
@@ -52,12 +52,12 @@ const files = [{
   dst: `boot/efi/loader/entries/arch.${host}.conf`,
   hosts: ['Frigg']
 }, {
-  src: `etc/default/grub`,
+  src: 'etc/default/grub',
   pkgs: ['grub'],
   hosts: ['Frigg']
 }, {
   src: `etc/default/grub.${host}`,
-  dst: `etc/default/grub`,
+  dst: 'etc/default/grub',
   pkgs: ['grub'],
   hosts: ['Gungnir']
 }, {
@@ -116,6 +116,7 @@ const files = [{
   pkgs: ['linux-samus4']
 }, {
   src: `etc/X11/xorg.conf.d/10-monitor.${host}.conf`,
+  dst: 'etc/X11/xorg.conf.d/10-monitor.conf',
   hosts: ['Mimir']
 }, {
   src: 'etc/X11/xorg.conf.d/15-dpms.conf'
@@ -174,7 +175,7 @@ const files = [{
   dst: 'etc/nginx/nginx.conf',
   pkgs: ['nginx']
 }, {
-  src: `node_modules/@razor-x/archutil/bin/archutil`,
+  src: 'node_modules/@razor-x/archutil/bin/archutil',
   dst: 'usr/local/bin/archutil',
   fmode: '0755'
 }, {
