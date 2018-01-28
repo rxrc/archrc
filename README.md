@@ -9,8 +9,8 @@ My Arch Linux configuration managed with [Curator] and [archutil].
 
 ## Requirements
 
-* [Node.js] with [npm].
 * [Zsh].
+* [Node.js] with [npm].
 
 Note: these requirements are handled automatically
 when bootstrapping a new system (see the instructions below).
