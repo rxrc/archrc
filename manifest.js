@@ -52,8 +52,14 @@ const files = [{
   dst: `boot/efi/loader/entries/arch.${host}.conf`,
   hosts: ['Frigg']
 }, {
+  src: `etc/default/grub`,
+  pkgs: ['grub'],
+  hosts: ['Frigg']
+}, {
   src: `etc/default/grub.${host}`,
-  pkgs: ['grub']
+  dst: `etc/default/grub`,
+  pkgs: ['grub'],
+  hosts: ['Gungnir']
 }, {
   src: `${rxrc}/systemd-units/system/efistub-update@.path`,
   dst: 'etc/systemd/system/efistub-update@.path',
