@@ -19,7 +19,7 @@
   "dependencies": {
     "@razor-x/archutil": "razor-x/archutil",
     "@rxrc/archrc-private": "bitbucket:razorx/archrc-private",
-    "@rxrc/systemd-units": "rxrc/systemd-units"
+    "@rxrc/systemd-units": "^2.1.2"
   },
   "devDependencies": {
     "@rxrc/curator": "^0.3.0"
