@@ -3,8 +3,8 @@ const os = require('os')
 const host = os.hostname().toLowerCase()
 const rxrc = 'node_modules/@rxrc'
 
-const io = 'linux'
-const pkg = 'pacman'
+const ioType = 'linux'
+const pkgType = 'pacman'
 
 const defaults = {
   dmode: '0755',
@@ -197,8 +197,7 @@ module.exports = {
   directories,
   files,
   symlinks,
-  io,
-  pkg,
-  root,
+  ioType,
+  pkgType,
   defaults
 }
