@@ -115,7 +115,7 @@ const files = [{
   pkgs: ['virtualbox']
 }, {
   src: 'etc/modprobe.d/alsa-base.conf',
-  pkgs: ['linux-samus4']
+  hosts: ['gungnir']
 }, {
   src: `etc/X11/xorg.conf.d/10-monitor.${host}.conf`,
   dst: 'etc/X11/xorg.conf.d/10-monitor.conf',
@@ -150,7 +150,7 @@ const files = [{
   dst: 'etc/systemd/coredump.conf.d/disable.conf'
 }, {
   src: 'etc/systemd/system/chromeos-kbd_backlight.service',
-  pkgs: ['linux-samus4']
+  hosts: ['gungnir']
 }, {
   src: `${rxrc}/systemd-units/system/numlock.service`,
   dst: 'etc/systemd/system/numlock.service'
@@ -194,11 +194,11 @@ const files = [{
 }, {
   src: 'usr/local/bin/chromeos-kbd_backlight',
   fmode: '0755',
-  pkgs: ['linux-samus4']
+  hosts: ['gungnir']
 }, {
   src: 'usr/local/bin/chromeos-sound-output-toggle',
   fmode: '0755',
-  pkgs: ['linux-samus4']
+  hosts: ['gungnir']
 }]
 
 const symlinks = []
