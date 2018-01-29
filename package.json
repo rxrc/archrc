@@ -3,7 +3,6 @@
   "version": "2.0.0",
   "private": true,
   "description": "Arch Linux configuration.",
-  "main": "manifest.js",
   "homepage": "https://github.com/rxrc/archrc",
   "bugs": "https://github.com/rxrc/archrc/issues",
   "repository": "rxrc/archrc",
