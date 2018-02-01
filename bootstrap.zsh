@@ -28,7 +28,7 @@ install_config () {
   puts 'Installed' 'Node modules'
 
   puts 'Installing' 'Config'
-  npm start
+  sudo npm start
   puts 'Installed' 'Config'
 }
 

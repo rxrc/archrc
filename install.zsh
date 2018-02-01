@@ -8,7 +8,7 @@ main () {
   npm install
 
   echo "\n$ npm start"
-  npm start
+  sudo npm start
 
   echo '\n$ ./units.zsh\n'
   ./units.zsh
