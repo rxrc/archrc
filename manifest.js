@@ -48,7 +48,7 @@ const files = [{
   dst: 'boot/efi/loader/loader.conf',
   hosts: ['frigg']
 }, {
-  src: `${rxrc}/archrc-private/loader/entries/arch.conf`,
+  src: `${rxrc}/archrc-private/loader/entries/arch.${host}.conf`,
   dst: 'boot/efi/loader/entries/arch.conf',
   hosts: ['frigg']
 }, {
