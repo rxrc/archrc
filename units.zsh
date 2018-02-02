@@ -49,20 +49,20 @@ if [[ $(hostname) == 'Sleipnir' || $(hostname) == 'Mimir' ]]; then
 
   # TODO This will fail under initial arch-chroot.
   #      Comment it out and run it after first boot.
-  sudo -S ln -s -f /run/systemd/resolve/resolv.conf /etc/resolv.conf
+  # sudo -S ln -s -f /run/systemd/resolve/resolv.conf /etc/resolv.conf
 
-  sudo -S sed -i \
-    's/hosts: files dns myhostname/hosts: files resolve myhostname/' \
-    /etc/nsswitch.conf
+  # sudo -S sed -i \
+  #   's/hosts: files dns myhostname/hosts: files resolve myhostname/' \
+  #   /etc/nsswitch.conf
 else
-  sudo -S sed -i \
-    's/hosts: files resolve myhostname/hosts: files dns myhostname/' \
-    /etc/nsswitch.conf
+  # sudo -S sed -i \
+  #   's/hosts: files resolve myhostname/hosts: files dns myhostname/' \
+  #   /etc/nsswitch.conf
 
-  if [[ -h /etc/resolv.conf ]]; then
-    sudo -S rm /etc/resolv.conf
-    sudo -S touch /etc/resolv.conf
-  fi
+  # if [[ -h /etc/resolv.conf ]]; then
+  #   sudo -S rm /etc/resolv.conf
+  #   sudo -S touch /etc/resolv.conf
+  # fi
 
   enabled+=("netctl-ifplugd@$(ls /sys/class/net | grep ^e | head -1)")
   enabled+=("netctl-auto@$(ls /sys/class/net | grep ^w | head -1)")
