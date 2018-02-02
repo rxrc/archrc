@@ -13,10 +13,7 @@ enabled+=('numlock')
 enabled+=('org.cups.cupsd')
 enabled+=('sshd')
 enabled+=('systemd-resolved')
-
-if [[ $(hostname) != 'Sleipnir' ]]; then
-  enabled+=('nftables')
-fi
+enabled+=('nftables')
 
 if [[ -d /boot/efi/EFI/arch || -d /boot/efi/loader ]]; then
   enabled+=('efistub-update@linux.path')
@@ -25,6 +22,26 @@ fi
 
 if [[ -d /boot/efi/EFI/refind ]]; then
   enabled+=('refind-update.path')
+fi
+
+if [[ -e /etc/ddclient/ddclient.conf ]]; then
+  enabled+=('ddclient')
+fi
+
+if [[ -e /etc/samba/smb.conf ]]; then
+  enabled+=('smbd')
+fi
+
+if [[ -e /etc/nginx/nginx.conf ]]; then
+  enabled+=('nginx')
+fi
+
+if [[ "$USER" != 'root' ]]; then
+  enabled+=("xscreensaver-lock@$USER")
+fi
+
+if (pacman -Q linux-samus4 &>/dev/null); then
+  enabled+=('chromeos-kbd_backlight')
 fi
 
 if [[ $(hostname) == 'Sleipnir' || $(hostname) == 'Mimir' ]]; then
@@ -52,26 +69,6 @@ else
 
   enabled+=("netctl-auto-resume@$(ls /sys/class/net | grep ^w | head -1)")
   enabled+=("netctl-auto-resume@$(ls /sys/class/net | grep ^e | head -1)")
-fi
-
-if [[ -e /etc/ddclient/ddclient.conf ]]; then
-  enabled+=('ddclient')
-fi
-
-if [[ -e /etc/samba/smb.conf ]]; then
-  enabled+=('smbd')
-fi
-
-if [[ -e /etc/nginx/nginx.conf ]]; then
-  enabled+=('nginx')
-fi
-
-if [[ "$USER" != 'root' ]]; then
-  enabled+=("xscreensaver-lock@$USER")
-fi
-
-if (pacman -Q linux-samus4 &>/dev/null); then
-  enabled+=('chromeos-kbd_backlight')
 fi
 
 for unit in $enabled; do
