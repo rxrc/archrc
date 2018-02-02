@@ -85,7 +85,8 @@ const files = [{
   pkgs: ['refind-efi']
 }, {
   src: `${rxrc}/systemd-units/system/netctl-auto-resume@.service`,
-  dst: 'etc/systemd/system/netctl-auto-resume@.service'
+  dst: 'etc/systemd/system/netctl-auto-resume@.service',
+  hosts: ['gungnir', 'frigg']
 }, {
   src: 'etc/pacman.conf',
   pkgs: ['pacman']
