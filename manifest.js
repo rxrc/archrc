@@ -117,10 +117,6 @@ const files = [{
   src: 'etc/modprobe.d/alsa-base.conf',
   hosts: ['gungnir']
 }, {
-  src: `etc/X11/xorg.conf.d/10-monitor.${host}.conf`,
-  dst: 'etc/X11/xorg.conf.d/10-monitor.conf',
-  hosts: ['mimir']
-}, {
   src: 'etc/X11/xorg.conf.d/15-dpms.conf'
 }, {
   src: 'etc/X11/xorg.conf.d/20-intel.conf',
