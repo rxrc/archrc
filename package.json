@@ -21,6 +21,6 @@
     "@rxrc/systemd-units": "^2.1.2"
   },
   "devDependencies": {
-    "@rxrc/curator": "^1.0.0-rc.0"
+    "@rxrc/curator": "^1.0.0"
   }
 }
