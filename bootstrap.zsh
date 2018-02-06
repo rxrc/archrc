@@ -23,7 +23,7 @@ set_hostname () {
 
 install_config () {
   puts 'Installing' 'Node modules'
-  sudo -S pacman -S --noconfirm npm
+  sudo -S pacman -S --noconfirm rsync npm
   npm install
   puts 'Installed' 'Node modules'
 
