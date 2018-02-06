@@ -119,11 +119,13 @@ packages:
     - hunspell
     - hunspell-en
     - jq
+    - mlocate
     - net-tools
     - openvpn
     - openvpn-update-systemd-resolved
     - p7zip
     - reflector
+    - ripgrep
     - rsync
     - the_silver_searcher
     - unrar
@@ -135,18 +137,15 @@ packages:
 
   terminal:
     - asciinema
+    - autojump
     - bc
+    - diff-so-fancy
     - fzf
     - glances
     - httpie
     - ponysay
     - tmux
     - tmuxinator
-
-    # ranger
-    - ranger
-    - w3m
-    - perl-image-exiftool
 
     # neovim
     - neovim
@@ -157,6 +156,7 @@ packages:
   fonts:
     - fontforge
     - font-mathematica
+    - otf-fira-code
     - otf-font-awesome
     - powerline-fonts-git
     - terminus-font
@@ -169,6 +169,7 @@ packages:
     - noto-fonts
     - noto-fonts-emoji
     - ttf-mathtype
+    - ttf-monoid
     - ttf-opensans
     - ttf-roboto
     - ttf-ubuntu-font-family
@@ -205,6 +206,7 @@ packages:
     - aws-cli
     - docker
     - docker-machine
+    - docker-compose
     - cabal-install
     - ghc
     - git
@@ -278,19 +280,19 @@ packages:
     - calibre
     - chromium
     - firefox
-    - firefox-developer
+    - firefox-developer-edition
     - flashplugin
     - google-chrome
     - google-talkplugin
     - gimp
-    - gvim
     - hexchat
     - inkscape
     - insync
     - keepassx2
     - mcomix
     - mumble
-    - neovim-qt-git
+    - neovim-qt
+    - neovim-gtk
     - rxvt-unicode
     - sakura
     - screencloud
