@@ -128,6 +128,11 @@ const files = [{
   pkgs: ['xf86-video-intel'],
   hosts: ['gungnir']
 }, {
+  src: `etc/X11/xorg.${host}.conf`,
+  dst: 'etc/X11/xorg.conf',
+  pkgs: ['nvidia'],
+  hosts: ['mimir']
+}, {
   src: 'etc/X11/xorg.conf.d/10-keyboard.conf',
   pkgs: ['xkeyboard-config-chromebook']
 }, {
