@@ -36,10 +36,6 @@ sets:
     - intel
     - wifi
 
-  x60:
-    - bios
-    - intel
-
   macbook:
     - macbook
     - efi
