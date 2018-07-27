@@ -86,7 +86,7 @@ const files = [{
 }, {
   src: `${rxrc}/systemd-units/system/netctl-auto-resume@.service`,
   dst: 'etc/systemd/system/netctl-auto-resume@.service',
-  hosts: ['gungnir', 'frigg']
+  hosts: ['gungnir', 'frigg', 'mjolnir']
 }, {
   src: 'etc/pacman.conf',
   pkgs: ['pacman']
@@ -106,10 +106,10 @@ const files = [{
   hosts: ['mimir', 'sleipnir']
 }, {
   src: 'etc/systemd/journald.conf.d/size.conf',
-  hosts: ['gungnir']
+  hosts: ['gungnir', 'mjolnir']
 }, {
   src: 'etc/udev/rules.d/99-lowbat.rules',
-  hosts: ['gungnir']
+  hosts: ['gungnir', 'mjolnir']
 }, {
   src: 'etc/modules-load.d/virtualbox.conf',
   pkgs: ['virtualbox']
@@ -121,7 +121,7 @@ const files = [{
 }, {
   src: 'etc/X11/xorg.conf.d/20-intel.conf',
   pkgs: ['xf86-video-intel'],
-  hosts: ['frigg']
+  hosts: ['frigg', 'mjolnir']
 }, {
   src: `etc/X11/xorg.conf.d/20-intel.${host}.conf`,
   dst: 'etc/X11/xorg.conf.d/20-intel.conf',
