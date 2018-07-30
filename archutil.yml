@@ -121,6 +121,7 @@ packages:
     - openresolv
     - openvpn-update-systemd-resolved
     - p7zip
+    - pacman-contrib
     - reflector
     - ripgrep
     - rsync
