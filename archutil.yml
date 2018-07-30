@@ -118,6 +118,7 @@ packages:
     - mlocate
     - net-tools
     - openvpn
+    - openresolv
     - openvpn-update-systemd-resolved
     - p7zip
     - reflector
