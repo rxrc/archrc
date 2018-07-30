@@ -171,7 +171,6 @@ packages:
     - ttf-ubuntu-font-family
 
   devel:
-    - abs
     - base-devel
     - blas
     - ctags
