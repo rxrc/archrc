@@ -227,7 +227,7 @@ packages:
 
   xorg:
     - xorg-server
-    - xorg-server-apps
+    - xorg-apps
     - xorg-xev
     - xorg-xinit
     - xautomation
