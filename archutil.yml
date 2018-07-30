@@ -184,7 +184,6 @@ packages:
     - npm
     - openssl
     - perl-libwww
-    - phantomjs
     - python-jedi
     - python2-jedi
     - python-pandocfilters
