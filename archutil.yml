@@ -212,6 +212,7 @@ packages:
     - cabal-install
     - ghc
     - git
+    - gr
     - go
     - gradle
     - heroku-toolbelt
