@@ -212,7 +212,6 @@ packages:
     - cabal-install
     - ghc
     - git
-    - gr
     - go
     - gradle
     - heroku-toolbelt
@@ -337,3 +336,6 @@ packages:
     # Use chromebook_redirect_key branch:
     # https://github.com/dhead666/archlinux-pkgbuilds/tree/chromebook_redirect_key/xkeyboard-config-chromebook
     - xkeyboard-config-chromebook
+
+    # Not found by archutil
+    - gr
