@@ -140,6 +140,10 @@ const files = [{
   pkgs: ['xf86-input-synaptics'],
   hosts: ['gungnir']
 }, {
+  src: 'etc/X11/xorg.conf.d/30-touchpad.conf',
+  pkgs: ['xf86-input-libinput'],
+  hosts: ['mjolnir']
+}, {
   src: 'etc/X11/xorg.conf.d/50-mtrack.conf',
   pkgs: ['xf86-input-mtrack-git'],
   hosts: ['frigg']
