@@ -23,8 +23,13 @@ const directories = [{
 }]
 
 const files = [{
-  src: `etc/mkinitcpio.conf`,
+  src: 'etc/mkinitcpio.conf',
   pkgs: ['mkinitcpio']
+}, {
+  src: 'etc/mkinitcpio.nvidia.conf',
+  dst: 'etc/mkinitcpio.conf',
+  order: 200,
+  pkgs: ['mkinitcpio', 'nvidia']
 }, {
   src: 'etc/locale.gen'
 }, {
