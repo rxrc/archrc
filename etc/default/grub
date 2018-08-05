@@ -1,5 +1,3 @@
-# This file managed by Config Curator.
-#
 # Arch Linux provided defaults.
 GRUB_DEFAULT=0
 GRUB_TIMEOUT=5
