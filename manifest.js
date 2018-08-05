@@ -170,6 +170,17 @@ const files = [{
   src: 'etc/lightdm/lightdm.conf',
   pkgs: ['lightdm']
 }, {
+  src: 'etc/lightdm/display_setup.sh',
+  fmode: '0755',
+  pkgs: ['lightdm']
+}, {
+  src: `etc/lightdm/display_setup.${host}.sh`,
+  dst: 'etc/lightdm/display_setup.sh',
+  fmode: '0755',
+  order: 200,
+  pkgs: ['lightdm'],
+  hosts: ['mjolnir']
+}, {
   src: 'etc/lightdm/lightdm-gtk-greeter.conf',
   pkgs: ['lightdm-gtk-greeter']
 }, {
