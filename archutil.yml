@@ -46,6 +46,12 @@ sets:
     - efi
     - intel
 
+  mjolnir:
+    - efi
+    - intel
+    - wifi
+    - nvidia
+
   sleipnir:
     - efi
     - nvidia
