@@ -216,7 +216,6 @@ packages:
     - gradle
     - heroku-toolbelt
     - minikube
-    - helm
     - kubectl-bin
     - kubernetes-helm
     - kubectx
