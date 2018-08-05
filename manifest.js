@@ -129,7 +129,7 @@ const files = [{
 }, {
   src: 'etc/X11/xorg.conf.d/20-intel.conf',
   pkgs: ['xf86-video-intel'],
-  hosts: ['frigg', 'mjolnir']
+  hosts: ['frigg']
 }, {
   src: `etc/X11/xorg.conf.d/20-intel.${host}.conf`,
   dst: 'etc/X11/xorg.conf.d/20-intel.conf',
@@ -139,7 +139,7 @@ const files = [{
   src: `etc/X11/xorg.${host}.conf`,
   dst: 'etc/X11/xorg.conf',
   pkgs: ['nvidia'],
-  hosts: ['mimir']
+  hosts: ['mimir', 'mjolnir']
 }, {
   src: `etc/pacman.d/hooks/nvidia.hook`,
   pkgs: ['nvidia']
