@@ -31,6 +31,9 @@ const files = [{
   order: 200,
   pkgs: ['mkinitcpio', 'nvidia']
 }, {
+  src: 'etc/vconsole.conf',
+  pkgs: ['terminus-font']
+}, {
   src: 'etc/locale.gen'
 }, {
   src: 'etc/locale.conf'
