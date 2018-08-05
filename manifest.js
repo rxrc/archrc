@@ -133,6 +133,9 @@ const files = [{
   pkgs: ['nvidia'],
   hosts: ['mimir']
 }, {
+  src: `etc/pacman.d/hooks/nvidia.hook`,
+  pkgs: ['nvidia']
+}, {
   src: 'etc/X11/xorg.conf.d/10-keyboard.conf',
   pkgs: ['xkeyboard-config-chromebook']
 }, {
