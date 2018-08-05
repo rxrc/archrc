@@ -215,6 +215,12 @@ packages:
     - go
     - gradle
     - heroku-toolbelt
+    - minikube
+    - helm
+    - kubectl-bin
+    - kubernetes-helm
+    - kubectx
+    - minikube
     - leiningen
     - jdk8-openjdk
     - terraform
