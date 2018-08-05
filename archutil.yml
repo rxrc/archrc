@@ -244,6 +244,7 @@ packages:
     - xorg-apps
     - xorg-xev
     - xorg-xinit
+    - xorg-xrandr
     - xautomation
     - xbindkeys
     - xclip
