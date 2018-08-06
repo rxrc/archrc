@@ -45,6 +45,7 @@ sets:
   mimir:
     - efi
     - intel
+    - nvidia
 
   mjolnir:
     - efi
