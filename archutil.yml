@@ -220,7 +220,6 @@ packages:
     - kubectl-bin
     - kubernetes-helm
     - kubectx
-    - minikube
     - leiningen
     - jdk8-openjdk
     - terraform
