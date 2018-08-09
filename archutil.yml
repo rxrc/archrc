@@ -129,6 +129,7 @@ packages:
     - openresolv
     - openvpn-update-systemd-resolved
     - openconnect
+    - vpn-slice-git
     - p7zip
     - pacman-contrib
     - reflector
