@@ -300,6 +300,7 @@ packages:
     - inkscape
     - insync
     - keepassxc
+    - kitty
     - mcomix
     - mumble
     - neovim-qt
@@ -307,6 +308,7 @@ packages:
     - rxvt-unicode
     - sakura
     - screencloud
+    - flameshot
     - terminator
     - termite
     - thunderbird
