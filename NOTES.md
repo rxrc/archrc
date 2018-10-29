@@ -2,7 +2,7 @@
 
 ## Linux Samus
 
-Refer to the instructions for [linux-samus sound setup.
+Refer to the instructions for [linux-samus] sound setup.
 Most of that configuration is already handled by this configuration.
 
 Some manual steps must be taken to enable full sound support.
