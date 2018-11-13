@@ -121,7 +121,6 @@ packages:
     - dos2unix
     - figlet
     - hunspell
-    - hunspell-en
     - jq
     - mlocate
     - net-tools
@@ -227,7 +226,6 @@ packages:
     - jdk8-openjdk
     - terraform
     - vagrant
-    - vim-systemd
     - virtualbox
     - virtualbox-host-dkms
 
