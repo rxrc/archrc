@@ -20,6 +20,8 @@ const unlinks = []
 const directories = [{
   src: `${rxrc}/systemd-units/system/user@.service.d`,
   dst: 'etc/systemd/system/user@.service.d'
+}, {
+  src: 'etc/systemd/resolved.conf.d'
 }]
 
 const files = [{

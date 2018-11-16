@@ -81,4 +81,6 @@ for unit in $disabled; do
   sudo -S systemctl disable $unit
 done
 
+sudo chattr +i /etc/resolv.conf
+
 exit
