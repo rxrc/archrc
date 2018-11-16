@@ -14,6 +14,7 @@ enabled+=('org.cups.cupsd')
 enabled+=('sshd')
 enabled+=('systemd-resolved')
 enabled+=('nftables')
+enabled+=('bluetooth')
 enabled+=('paccache.timer')
 
 if [[ -d /boot/efi/EFI/arch || -d /boot/efi/loader ]]; then
