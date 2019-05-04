@@ -55,8 +55,8 @@ sets:
 
   sleipnir:
     - efi
+    - intel
     - nvidia
-    - servers
 
 # List the packages with their categories below.
 packages:
