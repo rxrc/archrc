@@ -124,6 +124,8 @@ const files = [{
   src: 'etc/udev/rules.d/99-backlight.rules',
   hosts: ['mjolnir']
 }, {
+  src: 'etc/modules-load.d/loopback.conf'
+}, {
   src: 'etc/modules-load.d/virtualbox.conf',
   pkgs: ['virtualbox']
 }, {
