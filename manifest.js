@@ -139,7 +139,7 @@ const files = [{
 }, {
   src: 'etc/X11/xorg.conf.d/20-intel.conf',
   pkgs: ['xf86-video-intel'],
-  hosts: ['frigg']
+  hosts: ['frigg', 'mjolnir']
 }, {
   src: `etc/X11/xorg.conf.d/20-intel.${host}.conf`,
   dst: 'etc/X11/xorg.conf.d/20-intel.conf',
