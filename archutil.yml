@@ -52,6 +52,7 @@ sets:
     - intel
     - wifi
     - nvidia
+    - bumblebee
 
   sleipnir:
     - efi
@@ -85,6 +86,14 @@ packages:
   nvidia:
     - nvidia
     - nvidia-settings
+
+  bumblebee:
+    - bumblebee
+    - bbswitch
+    - mesa
+    - acpi_call
+    - virtualgl
+    - nvidia-utils
 
   efi:
     - efibootmgr
