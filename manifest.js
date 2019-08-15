@@ -15,7 +15,10 @@ const defaults = {
   group: 'root'
 }
 
-const unlinks = []
+const unlinks = [{
+  src: 'etc/X11/xorg.conf',
+  hosts: ['mjolnir']
+}]
 
 const directories = [{
   src: `${rxrc}/systemd-units/system/user@.service.d`,
@@ -146,7 +149,7 @@ const files = [{
   src: `etc/X11/xorg.${host}.conf`,
   dst: 'etc/X11/xorg.conf',
   pkgs: ['nvidia'],
-  hosts: ['mimir', 'mjolnir']
+  hosts: ['mimir']
 }, {
   src: 'etc/pacman.d/hooks/nvidia.hook',
   pkgs: ['nvidia']
