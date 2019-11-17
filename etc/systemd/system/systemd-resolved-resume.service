@@ -1,0 +1,10 @@
+[Unit]
+Description=Restart systemd-resolved after resume
+After=suspend.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/systemctl --no-block restart systemd-resolved.service
+
+[Install]
+WantedBy=suspend.target

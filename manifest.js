@@ -121,6 +121,8 @@ const files = [{
   src: 'etc/systemd/journald.conf.d/size.conf',
   hosts: ['gungnir', 'mjolnir']
 }, {
+  src: 'etc/systemd/system/systemd-resolved-resume.service',
+}, {
   src: 'etc/udev/rules.d/99-lowbat.rules',
   hosts: ['gungnir', 'mjolnir']
 }, {
