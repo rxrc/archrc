@@ -91,11 +91,11 @@ const files = [{
 }, {
   src: `${rxrc}/systemd-units/system/refind-update.path`,
   dst: 'etc/systemd/system/refind-update.path',
-  pkgs: ['refind-efi']
+  pkgs: ['refind']
 }, {
   src: `${rxrc}/systemd-units/system/refind-update.service`,
   dst: 'etc/systemd/system/refind-update.service',
-  pkgs: ['refind-efi']
+  pkgs: ['refind']
 }, {
   src: `${rxrc}/systemd-units/system/netctl-auto-resume@.service`,
   dst: 'etc/systemd/system/netctl-auto-resume@.service',

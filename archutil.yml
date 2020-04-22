@@ -97,7 +97,7 @@ packages:
 
   efi:
     - efibootmgr
-    - refind-efi
+    - refind
 
   bios:
     - grub
