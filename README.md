@@ -15,7 +15,6 @@ My Arch Linux configuration managed with [Curator] and [archutil].
 Note: these requirements are handled automatically
 when bootstrapping a new system (see the instructions below).
 
-[Bundler]: https://bundler.io/
 [Node.js]: https://nodejs.org/
 [npm]: https://www.npmjs.com/
 [Zsh]: https://www.zsh.org/
