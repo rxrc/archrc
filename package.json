@@ -16,8 +16,8 @@
     "postversion": "git push && git push --tags"
   },
   "dependencies": {
-    "@razor-x/archutil": "github:razor-x/archutil",
-    "@rxrc/archrc-private": "github:razor-x/archrc-private#v1.8.0",
+    "@rxrc/archutil": "github:razor-x/archutil#v1.2.2",
+    "@rxrc/archrc-private": "github:razor-x/archrc-private#v1.8.1",
     "@rxrc/systemd-units": "^2.1.3"
   },
   "devDependencies": {

@@ -216,7 +216,7 @@ const files = [{
   dst: 'etc/nginx/nginx.conf',
   pkgs: ['nginx']
 }, {
-  src: 'node_modules/@razor-x/archutil/bin/archutil',
+  src: `${rxrc}/archutil/bin/archutil`,
   dst: 'usr/local/bin/archutil',
   fmode: '0755'
 }, {
