@@ -27,6 +27,14 @@ const directories = [{
   dst: 'etc/systemd/system/user@.service.d'
 }, {
   src: 'etc/systemd/resolved.conf.d'
+}, {
+  src: 'usr/local/share/dark-mode.d',
+  fmode: '0755',
+  pkgs: ['darkman']
+}, {
+  src: 'usr/local/share/light-mode.d',
+  fmode: '0755',
+  pkgs: ['darkman']
 }]
 
 const files = [{
