@@ -10,7 +10,7 @@ command -v systemctl >/dev/null 2>&1 || exit 0
 
 enabled+=('lightdm')
 enabled+=('numlock')
-enabled+=('org.cups.cupsd')
+enabled+=('cups')
 enabled+=('sshd')
 enabled+=('systemd-resolved')
 enabled+=('systemd-resolved-resume')
