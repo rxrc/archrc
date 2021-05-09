@@ -156,6 +156,7 @@ packages:
     - autojump
     - bc
     - diff-so-fancy
+    - git-delta-bin
     - fzf
     - glances
     - httpie
