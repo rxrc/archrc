@@ -12,7 +12,7 @@
     "email": "razorx@evansosenko.com"
   },
   "scripts": {
-    "start": "curator",
+    "start": "sudo curator",
     "postversion": "git push && git push --tags"
   },
   "dependencies": {
