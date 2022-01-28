@@ -7,7 +7,7 @@
 # pacman: aura
 
 # Use a package manager for aur packages.
-aur: "aura"
+aur: "aura -A"
 
 # Collect categories together into sets.
 sets:
