@@ -7,7 +7,7 @@
 # pacman: aura
 
 # Use a package manager for aur packages.
-aur: "aura -A"
+aur: "aura"
 
 # Collect categories together into sets.
 sets:
@@ -62,7 +62,6 @@ sets:
 # List the packages with their categories below.
 packages:
   archutil:
-    - aura-bin
     - python
     - python-yaml
 
