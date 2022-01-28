@@ -51,16 +51,6 @@ Update the mirrorlist with reflector, e.g.,
 # pacman -Su
 ```
 
-If this repository or any of the dependencies are private,
-generate an ssh key pair with
-
-```
-# pacman -S openssh
-# ssh-keygen -C "$(whoami)@$(hostname)-$(date -I)"
-```
-
-and grant read access through the public key.
-
 Clone this with
 
 ```
@@ -73,26 +63,10 @@ or
 # git clone https://github.com/rxrc/archrc.git /root/archrc
 ```
 
-If you manage `/etc/fstab` with archrc,
-and your partitions have changed with a fresh install,
-you need to backup the working fstab before bootstrapping
-and restore it afterwards.
-
-Bootstrap with
+Manually install the `sudoers` file
 
 ```
-# cd ~/archrc
-# ./bootstrap.zsh Hostname
-```
-
-This will set the hostname to Hostname,
-install archutil and Config Curator,
-and install the configuration.
-
-Install Aura with
-
-```
-# ./aura.zsh
+# cp archrc/etc/sudoers /etc/sudoers
 ```
 
 At this point you need to create and switch to a non-root user.
@@ -121,7 +95,7 @@ $ curl -L https://git.io/vJARg | sh
 $ cd ~/archrc
 ```
 
-Again, if this repository or any of the dependencies are private,
+If this repository or any of the dependencies are private,
 generate an ssh key pair with
 
 ```bash
@@ -129,6 +103,28 @@ $ ssh-keygen -C "$(whoami)@$(hostname)-$(date -I)"
 ```
 
 and grant read access through the public key.
+
+If you manage `/etc/fstab` with archrc,
+and your partitions have changed with a fresh install,
+you need to backup the working fstab before bootstrapping
+and restore it afterwards.
+
+Bootstrap with
+
+```
+# cd ~/archrc
+# ./bootstrap.zsh Hostname
+```
+
+This will set the hostname to Hostname,
+install archutil and Config Curator,
+and install the configuration.
+
+Install Aura with
+
+```
+# ./aura.zsh
+```
 
 Install packages with
 
@@ -144,13 +140,11 @@ $ ./units.zsh
 
 #### Final tasks
 
-Switch back to root and run the bootstrap script one more time.
+Run the bootstrap script one more time.
 This will be needed if you have configuration
 that only installs when certain packages are installed.
 
 ```
-$ logout
-# cd ~/archrc
 # ./bootstrap.zsh Hostname
 # ./units.zsh
 ```
