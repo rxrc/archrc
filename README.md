@@ -46,7 +46,7 @@ After chroot, install some required packages
 For systems with wireless cards:
 
 ```
-# pacman -S iw
+# pacman -S iwd
 ```
 
 Update the mirrorlist with reflector, e.g.,
