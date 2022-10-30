@@ -40,7 +40,13 @@ After chroot, install some required packages
 ```
 # pacman-key --init
 # pacman-key --populate archlinux
-# pacman -S git reflector zsh inetutils
+# pacman -S git reflector zsh inetutils openssh
+```
+
+For systems with wireless cards:
+
+```
+# pacman -S iw
 ```
 
 Update the mirrorlist with reflector, e.g.,
