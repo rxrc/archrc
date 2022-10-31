@@ -68,7 +68,7 @@ const files = [{
 }, {
   src: `${rxrc}/archrc-private/loader/loader.conf`,
   dst: 'boot/efi/loader/loader.conf',
-  hosts: ['frigg']
+  hosts: ['frigg', 'gungnir']
 }, {
   src: `${rxrc}/archrc-private/loader/entries/arch.${host}.conf`,
   dst: 'boot/efi/loader/entries/arch.conf',
