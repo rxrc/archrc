@@ -156,7 +156,7 @@ packages:
 
   terminal:
     - asciinema
-    - autojump
+    - shonenjump
     - bc
     - diff-so-fancy
     - git-delta
