@@ -60,7 +60,7 @@ sets:
     - efi
     - intel
     - nvidia
-    
+
   gungnir:
     - efi
     - intel
@@ -90,7 +90,7 @@ packages:
   intel:
     - libva-intel-driver
     - xf86-video-intel
-    
+
   vulkan:
     - libva-intel-driver
     - vulkan-intel
@@ -113,7 +113,7 @@ packages:
 
   bios:
     - grub
-    
+
   backlight:
     - acpilight
 
@@ -302,7 +302,7 @@ packages:
     - kitty
     - mcomix
     - mumble
-    - neovim-qt
+    - neovide
     - rxvt-unicode
     - sakura
     - screencloud
