@@ -264,6 +264,7 @@ packages:
     - maim
     - numlockx
     - unclutter
+    - darkman
 
     # LightDM
     - lightdm
