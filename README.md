@@ -99,7 +99,7 @@ If this repository or any of the dependencies are private,
 generate an ssh key pair with
 
 ```bash
-$ ssh-keygen -C "$(whoami)@$(hostname)-$(date -I)"
+$ ssh-keygen -t ed25519 -C "$(whoami)@$(hostname)-$(date -I)"
 ```
 
 and grant read access through the public key.
