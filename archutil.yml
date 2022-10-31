@@ -163,12 +163,10 @@ packages:
   neovim:
     - neovim
     - vim-spell-en
-    - python-neovim
 
   fonts:
     - fontforge
-    - font-mathematica
-    - otf-fira-code
+    - ttf-fira-code
     - otf-font-awesome
     - powerline-fonts-git
     - terminus-font
@@ -216,9 +214,8 @@ packages:
     - git
     - go
     - gradle
-    - minikube-bin
-    - kubectl-bin
-    - kubernetes-helm
+    - kubectl
+    - helm
     - kubectx
     - leiningen
     - jdk8-openjdk
