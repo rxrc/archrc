@@ -53,24 +53,8 @@ fi
 
 if [[ $(hostname) == 'Sleipnir' || $(hostname) == 'Mimir' ]]; then
   enabled+=('systemd-networkd')
-
-  # TODO This will fail under initial arch-chroot.
-  #      Comment it out and run it after first boot.
-  # sudo -S ln -s -f /run/systemd/resolve/resolv.conf /etc/resolv.conf
-
-  # sudo -S sed -i \
-  #   's/hosts: files dns myhostname/hosts: files resolve myhostname/' \
-  #   /etc/nsswitch.conf
-elif (pacman -Q netctl &>/dev/null); then
-  # sudo -S sed -i \
-  #   's/hosts: files resolve myhostname/hosts: files dns myhostname/' \
-  #   /etc/nsswitch.conf
-
-  # if [[ -h /etc/resolv.conf ]]; then
-  #   sudo -S rm /etc/resolv.conf
-  #   sudo -S touch /etc/resolv.conf
-  # fi
-
+elif [[ $(hostname) == 'Gungnir' ]]; then
+elif [[ $(hostname) == 'Mjolnir' && $(pacman -Q netctl &>/dev/null) ]]; then
   enabled+=("netctl-auto@$(ls /sys/class/net | grep ^w | head -1)")
   enabled+=("netctl-auto-resume@$(ls /sys/class/net | grep ^e | head -1)")
 fi
@@ -85,6 +69,9 @@ for unit in $disabled; do
   sudo -S systemctl disable $unit
 done
 
-sudo chattr +i /etc/resolv.conf
+# TODO This will fail under initial arch-chroot.
+#      Ignore for now and run it after first boot.
+sudo -S ln -s -f /run/systemd/resolve/resolv.conf /etc/resolv.conf
+sudo chattr +i "$(realpath /etc/resolv.conf)"
 
 exit
