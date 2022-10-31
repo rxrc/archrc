@@ -132,7 +132,6 @@ packages:
     - jq
     - mlocate
     - net-tools
-    - openresolv
     - p7zip
     - pacman-contrib
     - reflector
@@ -166,19 +165,17 @@ packages:
 
   fonts:
     - fontforge
-    - ttf-fira-code
+    - nerd-fonts-fira-code
     - otf-font-awesome
-    - powerline-fonts-git
+    - powerline-fonts
     - terminus-font
-    - ttf-computer-modern-fonts
     - ttf-bitstream-vera
     - ttf-dejavu
-    - ttf-freefont
+    - gnu-free-fonts
     - ttf-inconsolata-g
     - ttf-liberation
     - noto-fonts
     - noto-fonts-emoji
-    - ttf-mathtype
     - ttf-monoid
     - ttf-opensans
     - ttf-roboto
