@@ -303,7 +303,6 @@ packages:
     - mcomix
     - mumble
     - neovim-qt
-    - neovim-gtk
     - rxvt-unicode
     - sakura
     - screencloud
