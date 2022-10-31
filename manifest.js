@@ -159,7 +159,7 @@ const files = [{
   dst: 'etc/X11/xorg.conf.d/20-intel.conf',
   pkgs: ['xf86-video-intel'],
   order: 200,
-  hosts: ['pixelbook']
+  hosts: ['pixelbook', 'gungnir']
 }, {
   src: `etc/X11/xorg.${host}.conf`,
   dst: 'etc/X11/xorg.conf',
