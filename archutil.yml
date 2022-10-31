@@ -318,8 +318,7 @@ packages:
     - zathura-ps
 
   wifi:
-    - wpa_actiond
-    - wpa_supplicant
+    - iwd
 
   servers:
     - nginx
