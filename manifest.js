@@ -124,6 +124,9 @@ const files = [{
   src: 'etc/ssh/sshd_config',
   pkgs: ['openssh']
 }, {
+  src: 'etc/iwd/main.conf',
+  pkgs: ['iwd']
+}, {
   src: `etc/systemd/network/wired.${host}.network`,
   dst: 'etc/systemd/network/wired.network',
   hosts: ['mimir', 'sleipnir']

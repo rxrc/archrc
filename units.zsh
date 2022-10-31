@@ -53,6 +53,7 @@ fi
 if [[ $(hostname) == 'Sleipnir' || $(hostname) == 'Mimir' ]]; then
   enabled+=('systemd-networkd')
 elif [[ $(hostname) == 'Gungnir' ]]; then
+  enabled+=('iwd')
 elif [[ $(hostname) == 'Mjolnir' && $(pacman -Q netctl &>/dev/null) ]]; then
   enabled+=('systemd-resolved-resume')
   enabled+=("netctl-auto@$(ls /sys/class/net | grep ^w | head -1)")
