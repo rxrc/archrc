@@ -57,13 +57,7 @@ Update the mirrorlist with reflector, e.g.,
 # pacman -Su
 ```
 
-Clone this with
-
-```
-# curl -L https://git.io/vJARg | sh
-```
-
-or
+Clone this
 
 ```
 # git clone https://github.com/rxrc/archrc.git /root/archrc
