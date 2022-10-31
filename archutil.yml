@@ -205,7 +205,7 @@ packages:
   development:
     - android-tools
     - android-udev
-    - aws-cli
+    - aws-cli-v2
     - cabal-install
     - ghc
     - git
@@ -215,7 +215,8 @@ packages:
     - helm
     - kubectx
     - leiningen
-    - jdk8-openjdk
+    - jre-openjdk
+    - jdk-openjdk
     - terraform
     - vagrant
     - virtualbox
