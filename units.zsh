@@ -61,7 +61,7 @@ if [[ $(hostname) == 'Sleipnir' || $(hostname) == 'Mimir' ]]; then
   # sudo -S sed -i \
   #   's/hosts: files dns myhostname/hosts: files resolve myhostname/' \
   #   /etc/nsswitch.conf
-else
+elif (pacman -Q netctl &>/dev/null); then
   # sudo -S sed -i \
   #   's/hosts: files resolve myhostname/hosts: files dns myhostname/' \
   #   /etc/nsswitch.conf
