@@ -59,6 +59,11 @@ sets:
     - efi
     - intel
     - nvidia
+    
+  gungnir:
+    - efi
+    - intel
+    - wifi
 
 # List the packages with their categories below.
 packages:
@@ -83,6 +88,10 @@ packages:
   intel:
     - libva-intel-driver
     - xf86-video-intel
+    
+  vulkan:
+    - libva-intel-driver
+    - vulkan-intel
 
   nvidia:
     - nvidia
