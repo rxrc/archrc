@@ -4,7 +4,7 @@
 
 My Arch Linux configuration managed with [Curator] and [archutil].
 
-[archutil]: https://github.com/razor-x/archutil
+[archutil]: https://github.com/rxrc/archutil
 [Curator]: https://github.com/rxrc/curator
 
 ## Requirements
