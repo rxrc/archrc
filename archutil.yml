@@ -288,9 +288,7 @@ packages:
     - chromium
     - firefox
     - firefox-developer-edition
-    - flashplugin
     - google-chrome
-    - google-talkplugin
     - gimp
     - hexchat
     - inkscape
