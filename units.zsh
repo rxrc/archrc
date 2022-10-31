@@ -13,7 +13,6 @@ enabled+=('numlock')
 enabled+=('cups')
 enabled+=('sshd')
 enabled+=('systemd-resolved')
-enabled+=('systemd-resolved-resume')
 enabled+=('nftables')
 enabled+=('bluetooth')
 enabled+=('paccache.timer')
@@ -55,6 +54,7 @@ if [[ $(hostname) == 'Sleipnir' || $(hostname) == 'Mimir' ]]; then
   enabled+=('systemd-networkd')
 elif [[ $(hostname) == 'Gungnir' ]]; then
 elif [[ $(hostname) == 'Mjolnir' && $(pacman -Q netctl &>/dev/null) ]]; then
+  enabled+=('systemd-resolved-resume')
   enabled+=("netctl-auto@$(ls /sys/class/net | grep ^w | head -1)")
   enabled+=("netctl-auto-resume@$(ls /sys/class/net | grep ^e | head -1)")
 fi
