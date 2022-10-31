@@ -54,6 +54,7 @@ sets:
     - wifi
     - nvidia
     - bumblebee
+    - backlight
 
   sleipnir:
     - efi
@@ -64,6 +65,7 @@ sets:
     - efi
     - intel
     - wifi
+    - backlight
 
 # List the packages with their categories below.
 packages:
@@ -111,6 +113,9 @@ packages:
 
   bios:
     - grub
+    
+  backlight:
+    - acpilight
 
   samus:
     - xf86-input-synaptics
