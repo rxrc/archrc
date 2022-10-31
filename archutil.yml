@@ -326,12 +326,9 @@ packages:
   # Must be built manually.
   build:
     - mathematica
-    - ttf-ms-win10
+    - ttf-ms-win11
 
     # Only for samus.
     # Use chromebook_redirect_key branch:
     # https://github.com/dhead666/archlinux-pkgbuilds/tree/chromebook_redirect_key/xkeyboard-config-chromebook
     - xkeyboard-config-chromebook
-
-    # Not found by archutil
-    - gr
