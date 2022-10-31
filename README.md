@@ -91,7 +91,7 @@ Optionally, add this user to the autologin group now,
 Create your own archrc with
 
 ```bash
-$ curl -L https://git.io/vJARg | sh
+$ git clone https://github.com/rxrc/archrc.git
 $ cd ~/archrc
 ```
 
