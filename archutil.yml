@@ -288,7 +288,6 @@ packages:
     - redshift
     - librsvg
     - python-gobject
-    - python-xdg
 
   graphical:
     - calibre
@@ -336,3 +335,6 @@ packages:
     # Use chromebook_redirect_key branch:
     # https://github.com/dhead666/archlinux-pkgbuilds/tree/chromebook_redirect_key/xkeyboard-config-chromebook
     - xkeyboard-config-chromebook
+
+    # For Redshift, but must be installed manually as there is an AUR package with the same name.
+    - python-xdg
