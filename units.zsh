@@ -72,8 +72,6 @@ else
   # fi
 
   enabled+=("netctl-auto@$(ls /sys/class/net | grep ^w | head -1)")
-
-  enabled+=("netctl-auto-resume@$(ls /sys/class/net | grep ^w | head -1)")
   enabled+=("netctl-auto-resume@$(ls /sys/class/net | grep ^e | head -1)")
 fi
 
