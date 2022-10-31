@@ -27,7 +27,7 @@ main () {
   sudo -S chmod -R g+rwX $build_dir
   sudo -S -u nobody makepkg
 
-  aura_bin=$(ls aura-bin-*.xz)
+  aura_bin=$(ls aura-bin-*.tar.gz)
   sudo -S pacman -U --noconfirm $aura_bin
 
   sudo -S rm -rf $build_dir
