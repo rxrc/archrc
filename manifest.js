@@ -81,7 +81,7 @@ const files = [{
   src: `etc/default/grub.${host}`,
   dst: 'etc/default/grub',
   pkgs: ['grub'],
-  hosts: ['gungnir']
+  hosts: ['pixelbook']
 }, {
   src: `${rxrc}/systemd-units/system/efistub-update@.path`,
   dst: 'etc/systemd/system/efistub-update@.path',
@@ -109,7 +109,7 @@ const files = [{
 }, {
   src: `${rxrc}/systemd-units/system/netctl-auto-resume@.service`,
   dst: 'etc/systemd/system/netctl-auto-resume@.service',
-  hosts: ['gungnir', 'frigg', 'mjolnir']
+  hosts: ['pixelbook', 'frigg', 'mjolnir']
 }, {
   src: 'etc/pacman.conf',
   pkgs: ['pacman']
@@ -129,12 +129,12 @@ const files = [{
   hosts: ['mimir', 'sleipnir']
 }, {
   src: 'etc/systemd/journald.conf.d/size.conf',
-  hosts: ['gungnir', 'mjolnir']
+  hosts: ['pixelbook', 'mjolnir']
 }, {
   src: 'etc/systemd/system/systemd-resolved-resume.service',
 }, {
   src: 'etc/udev/rules.d/99-lowbat.rules',
-  hosts: ['gungnir', 'mjolnir']
+  hosts: ['pixelbook', 'mjolnir']
 }, {
   src: 'etc/udev/rules.d/99-backlight.rules',
   hosts: ['mjolnir']
@@ -145,7 +145,7 @@ const files = [{
   pkgs: ['virtualbox']
 }, {
   src: 'etc/modprobe.d/alsa-base.conf',
-  hosts: ['gungnir']
+  hosts: ['pixelbook']
 }, {
   src: 'etc/X11/xorg.conf.d/15-dpms.conf'
 }, {
@@ -156,7 +156,7 @@ const files = [{
   src: `etc/X11/xorg.conf.d/20-intel.${host}.conf`,
   dst: 'etc/X11/xorg.conf.d/20-intel.conf',
   pkgs: ['xf86-video-intel'],
-  hosts: ['gungnir']
+  hosts: ['pixelbook']
 }, {
   src: `etc/X11/xorg.${host}.conf`,
   dst: 'etc/X11/xorg.conf',
@@ -171,7 +171,7 @@ const files = [{
 }, {
   src: 'etc/X11/xorg.conf.d/50-synaptics.conf',
   pkgs: ['xf86-input-synaptics'],
-  hosts: ['gungnir']
+  hosts: ['pixelbook']
 }, {
   src: 'etc/X11/xorg.conf.d/30-touchpad.conf',
   pkgs: ['xf86-input-libinput'],
@@ -188,7 +188,7 @@ const files = [{
   dst: 'etc/systemd/coredump.conf.d/disable.conf'
 }, {
   src: 'etc/systemd/system/chromeos-kbd_backlight.service',
-  hosts: ['gungnir']
+  hosts: ['pixelbook']
 }, {
   src: `${rxrc}/systemd-units/system/numlock.service`,
   dst: 'etc/systemd/system/numlock.service'
@@ -243,11 +243,11 @@ const files = [{
 }, {
   src: 'usr/local/bin/chromeos-kbd_backlight',
   fmode: '0755',
-  hosts: ['gungnir']
+  hosts: ['pixelbook']
 }, {
   src: 'usr/local/bin/chromeos-sound-output-toggle',
   fmode: '0755',
-  hosts: ['gungnir']
+  hosts: ['pixelbook']
 }]
 
 const symlinks = []
