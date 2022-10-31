@@ -302,6 +302,7 @@ packages:
     - kitty
     - mcomix
     - mumble
+    - neovim-qt
     - neovide
     - rxvt-unicode
     - sakura
