@@ -120,12 +120,6 @@ packages:
     - kbdlight
     - xf86-input-mtrack-git
 
-  dyndns:
-    - ddclient
-
-  backup:
-    - bacula-client
-
   core:
     - openssh
     - sudo
