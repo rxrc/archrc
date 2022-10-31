@@ -66,7 +66,7 @@ Clone this
 Manually install the `sudoers` file
 
 ```
-# cp archrc/etc/sudoers /etc/sudoers
+# cp /root/archrc/etc/sudoers /etc/sudoers
 ```
 
 At this point you need to create and switch to a non-root user.
