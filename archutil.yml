@@ -305,7 +305,6 @@ packages:
     - mumble
     - neovim-qt
     - neovide
-    - rxvt-unicode
     - flameshot
     - terminator
     - thunderbird
