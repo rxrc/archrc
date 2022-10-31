@@ -72,7 +72,7 @@ const files = [{
 }, {
   src: `${rxrc}/archrc-private/loader/entries/arch.${host}.conf`,
   dst: 'boot/efi/loader/entries/arch.conf',
-  hosts: ['frigg']
+  hosts: ['frigg', 'gungnir']
 }, {
   src: 'etc/default/grub',
   pkgs: ['grub'],
@@ -129,15 +129,15 @@ const files = [{
   hosts: ['mimir', 'sleipnir']
 }, {
   src: 'etc/systemd/journald.conf.d/size.conf',
-  hosts: ['pixelbook', 'mjolnir']
+  hosts: ['pixelbook', 'mjolnir', 'gungnir']
 }, {
   src: 'etc/systemd/system/systemd-resolved-resume.service',
 }, {
   src: 'etc/udev/rules.d/99-lowbat.rules',
-  hosts: ['pixelbook', 'mjolnir']
+  hosts: ['pixelbook', 'mjolnir', 'gungnir']
 }, {
   src: 'etc/udev/rules.d/99-backlight.rules',
-  hosts: ['mjolnir']
+  hosts: ['mjolnir', 'gungnir']
 }, {
   src: 'etc/modules-load.d/loopback.conf'
 }, {
@@ -150,12 +150,12 @@ const files = [{
   src: 'etc/X11/xorg.conf.d/15-dpms.conf'
 }, {
   src: 'etc/X11/xorg.conf.d/20-intel.conf',
-  pkgs: ['xf86-video-intel'],
-  hosts: ['frigg', 'mjolnir']
+  pkgs: ['xf86-video-intel']
 }, {
   src: `etc/X11/xorg.conf.d/20-intel.${host}.conf`,
   dst: 'etc/X11/xorg.conf.d/20-intel.conf',
   pkgs: ['xf86-video-intel'],
+  order: 200,
   hosts: ['pixelbook']
 }, {
   src: `etc/X11/xorg.${host}.conf`,
@@ -175,7 +175,7 @@ const files = [{
 }, {
   src: 'etc/X11/xorg.conf.d/30-touchpad.conf',
   pkgs: ['xf86-input-libinput'],
-  hosts: ['mjolnir']
+  hosts: ['mjolnir', 'gungnir']
 }, {
   src: 'etc/X11/xorg.conf.d/50-mtrack.conf',
   pkgs: ['xf86-input-mtrack-git'],
