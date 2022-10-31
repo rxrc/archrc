@@ -78,6 +78,7 @@ packages:
     - ntfs-3g
     - smbclient
     - sshfs
+    - linux-firmware
 
   intel:
     - libva-intel-driver
