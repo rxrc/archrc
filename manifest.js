@@ -46,6 +46,12 @@ const files = [{
   order: 200,
   pkgs: ['mkinitcpio', 'nvidia']
 }, {
+  src: 'etc/mkinitcpio.i915.conf',
+  dst: 'etc/mkinitcpio.conf',
+  order: 200,
+  pkgs: ['mkinitcpio'],
+  hosts: ['mjolnir']
+}, {
   src: 'etc/vconsole.conf',
   pkgs: ['terminus-font']
 }, {
