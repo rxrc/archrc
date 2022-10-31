@@ -306,7 +306,6 @@ packages:
     - neovide
     - rxvt-unicode
     - sakura
-    - screencloud
     - flameshot
     - terminator
     - termite
