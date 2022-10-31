@@ -19,6 +19,7 @@ sets:
   user:
     - tools
     - terminal
+    - neovim
     - fonts
     - devel
     - development
@@ -127,16 +128,11 @@ packages:
     - curl
     - dialog
     - dos2unix
-    - figlet
     - hunspell
     - jq
     - mlocate
     - net-tools
-    - openvpn
     - openresolv
-    - openvpn-update-systemd-resolved
-    - openconnect
-    - vpn-slice-git
     - p7zip
     - pacman-contrib
     - reflector
@@ -155,7 +151,8 @@ packages:
     - autojump
     - bc
     - diff-so-fancy
-    - git-delta-bin
+    - git-delta
+    - figlet
     - fzf
     - glances
     - httpie
@@ -163,11 +160,10 @@ packages:
     - tmux
     - tmuxinator
 
-    # neovim
+  neovim:
     - neovim
     - vim-spell-en
     - python-neovim
-    - python2-neovim
 
   fonts:
     - fontforge
@@ -203,11 +199,8 @@ packages:
     - npm
     - openssl
     - perl-libwww
-    - python-jedi
-    - python2-jedi
     - python-pandocfilters
     - python-pygments
-    - python-tornado
     - r
     - sqlite
     - watchman
@@ -218,15 +211,11 @@ packages:
     - android-tools
     - android-udev
     - aws-cli
-    - docker
-    - docker-machine
-    - docker-compose
     - cabal-install
     - ghc
     - git
     - go
     - gradle
-    - heroku-toolbelt
     - minikube-bin
     - kubectl-bin
     - kubernetes-helm
