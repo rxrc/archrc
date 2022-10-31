@@ -2,6 +2,7 @@
   "name": "@rxrc/archrc",
   "version": "2.0.0",
   "private": true,
+  "type": "module",
   "description": "Arch Linux configuration.",
   "homepage": "https://github.com/rxrc/archrc",
   "bugs": "https://github.com/rxrc/archrc/issues",
@@ -21,6 +22,6 @@
     "@rxrc/systemd-units": "^2.1.7"
   },
   "devDependencies": {
-    "@rxrc/curator": "^1.0.3"
+    "config-curator": "^2.0.0"
   }
 }

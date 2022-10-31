@@ -1,6 +1,6 @@
 'use strict'
 
-const os = require('os')
+import os from 'os'
 
 const host = os.hostname().toLowerCase()
 const rxrc = 'node_modules/@rxrc'
@@ -252,7 +252,7 @@ const files = [{
 
 const symlinks = []
 
-module.exports = {
+export default {
   unlinks,
   directories,
   files,
