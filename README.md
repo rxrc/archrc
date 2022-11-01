@@ -132,6 +132,13 @@ Install packages with
 $ /usr/local/bin/archutil install --sets main user gui
 ```
 
+Go packages built from the AUR may generate write protected files in `$HOME/go`,
+safely remove them with
+
+```bash
+$ rm -rf $HOME/go
+```
+
 Setup systemd units with
 
 ```bash
