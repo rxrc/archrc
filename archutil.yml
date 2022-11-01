@@ -335,3 +335,6 @@ packages:
 
     # For Redshift, but must be installed manually as there is an AUR package with the same name.
     - python-xdg
+
+    # https://wiki.archlinux.org/title/docker#Docker_Desktop
+    - docker-desktop
