@@ -273,6 +273,8 @@ packages:
     - numlockx
     - unclutter
     - darkman
+    - xfce4-settings
+    - xdg-desktop-portal # select gtk
 
     # LightDM
     - lightdm
