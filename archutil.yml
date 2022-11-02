@@ -221,6 +221,7 @@ packages:
     - android-udev
     - aws-cli-v2
     - cabal-install
+    - dbeaver
     - ghc
     - git
     - go
@@ -229,6 +230,8 @@ packages:
     - helm
     - kubectx
     - leiningen
+    - postgresql
+    - insomnia-bin
     - jre-openjdk
     - jdk-openjdk
     - terraform
