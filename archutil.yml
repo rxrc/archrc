@@ -225,6 +225,7 @@ packages:
     - ghc
     - git
     - go
+    - github-cli
     - gradle
     - kubectl
     - helm
