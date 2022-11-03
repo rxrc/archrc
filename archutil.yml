@@ -210,6 +210,7 @@ packages:
     - perl-libwww
     - python-pandocfilters
     - python-pygments
+    - python-poetry
     - r
     - sqlite
     - watchman
