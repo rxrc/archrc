@@ -223,6 +223,7 @@ packages:
     - aws-cli-v2
     - cabal-install
     - dbeaver
+    - doppler-cli-bin
     - ghc
     - git
     - go
