@@ -16,7 +16,6 @@ set_hostname () {
   fi
 
   puts 'Setting' 'Hostname'
-  echo $hostname | sudo -S tee /etc/hostname
   sudo hostnamectl set-hostname $hostname
   puts 'Hostname' $hostname
 }
