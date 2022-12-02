@@ -227,6 +227,8 @@ packages:
     - ghc
     - git
     - go
+    - golangci-lint-bin
+    - goreleaser
     - github-cli
     - gradle
     - kubectl
