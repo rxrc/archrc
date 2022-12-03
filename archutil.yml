@@ -68,6 +68,11 @@ sets:
     - backlight
     - sof
 
+  freyja:
+    - efi
+    - intel
+    - sof
+
 # List the packages with their categories below.
 packages:
   archutil:
