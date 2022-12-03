@@ -161,7 +161,7 @@ packages:
 
   terminal:
     - asciinema
-    - shonenjump
+    - autojump
     - bc
     - diff-so-fancy
     - git-delta
