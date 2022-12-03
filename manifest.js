@@ -68,11 +68,11 @@ const files = [{
 }, {
   src: `${rxrc}/archrc-private/loader/loader.conf`,
   dst: 'boot/efi/loader/loader.conf',
-  hosts: ['frigg', 'gungnir']
+  hosts: ['frigg', 'gungnir', 'freyja']
 }, {
   src: `${rxrc}/archrc-private/loader/entries/arch.${host}.conf`,
   dst: 'boot/efi/loader/entries/arch.conf',
-  hosts: ['frigg', 'gungnir']
+  hosts: ['frigg', 'gungnir', 'freyja']
 }, {
   src: 'etc/default/grub',
   pkgs: ['grub'],
@@ -132,7 +132,7 @@ const files = [{
   hosts: ['mimir', 'sleipnir']
 }, {
   src: 'etc/systemd/journald.conf.d/size.conf',
-  hosts: ['pixelbook', 'mjolnir', 'gungnir']
+  hosts: ['pixelbook', 'mjolnir', 'gungnir', 'freyja']
 }, {
   src: 'etc/systemd/system/systemd-resolved-resume.service',
 }, {
@@ -159,7 +159,7 @@ const files = [{
   dst: 'etc/X11/xorg.conf.d/20-intel.conf',
   pkgs: ['xf86-video-intel'],
   order: 200,
-  hosts: ['pixelbook', 'gungnir']
+  hosts: ['pixelbook', 'gungnir', 'freyja']
 }, {
   src: `etc/X11/xorg.${host}.conf`,
   dst: 'etc/X11/xorg.conf',
