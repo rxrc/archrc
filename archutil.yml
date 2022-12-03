@@ -179,7 +179,7 @@ packages:
 
   fonts:
     - fontforge
-    - nerd-fonts-fira-code
+    - otf-nerd-fonts-fira-code
     - otf-font-awesome
     - powerline-fonts
     - terminus-font
