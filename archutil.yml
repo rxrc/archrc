@@ -272,6 +272,8 @@ packages:
     - xclip
     - xdotool
     - xscreensaver-arch-logo
+    - xsecurelock
+    - xss-lock
 
   audio:
     - alsa-utils
