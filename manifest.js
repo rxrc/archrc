@@ -196,10 +196,6 @@ const files = [{
   src: `${rxrc}/systemd-units/system/numlock.service`,
   dst: 'etc/systemd/system/numlock.service'
 }, {
-  src: `${rxrc}/systemd-units/system/xscreensaver-lock@.service`,
-  dst: 'etc/systemd/system/xscreensaver-lock@.service',
-  pkgs: ['xscreensaver-arch-logo']
-}, {
   src: 'etc/lightdm/lightdm.conf',
   pkgs: ['lightdm']
 }, {

@@ -38,10 +38,6 @@ if [[ -e /etc/nginx/nginx.conf ]]; then
   enabled+=('nginx')
 fi
 
-if [[ "$USER" != 'root' ]]; then
-  enabled+=("xscreensaver-lock@$USER")
-fi
-
 if (pacman -Q bumblebee &>/dev/null); then
   enabled+=('bumblebeed')
 fi
