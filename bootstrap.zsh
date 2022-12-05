@@ -32,6 +32,19 @@ install_config () {
   puts 'Installed' 'Config'
 }
 
+install_efistubs () {
+  puts 'Installing' 'EFI Stubs'
+  if [[ -d /boot/efi ]]; then
+    efi_stub_path="/boot/efi/EFI/arch"
+    mkdir $efi_stub_path
+    sudo cp /boot/vmlinuz-linux "${efi_stub_path}/vmlinuz-linux.efi"
+    sudo cp /boot/initramfs-linux.img "${efi_stub_path}"
+    sudo cp /boot/initramfs-linux-fallback.img "${efi_stub_path}"
+    sudo cp /boot/intel-ucode.img "${efi_stub_path}"
+    puts 'Installed' 'EFI Stubs'
+  fi
+}
+
 install_archutil () {
   archutil_url='https://raw.githubusercontent.com/rxrc/archutil/v1.2.9/bin/archutil'
 
@@ -70,6 +83,7 @@ main () {
   install_config
   install_archutil
   set_locale
+  install_efistubs
   puts 'Done' ''
 }
 
