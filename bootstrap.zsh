@@ -34,9 +34,9 @@ install_config () {
 
 install_efistubs () {
   puts 'Installing' 'EFI Stubs'
-  if [[ -d /boot/efi ]]; then
+  if [[ -d /boot/efi/EFI ]]; then
     efi_stub_path="/boot/efi/EFI/arch"
-    mkdir $efi_stub_path
+    sudo mkdir -p $efi_stub_path
     sudo cp /boot/vmlinuz-linux "${efi_stub_path}/vmlinuz-linux.efi"
     sudo cp /boot/initramfs-linux.img "${efi_stub_path}"
     sudo cp /boot/initramfs-linux-fallback.img "${efi_stub_path}"
