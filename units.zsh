@@ -48,6 +48,8 @@ fi
 
 if [[ $(hostname) == 'Sleipnir' || $(hostname) == 'Mimir' ]]; then
   enabled+=('systemd-networkd')
+elif [[ $(hostname) == 'Freyja' ]]; then
+  enabled+=('dhcpcd')
 elif [[ $(hostname) == 'Gungnir' ]]; then
   enabled+=('iwd')
 elif [[ $(hostname) == 'Mjolnir' && $(pacman -Q netctl &>/dev/null) ]]; then
