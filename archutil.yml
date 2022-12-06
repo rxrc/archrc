@@ -115,7 +115,6 @@ packages:
 
   efi:
     - efibootmgr
-    - refind
 
   bios:
     - grub

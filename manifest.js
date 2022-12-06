@@ -60,14 +60,6 @@ const files = [{
   src: `${rxrc}/archrc-private/etc/fstab.${host}`,
   dst: 'etc/fstab'
 }, {
-  src: `${rxrc}/archrc-private/refind/refind.conf`,
-  dst: 'boot/efi/EFI/refind/refind.conf',
-  hosts: ['sleipnir']
-}, {
-  src: `${rxrc}/archrc-private/refind/refind_linux.${host}.conf`,
-  dst: 'boot/refind_linux.conf',
-  hosts: ['sleipnir']
-}, {
   src: `${rxrc}/archrc-private/loader/loader.conf`,
   dst: 'boot/efi/loader/loader.conf',
   hosts: ['frigg', 'gungnir', 'freyja']
@@ -100,14 +92,6 @@ const files = [{
   src: `${rxrc}/systemd-units/system/efistub-ucode-update@.service`,
   dst: 'etc/systemd/system/efistub-ucode-update@.service',
   pkgs: ['efibootmgr', 'intel-ucode']
-}, {
-  src: `${rxrc}/systemd-units/system/refind-update.path`,
-  dst: 'etc/systemd/system/refind-update.path',
-  pkgs: ['refind']
-}, {
-  src: `${rxrc}/systemd-units/system/refind-update.service`,
-  dst: 'etc/systemd/system/refind-update.service',
-  pkgs: ['refind']
 }, {
   src: `${rxrc}/systemd-units/system/netctl-auto-resume@.service`,
   dst: 'etc/systemd/system/netctl-auto-resume@.service',

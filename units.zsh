@@ -22,10 +22,6 @@ if [[ -d /boot/efi/EFI/arch || -d /boot/efi/loader ]]; then
   enabled+=('efistub-ucode-update@linux.path')
 fi
 
-if [[ -d /boot/efi/EFI/refind ]]; then
-  enabled+=('refind-update.path')
-fi
-
 if [[ -e /etc/ddclient/ddclient.conf ]]; then
   enabled+=('ddclient')
 fi
