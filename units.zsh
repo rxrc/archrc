@@ -17,11 +17,6 @@ enabled+=('nftables')
 enabled+=('bluetooth')
 enabled+=('paccache.timer')
 
-if [[ -d /boot/efi/EFI/arch || -d /boot/efi/loader ]]; then
-  enabled+=('efistub-update@linux.path')
-  enabled+=('efistub-ucode-update@linux.path')
-fi
-
 if [[ -e /etc/ddclient/ddclient.conf ]]; then
   enabled+=('ddclient')
 fi

@@ -61,11 +61,11 @@ const files = [{
   dst: 'etc/fstab'
 }, {
   src: `${rxrc}/archrc-private/loader/loader.conf`,
-  dst: 'boot/efi/loader/loader.conf',
+  dst: 'boot/loader/loader.conf',
   hosts: ['frigg', 'gungnir', 'freyja']
 }, {
   src: `${rxrc}/archrc-private/loader/entries/arch.${host}.conf`,
-  dst: 'boot/efi/loader/entries/arch.conf',
+  dst: 'boot/loader/entries/arch.conf',
   hosts: ['frigg', 'gungnir', 'freyja']
 }, {
   src: 'etc/default/grub',
@@ -76,22 +76,6 @@ const files = [{
   dst: 'etc/default/grub',
   pkgs: ['grub'],
   hosts: ['pixelbook']
-}, {
-  src: `${rxrc}/systemd-units/system/efistub-update@.path`,
-  dst: 'etc/systemd/system/efistub-update@.path',
-  pkgs: ['efibootmgr']
-}, {
-  src: `${rxrc}/systemd-units/system/efistub-update@.service`,
-  dst: 'etc/systemd/system/efistub-update@.service',
-  pkgs: ['efibootmgr']
-}, {
-  src: `${rxrc}/systemd-units/system/efistub-ucode-update@.path`,
-  dst: 'etc/systemd/system/efistub-ucode-update@.path',
-  pkgs: ['efibootmgr', 'intel-ucode']
-}, {
-  src: `${rxrc}/systemd-units/system/efistub-ucode-update@.service`,
-  dst: 'etc/systemd/system/efistub-ucode-update@.service',
-  pkgs: ['efibootmgr', 'intel-ucode']
 }, {
   src: `${rxrc}/systemd-units/system/netctl-auto-resume@.service`,
   dst: 'etc/systemd/system/netctl-auto-resume@.service',
