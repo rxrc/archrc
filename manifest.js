@@ -115,7 +115,7 @@ const files = [{
 }, {
   src: `etc/systemd/network/wired.${host}.network`,
   dst: 'etc/systemd/network/wired.network',
-  hosts: ['mimir', 'sleipnir']
+  hosts: ['sleipnir']
 }, {
   src: 'etc/systemd/journald.conf.d/size.conf',
   hosts: ['pixelbook', 'mjolnir', 'gungnir', 'freyja']
@@ -146,11 +146,6 @@ const files = [{
   pkgs: ['xf86-video-intel'],
   order: 200,
   hosts: ['pixelbook', 'gungnir', 'freyja']
-}, {
-  src: `etc/X11/xorg.${host}.conf`,
-  dst: 'etc/X11/xorg.conf',
-  pkgs: ['nvidia'],
-  hosts: ['mimir']
 }, {
   src: 'etc/pacman.d/hooks/nvidia.hook',
   pkgs: ['nvidia']

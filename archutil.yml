@@ -43,11 +43,6 @@ sets:
     - intel
     - wifi
 
-  mimir:
-    - efi
-    - intel
-    - nvidia
-
   mjolnir:
     - efi
     - intel
