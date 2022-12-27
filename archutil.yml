@@ -245,6 +245,7 @@ packages:
     - vagrant
     - virtualbox
     - virtualbox-host-dkms
+    - visual-studio-code-bin
 
   print:
     - biber
