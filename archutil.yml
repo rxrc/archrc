@@ -236,6 +236,7 @@ packages:
     - gradle
     - kubectl
     - helm
+    - hugo
     - kubectx
     - leiningen
     - postgresql
