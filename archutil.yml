@@ -150,6 +150,7 @@ packages:
     - reflector
     - ripgrep
     - rsync
+    - rclone
     - the_silver_searcher
     - unrar
     - unzip
