@@ -229,6 +229,7 @@ packages:
     - doppler-cli-bin
     - ghc
     - git
+    - git-lfs
     - go
     - golangci-lint-bin
     - goreleaser
