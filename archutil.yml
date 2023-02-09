@@ -91,6 +91,7 @@ packages:
   intel:
     - libva-intel-driver
     - xf86-video-intel
+    - intel-media-driver
 
   vulkan:
     - libva-intel-driver
