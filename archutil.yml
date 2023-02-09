@@ -256,7 +256,7 @@ packages:
     - cups-pdf
     - hplip
     - kindlegen
-    - pandoc
+    - pandoc-cli
     - texlive-most
 
   xorg:
