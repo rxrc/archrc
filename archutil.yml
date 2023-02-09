@@ -179,7 +179,6 @@ packages:
 
   fonts:
     - fontforge
-    - otf-nerd-fonts-fira-code
     - otf-font-awesome
     - powerline-fonts
     - terminus-font
@@ -271,7 +270,6 @@ packages:
     - xdotool
     - xscreensaver-arch-logo
     - xsecurelock
-    - xss-lock
 
   audio:
     - alsa-utils
@@ -349,6 +347,8 @@ packages:
   build:
     - mathematica
     - ttf-ms-win11
+    - otf-nerd-fonts-fira-code
+    - xss-lock-session
 
     # Only for samus.
     # Use chromebook_redirect_key branch:
