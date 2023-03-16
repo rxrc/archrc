@@ -216,7 +216,7 @@ packages:
     - php
     - composer
     - sqlite
-    - watchman
+    - watchman-bin
     - yarn
     - zlib
 
