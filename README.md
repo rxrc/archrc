@@ -23,7 +23,7 @@ when bootstrapping a new system (see the instructions below).
 
 ### Bootstrapping a new system
 
-Follow the normal install process.
+Follow the [normal install process](https://wiki.archlinux.org/title/installation_guide).
 Be sure to set the Hardware clock first
 
 ```
