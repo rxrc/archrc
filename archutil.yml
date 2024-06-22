@@ -257,7 +257,7 @@ packages:
     - hplip
     - kindlegen
     - pandoc-cli
-    - texlive-most
+    - texlive
 
   xorg:
     - xorg-server
