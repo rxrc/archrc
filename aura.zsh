@@ -9,6 +9,9 @@ main () {
 
   sudo -S pacman -S --noconfirm curl grep sed sudo tar
 
+  sudo cp /etc/makepkg.conf /etc/makepkg.conf.bak
+  sudo cp etc/makepkg.conf /etc/makepkg.conf
+
   build_dir=$(mktemp -d)
   cd $build_dir
 
@@ -31,6 +34,7 @@ main () {
   sudo -S pacman -U --noconfirm $aura_bin
 
   sudo -S rm -rf $build_dir
+  sudo cp /etc/makepkg.conf.bak /etc/makepkg.conf
 }
 
 main
