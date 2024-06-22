@@ -242,7 +242,6 @@ packages:
     - leiningen
     - postgresql
     - insomnia-bin
-    - jre-openjdk
     - jdk-openjdk
     - terraform
     - vagrant
