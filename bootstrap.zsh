@@ -32,6 +32,7 @@ install_config () {
   puts 'Installed' 'Config'
 }
 
+install_archutil () {
   archutil_url='https://raw.githubusercontent.com/rxrc/archutil/v1.2.9/bin/archutil'
 
   puts 'Installing' 'archutil requirements'
