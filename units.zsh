@@ -37,7 +37,7 @@ if (pacman -Q linux-samus4 &>/dev/null); then
   enabled+=('chromeos-kbd_backlight')
 fi
 
-if [[ $(hostname) == 'Sleipnir' || $(hostname) == 'Mimir' ]]; then
+if [[ $(hostname) == 'Sleipnir' || $(hostname) == 'Mimir' || $(hostname) == 'Fenrir' ]]; then
   enabled+=('systemd-networkd')
 elif [[ $(hostname) == 'Freyja' ]]; then
   enabled+=('dhcpcd')
