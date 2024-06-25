@@ -87,6 +87,7 @@ packages:
     - smbclient
     - sshfs
     - linux-firmware
+    - lvm2
 
   intel:
     - libva-intel-driver
