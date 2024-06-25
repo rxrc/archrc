@@ -68,6 +68,9 @@ sets:
     - intel
     - sof
 
+  fenrir:
+    - vmware
+
 # List the packages with their categories below.
 packages:
   archutil:
@@ -129,6 +132,12 @@ packages:
     - bcwc-pcie-git
     - kbdlight
     - xf86-input-mtrack-git
+
+  vmware:
+    - open-vm-tools
+    - xf86-input-vmmouse
+    - xf86-video-vmware
+    - mesa
 
   core:
     - openssh
