@@ -37,6 +37,10 @@ if (pacman -Q linux-samus4 &>/dev/null); then
   enabled+=('chromeos-kbd_backlight')
 fi
 
+if (pacman -Q open-vm-tools &>/dev/null); then
+  enabled+=('vmtoolsd')
+fi
+
 if [[ $(hostname) == 'Sleipnir' || $(hostname) == 'Mimir' || $(hostname) == 'Fenrir' ]]; then
   enabled+=('systemd-networkd')
 elif [[ $(hostname) == 'Freyja' ]]; then
