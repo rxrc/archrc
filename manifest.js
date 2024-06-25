@@ -99,7 +99,7 @@ const files = [{
 }, {
   src: `etc/systemd/network/wired.${host}.network`,
   dst: 'etc/systemd/network/wired.network',
-  hosts: ['sleipnir']
+  hosts: ['sleipnir', 'fenrir']
 }, {
   src: 'etc/systemd/journald.conf.d/size.conf',
   hosts: ['pixelbook', 'mjolnir', 'gungnir', 'freyja', 'fenrir']

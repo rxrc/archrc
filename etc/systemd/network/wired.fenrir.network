@@ -1,0 +1,5 @@
+[Match]
+Name=ens33
+
+[Network]
+DHCP=ipv4
