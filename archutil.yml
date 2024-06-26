@@ -237,6 +237,9 @@ packages:
     - cabal-install
     - dbeaver
     - doppler-cli-bin
+    - docker-desktop
+    - docker-buildx
+    - docker-compose
     - ghc
     - git
     - git-lfs
@@ -367,7 +370,3 @@ packages:
 
     # For Redshift, but must be installed manually as there is an AUR package with the same name.
     - python-xdg
-
-    # https://wiki.archlinux.org/title/docker#Docker_Desktop
-    - docker-desktop
-    - docker-buildx
