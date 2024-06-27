@@ -204,6 +204,7 @@ packages:
     - ttf-opensans
     - ttf-roboto
     - ttf-ubuntu-font-family
+    - ttf-firacode-nerd
 
   devel:
     - base-devel
@@ -360,7 +361,6 @@ packages:
   build:
     - mathematica
     - ttf-ms-win11
-    - otf-nerd-fonts-fira-code
     - xss-lock-session
 
     # Only for samus.
