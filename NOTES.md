@@ -1,5 +1,8 @@
 # Manual Configuration Notes
 
+$> sudo groupadd plugdev
+$> sudo usermod -aG plugdev $USER
+
 ## Bumblebee
 
 Add user to bumblebee group with

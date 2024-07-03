@@ -106,6 +106,8 @@ const files = [{
 }, {
   src: 'etc/systemd/system/systemd-resolved-resume.service',
 }, {
+  src: 'etc/udev/rules.d/50-zsa.rules',
+}, {
   src: 'etc/udev/rules.d/99-lowbat.rules',
   hosts: ['pixelbook', 'mjolnir', 'gungnir']
 }, {
