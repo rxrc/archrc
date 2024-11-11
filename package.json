@@ -17,7 +17,7 @@
     "postversion": "git push && git push --tags"
   },
   "dependencies": {
-    "@rxrc/archrc-private": "github:rxrc/archrc-private#v2.2.1",
+    "@rxrc/archrc-private": "github:rxrc/archrc-private#v2.3.0",
     "@rxrc/archutil": "^1.2.9",
     "@rxrc/systemd-units": "^2.1.7"
   },
