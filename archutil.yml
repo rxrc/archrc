@@ -154,7 +154,7 @@ packages:
     - hunspell
     - jq
     - man-db
-    - mlocate
+    # - mlocate
     - net-tools
     - p7zip
     - pacman-contrib
