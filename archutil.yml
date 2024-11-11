@@ -102,8 +102,7 @@ packages:
     - vulkan-intel
 
   nvidia:
-    - nvidia
-    - nvidia-settings
+    - nvidia-open
 
   bumblebee:
     - bumblebee
