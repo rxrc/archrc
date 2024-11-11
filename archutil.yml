@@ -91,6 +91,7 @@ packages:
     - sshfs
     - linux-firmware
     - lvm2
+    - util-linux
 
   intel:
     - libva-intel-driver

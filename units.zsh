@@ -16,6 +16,8 @@ enabled+=('systemd-resolved')
 enabled+=('nftables')
 enabled+=('bluetooth')
 enabled+=('paccache.timer')
+enabled+=('fstrim')
+enabled+=('fstrim.timer')
 
 if [[ -e /etc/ddclient/ddclient.conf ]]; then
   enabled+=('ddclient')
