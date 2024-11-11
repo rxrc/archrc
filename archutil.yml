@@ -240,7 +240,6 @@ packages:
     - doppler-cli-bin
     - docker-desktop
     - docker-buildx
-    - docker-compose
     - ghc
     - git
     - git-lfs
