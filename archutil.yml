@@ -172,7 +172,7 @@ packages:
 
   terminal:
     - asciinema
-    - autojump
+    # - autojump
     - bc
     - diff-so-fancy
     - git-delta
@@ -182,7 +182,7 @@ packages:
     - httpie
     - ponysay
     - tmux
-    - tmuxinator
+    # - tmuxinator
 
   neovim:
     - neovim
@@ -196,7 +196,7 @@ packages:
     - ttf-bitstream-vera
     - ttf-dejavu
     - gnu-free-fonts
-    - ttf-inconsolata-g
+    # - ttf-inconsolata-g
     - ttf-liberation
     - noto-fonts
     - noto-fonts-emoji
@@ -227,25 +227,25 @@ packages:
     - php
     - composer
     - sqlite
-    - watchman-bin
+    # - watchman-bin
     - yarn
     - zlib
 
   development:
     - android-tools
     - android-udev
-    - aws-cli-v2
+    # - aws-cli-v2
     - cabal-install
     - dbeaver
-    - doppler-cli-bin
-    - docker-desktop
+    # - doppler-cli-bin
+    # - docker-desktop
     - docker-buildx
     - docker-compose
     - ghc
     - git
     - git-lfs
     - go
-    - golangci-lint-bin
+    # - golangci-lint-bin
     - goreleaser
     - github-cli
     - gradle
@@ -260,14 +260,14 @@ packages:
     - vagrant
     - virtualbox
     - virtualbox-host-dkms
-    - visual-studio-code-bin
+    # - visual-studio-code-bin
 
   print:
     - biber
     - cups
     - cups-pdf
     - hplip
-    - kindlegen
+    # - kindlegen
     - pandoc-cli
     - texlive
 
@@ -294,7 +294,7 @@ packages:
 
   window-manager:
     - maim
-    - numlockx
+    # - numlockx
     - unclutter
     - darkman
     - xfce4-settings
