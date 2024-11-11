@@ -154,7 +154,7 @@ packages:
     - hunspell
     - jq
     - man-db
-    # - mlocate
+    - mlocate
     - net-tools
     - p7zip
     - pacman-contrib
@@ -172,7 +172,7 @@ packages:
 
   terminal:
     - asciinema
-    # - autojump
+    - autojump
     - bc
     - diff-so-fancy
     - git-delta
@@ -182,7 +182,7 @@ packages:
     - httpie
     - ponysay
     - tmux
-    # - tmuxinator
+    - tmuxinator
 
   neovim:
     - neovim
@@ -196,7 +196,7 @@ packages:
     - ttf-bitstream-vera
     - ttf-dejavu
     - gnu-free-fonts
-    # - ttf-inconsolata-g
+    - ttf-inconsolata-g
     - ttf-liberation
     - noto-fonts
     - noto-fonts-emoji
@@ -227,25 +227,25 @@ packages:
     - php
     - composer
     - sqlite
-    # - watchman-bin
+    - watchman-bin
     - yarn
     - zlib
 
   development:
     - android-tools
     - android-udev
-    # - aws-cli-v2
+    - aws-cli-v2
     - cabal-install
     - dbeaver
-    # - doppler-cli-bin
-    # - docker-desktop
+    - doppler-cli-bin
+    - docker-desktop
     - docker-buildx
     - docker-compose
     - ghc
     - git
     - git-lfs
     - go
-    # - golangci-lint-bin
+    - golangci-lint-bin
     - goreleaser
     - github-cli
     - gradle
@@ -260,14 +260,14 @@ packages:
     - vagrant
     - virtualbox
     - virtualbox-host-dkms
-    # - visual-studio-code-bin
+    - visual-studio-code-bin
 
   print:
     - biber
     - cups
     - cups-pdf
     - hplip
-    # - kindlegen
+    - kindlegen
     - pandoc-cli
     - texlive
 
@@ -281,7 +281,7 @@ packages:
     - xbindkeys
     - xclip
     - xdotool
-    # - xscreensaver-arch-logo
+    - xscreensaver-arch-logo
     - xsecurelock
 
   audio:
@@ -294,7 +294,7 @@ packages:
 
   window-manager:
     - maim
-    # - numlockx
+    - numlockx
     - unclutter
     - darkman
     - xfce4-settings
@@ -309,12 +309,12 @@ packages:
     # GTK.
     - gtk3
     - adapta-gtk-theme
-    # - paper-icon-theme-git
+    - paper-icon-theme-git
 
     # Awesome.
     - awesome
-    # - awesome-freedesktop-git
-    # - lain-git
+    - awesome-freedesktop-git
+    - lain-git
     - vicious
 
     # Redshift.
@@ -327,14 +327,14 @@ packages:
     - chromium
     - firefox
     - firefox-developer-edition
-    # - google-chrome
+    - google-chrome
     - gimp
     - hexchat
     - inkscape
-    # - insync
+    - insync
     - keepassxc
     - kitty
-    # - mcomix
+    - mcomix
     - mumble
     - neovim-qt
     - neovide
