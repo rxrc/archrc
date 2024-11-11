@@ -62,11 +62,11 @@ const files = [{
 }, {
   src: `${rxrc}/archrc-private/loader/loader.conf`,
   dst: 'boot/loader/loader.conf',
-  hosts: ['frigg', 'gungnir', 'freyja', 'fenrir']
+  hosts: ['frigg', 'gungnir', 'freyja', 'fenrir', 'sleipnir']
 }, {
   src: `${rxrc}/archrc-private/loader/entries/arch.${host}.conf`,
   dst: 'boot/loader/entries/arch.conf',
-  hosts: ['frigg', 'gungnir', 'freyja', 'fenrir']
+  hosts: ['frigg', 'gungnir', 'freyja', 'fenrir', 'sleipnir']
 }, {
   src: 'etc/default/grub',
   pkgs: ['grub'],
@@ -102,7 +102,7 @@ const files = [{
   hosts: ['fenrir']
 }, {
   src: 'etc/systemd/journald.conf.d/size.conf',
-  hosts: ['pixelbook', 'mjolnir', 'gungnir', 'freyja', 'fenrir']
+  hosts: ['pixelbook', 'mjolnir', 'gungnir', 'freyja', 'fenrir', 'sleipnir']
 }, {
   src: 'etc/systemd/system/systemd-resolved-resume.service',
 }, {
