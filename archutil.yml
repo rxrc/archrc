@@ -281,7 +281,7 @@ packages:
     - xbindkeys
     - xclip
     - xdotool
-    - xscreensaver-arch-logo
+    # - xscreensaver-arch-logo
     - xsecurelock
 
   audio:
@@ -309,12 +309,12 @@ packages:
     # GTK.
     - gtk3
     - adapta-gtk-theme
-    - paper-icon-theme-git
+    # - paper-icon-theme-git
 
     # Awesome.
     - awesome
-    - awesome-freedesktop-git
-    - lain-git
+    # - awesome-freedesktop-git
+    # - lain-git
     - vicious
 
     # Redshift.
@@ -327,14 +327,14 @@ packages:
     - chromium
     - firefox
     - firefox-developer-edition
-    - google-chrome
+    # - google-chrome
     - gimp
     - hexchat
     - inkscape
-    - insync
+    # - insync
     - keepassxc
     - kitty
-    - mcomix
+    # - mcomix
     - mumble
     - neovim-qt
     - neovide
