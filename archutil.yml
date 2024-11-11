@@ -255,7 +255,6 @@ packages:
     - kubectx
     - leiningen
     - postgresql
-    - insomnia-bin
     - jdk-openjdk
     - terraform
     - vagrant
