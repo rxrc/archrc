@@ -36,6 +36,7 @@ install_archutil () {
   archutil_url='https://raw.githubusercontent.com/rxrc/archutil/v1.2.9/bin/archutil'
 
   puts 'Installing' 'archutil requirements'
+  sudo -S pacman -Sy
   sudo -S pacman -S --noconfirm curl python python-yaml
   puts 'Installed' 'archutil requirements'
 
