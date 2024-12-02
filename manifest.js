@@ -127,6 +127,11 @@ const files = [{
   src: 'etc/X11/xorg.conf.d/20-intel.conf',
   pkgs: ['xf86-video-intel']
 }, {
+  src: `etc/X11/xorg.conf.d/10-monitor.${host}.conf`,
+  dst: 'etc/X11/xorg.conf.d/10-monitor.conf',
+  order: 200,
+  hosts: ['freyja']
+}, {
   src: `etc/X11/xorg.conf.d/20-intel.${host}.conf`,
   dst: 'etc/X11/xorg.conf.d/20-intel.conf',
   pkgs: ['xf86-video-intel'],
