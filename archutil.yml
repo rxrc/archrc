@@ -43,6 +43,10 @@ sets:
     - intel
     - wifi
 
+  frigg:
+    - efi
+    - amd
+
   sleipnir:
     - efi
     - intel
@@ -90,9 +94,9 @@ packages:
     - intel-media-driver
     - intel-ucode
 
-  vulkan:
-    - libva-intel-driver
-    - vulkan-intel
+  amd:
+    - xf86-video-amdgpu
+    - amd-ucode
 
   nvidia:
     - nvidia-open
