@@ -17,10 +17,7 @@ const defaults = {
   group: 'root'
 }
 
-const unlinks = [{
-  src: 'etc/X11/xorg.conf',
-  hosts: ['mjolnir']
-}]
+const unlinks = []
 
 const directories = [{
   src: `${rxrc}/systemd-units/system/user@.service.d`,
@@ -79,7 +76,7 @@ const files = [{
 }, {
   src: `${rxrc}/systemd-units/system/netctl-auto-resume@.service`,
   dst: 'etc/systemd/system/netctl-auto-resume@.service',
-  hosts: ['pixelbook', 'frigg', 'mjolnir']
+  hosts: ['pixelbook', 'frigg']
 }, {
   src: 'etc/pacman.conf',
   pkgs: ['pacman']
@@ -102,17 +99,17 @@ const files = [{
   hosts: ['fenrir', 'sleipnir']
 }, {
   src: 'etc/systemd/journald.conf.d/size.conf',
-  hosts: ['pixelbook', 'mjolnir', 'gungnir', 'freyja', 'fenrir', 'sleipnir']
+  hosts: ['pixelbook', 'gungnir', 'freyja', 'fenrir', 'sleipnir']
 }, {
   src: 'etc/systemd/system/systemd-resolved-resume.service',
 }, {
   src: 'etc/udev/rules.d/50-zsa.rules',
 }, {
   src: 'etc/udev/rules.d/99-lowbat.rules',
-  hosts: ['pixelbook', 'mjolnir', 'gungnir']
+  hosts: ['pixelbook', 'gungnir']
 }, {
   src: 'etc/udev/rules.d/99-backlight.rules',
-  hosts: ['mjolnir', 'gungnir']
+  hosts: ['gungnir']
 }, {
   src: 'etc/modules-load.d/loopback.conf'
 }, {
@@ -150,7 +147,7 @@ const files = [{
 }, {
   src: 'etc/X11/xorg.conf.d/30-touchpad.conf',
   pkgs: ['xf86-input-libinput'],
-  hosts: ['mjolnir', 'gungnir']
+  hosts: ['gungnir']
 }, {
   src: 'etc/X11/xorg.conf.d/50-mtrack.conf',
   pkgs: ['xf86-input-mtrack-git'],
@@ -170,17 +167,6 @@ const files = [{
 }, {
   src: 'etc/lightdm/lightdm.conf',
   pkgs: ['lightdm']
-}, {
-  src: 'etc/lightdm/display_setup.sh',
-  fmode: '0755',
-  pkgs: ['lightdm']
-}, {
-  src: `etc/lightdm/display_setup.${host}.sh`,
-  dst: 'etc/lightdm/display_setup.sh',
-  fmode: '0755',
-  order: 200,
-  pkgs: ['lightdm'],
-  hosts: ['mjolnir']
 }, {
   src: 'etc/lightdm/lightdm-gtk-greeter.conf',
   pkgs: ['lightdm-gtk-greeter']

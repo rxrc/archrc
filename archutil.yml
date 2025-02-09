@@ -43,14 +43,6 @@ sets:
     - intel
     - wifi
 
-  mjolnir:
-    - efi
-    - intel
-    - wifi
-    - nvidia
-    - bumblebee
-    - backlight
-
   sleipnir:
     - efi
     - intel
