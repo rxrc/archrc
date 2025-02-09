@@ -151,7 +151,7 @@ packages:
     - jq
     - man-db
     - mlocate
-    - net-tools
+    - inetutils
     - p7zip
     - pacman-contrib
     - reflector
