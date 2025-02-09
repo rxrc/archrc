@@ -45,7 +45,7 @@ fi
 
 if [[ $(hostname) == 'Sleipnir' || $(hostname) == 'Fenrir' || $(hostname) == 'Frigg' ]]; then
   enabled+=('systemd-networkd')
-elif [[ $(hostname) == 'Freyja' || $(hostname) == 'Sleipnir' || $(hostname) == 'Frigg' ]]; then
+elif [[ $(hostname) == 'Freyja' || $(hostname) == 'Sleipnir' ]]; then
   enabled+=('dhcpcd')
 elif [[ $(hostname) == 'Gungnir' ]]; then
   enabled+=('iwd')
