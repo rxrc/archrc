@@ -59,15 +59,11 @@ const files = [{
 }, {
   src: `${rxrc}/archrc-private/loader/loader.conf`,
   dst: 'boot/loader/loader.conf',
-  hosts: ['frigg', 'gungnir', 'freyja', 'fenrir', 'sleipnir']
+  hosts: ['gungnir', 'freyja', 'fenrir', 'sleipnir']
 }, {
   src: `${rxrc}/archrc-private/loader/entries/arch.${host}.conf`,
   dst: 'boot/loader/entries/arch.conf',
-  hosts: ['frigg', 'gungnir', 'freyja', 'fenrir', 'sleipnir']
-}, {
-  src: 'etc/default/grub',
-  pkgs: ['grub'],
-  hosts: ['frigg']
+  hosts: ['gungnir', 'freyja', 'fenrir', 'sleipnir']
 }, {
   src: `etc/default/grub.${host}`,
   dst: 'etc/default/grub',
@@ -76,7 +72,7 @@ const files = [{
 }, {
   src: `${rxrc}/systemd-units/system/netctl-auto-resume@.service`,
   dst: 'etc/systemd/system/netctl-auto-resume@.service',
-  hosts: ['pixelbook', 'frigg']
+  hosts: ['pixelbook']
 }, {
   src: 'etc/pacman.conf',
   pkgs: ['pacman']
@@ -148,10 +144,6 @@ const files = [{
   src: 'etc/X11/xorg.conf.d/30-touchpad.conf',
   pkgs: ['xf86-input-libinput'],
   hosts: ['gungnir']
-}, {
-  src: 'etc/X11/xorg.conf.d/50-mtrack.conf',
-  pkgs: ['xf86-input-mtrack-git'],
-  hosts: ['frigg']
 }, {
   src: `${rxrc}/systemd-units/logind.conf.d/acpi.conf`,
   dst: 'etc/systemd/logind.conf.d/acpi.conf'
