@@ -75,7 +75,6 @@ packages:
     - bluez
     - bluez-utils
     - gptfdisk
-    - intel-ucode
     - lsof
     - nftables
     - ntfs-3g
@@ -89,6 +88,7 @@ packages:
     - libva-intel-driver
     - xf86-video-intel
     - intel-media-driver
+    - intel-ucode
 
   vulkan:
     - libva-intel-driver
