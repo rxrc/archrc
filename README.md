@@ -31,6 +31,12 @@ Be sure to set the Hardware clock first
 # hwclock --systohc --utc
 ```
 
+Update the mirrorlist with reflector, e.g.,
+
+```
+# reflector -l 5 -c US -p https --sort rate --save /etc/pacman.d/mirrorlist
+```
+
 Prepare disks, mount partitions, run pacstrap and genfstab.
 
 #### As root
@@ -40,21 +46,13 @@ After chroot, install some required packages
 ```
 # pacman-key --init
 # pacman-key --populate archlinux
-# pacman -S git reflector zsh inetutils openssh
+# pacman -S git zsh inetutils openssh net-tools
 ```
 
 For systems with wireless cards:
 
 ```
 # pacman -S iwd
-```
-
-Update the mirrorlist with reflector, e.g.,
-
-```
-# reflector -l 5 -c US -p https --sort rate --save /etc/pacman.d/mirrorlist
-# pacman -Syy
-# pacman -Su
 ```
 
 Clone this
