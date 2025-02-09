@@ -46,7 +46,7 @@ After chroot, install some required packages
 ```
 # pacman-key --init
 # pacman-key --populate archlinux
-# pacman -S git zsh inetutils openssh net-tools
+# pacman -S git zsh inetutils openssh
 ```
 
 For systems with wireless cards:
