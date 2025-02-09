@@ -25,7 +25,7 @@ main () {
   depends=$(echo $depends | tr '(' ' ' | tr ')' ' ' | sed "s/'//g")
 
   # TODO: This line is failing, but comment it out and install the dependencies manually.
-  sudo -S pacman -S --noconfirm $(echo $depends)
+  # sudo -S pacman -S --noconfirm $(echo $depends)
 
   sudo -S chgrp -R nobody $build_dir
   sudo -S chmod -R g+rwX $build_dir
