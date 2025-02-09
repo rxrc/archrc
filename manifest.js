@@ -59,11 +59,11 @@ const files = [{
 }, {
   src: `${rxrc}/archrc-private/loader/loader.conf`,
   dst: 'boot/loader/loader.conf',
-  hosts: ['gungnir', 'freyja', 'fenrir', 'sleipnir']
+  hosts: ['gungnir', 'freyja', 'fenrir', 'sleipnir', 'frigg']
 }, {
   src: `${rxrc}/archrc-private/loader/entries/arch.${host}.conf`,
   dst: 'boot/loader/entries/arch.conf',
-  hosts: ['gungnir', 'freyja', 'fenrir', 'sleipnir']
+  hosts: ['gungnir', 'freyja', 'fenrir', 'sleipnir', 'frigg']
 }, {
   src: 'etc/pacman.conf',
   pkgs: ['pacman']
@@ -83,10 +83,9 @@ const files = [{
 }, {
   src: `etc/systemd/network/wired.${host}.network`,
   dst: 'etc/systemd/network/wired.network',
-  hosts: ['fenrir', 'sleipnir']
+  hosts: ['fenrir', 'sleipnir', 'frigg']
 }, {
   src: 'etc/systemd/journald.conf.d/size.conf',
-  hosts: ['gungnir', 'freyja', 'fenrir', 'sleipnir']
 }, {
   src: 'etc/systemd/system/systemd-resolved-resume.service',
 }, {

@@ -43,9 +43,9 @@ if (pacman -Q open-vm-tools &>/dev/null); then
   enabled+=('vmtoolsd')
 fi
 
-if [[ $(hostname) == 'Sleipnir' || $(hostname) == 'Fenrir' ]]; then
+if [[ $(hostname) == 'Sleipnir' || $(hostname) == 'Fenrir' || $(hostname) == 'Frigg' ]]; then
   enabled+=('systemd-networkd')
-elif [[ $(hostname) == 'Freyja' || $(hostname) == 'Sleipnir' ]]; then
+elif [[ $(hostname) == 'Freyja' || $(hostname) == 'Sleipnir' || $(hostname) == 'Frigg' ]]; then
   enabled+=('dhcpcd')
 elif [[ $(hostname) == 'Gungnir' ]]; then
   enabled+=('iwd')
