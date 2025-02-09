@@ -65,15 +65,6 @@ const files = [{
   dst: 'boot/loader/entries/arch.conf',
   hosts: ['gungnir', 'freyja', 'fenrir', 'sleipnir']
 }, {
-  src: `etc/default/grub.${host}`,
-  dst: 'etc/default/grub',
-  pkgs: ['grub'],
-  hosts: ['pixelbook']
-}, {
-  src: `${rxrc}/systemd-units/system/netctl-auto-resume@.service`,
-  dst: 'etc/systemd/system/netctl-auto-resume@.service',
-  hosts: ['pixelbook']
-}, {
   src: 'etc/pacman.conf',
   pkgs: ['pacman']
 }, {
@@ -95,14 +86,14 @@ const files = [{
   hosts: ['fenrir', 'sleipnir']
 }, {
   src: 'etc/systemd/journald.conf.d/size.conf',
-  hosts: ['pixelbook', 'gungnir', 'freyja', 'fenrir', 'sleipnir']
+  hosts: ['gungnir', 'freyja', 'fenrir', 'sleipnir']
 }, {
   src: 'etc/systemd/system/systemd-resolved-resume.service',
 }, {
   src: 'etc/udev/rules.d/50-zsa.rules',
 }, {
   src: 'etc/udev/rules.d/99-lowbat.rules',
-  hosts: ['pixelbook', 'gungnir']
+  hosts: ['gungnir']
 }, {
   src: 'etc/udev/rules.d/99-backlight.rules',
   hosts: ['gungnir']
@@ -111,9 +102,6 @@ const files = [{
 }, {
   src: 'etc/modules-load.d/virtualbox.conf',
   pkgs: ['virtualbox']
-}, {
-  src: 'etc/modprobe.d/alsa-base.conf',
-  hosts: ['pixelbook']
 }, {
   src: 'etc/X11/xorg.conf.d/15-dpms.conf'
 }, {
@@ -129,17 +117,13 @@ const files = [{
   dst: 'etc/X11/xorg.conf.d/20-intel.conf',
   pkgs: ['xf86-video-intel'],
   order: 200,
-  hosts: ['pixelbook', 'gungnir', 'freyja']
+  hosts: ['gungnir', 'freyja']
 }, {
   src: 'etc/pacman.d/hooks/nvidia.hook',
   pkgs: ['nvidia']
 }, {
   src: 'etc/X11/xorg.conf.d/10-keyboard.conf',
   pkgs: ['xkeyboard-config-chromebook']
-}, {
-  src: 'etc/X11/xorg.conf.d/50-synaptics.conf',
-  pkgs: ['xf86-input-synaptics'],
-  hosts: ['pixelbook']
 }, {
   src: 'etc/X11/xorg.conf.d/30-touchpad.conf',
   pkgs: ['xf86-input-libinput'],
@@ -150,9 +134,6 @@ const files = [{
 }, {
   src: `${rxrc}/systemd-units/coredump.conf.d/disable.conf`,
   dst: 'etc/systemd/coredump.conf.d/disable.conf'
-}, {
-  src: 'etc/systemd/system/chromeos-kbd_backlight.service',
-  hosts: ['pixelbook']
 }, {
   src: `${rxrc}/systemd-units/system/numlock.service`,
   dst: 'etc/systemd/system/numlock.service'
@@ -189,14 +170,6 @@ const files = [{
   src: 'usr/local/bin/touchpad-toggle',
   fmode: '0755',
   pkgs: ['xf86-input-synaptics']
-}, {
-  src: 'usr/local/bin/chromeos-kbd_backlight',
-  fmode: '0755',
-  hosts: ['pixelbook']
-}, {
-  src: 'usr/local/bin/chromeos-sound-output-toggle',
-  fmode: '0755',
-  hosts: ['pixelbook']
 }]
 
 const symlinks = []
