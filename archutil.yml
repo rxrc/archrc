@@ -31,12 +31,6 @@ sets:
     - window-manager
     - graphical
 
-  samus:
-    - samus
-    - bios
-    - intel
-    - wifi
-
   macbook:
     - macbook
     - efi
@@ -120,9 +114,6 @@ packages:
 
   sof:
     - sof-firmware
-
-  samus:
-    - xf86-input-synaptics
 
   macbook:
     - bcwc-pcie-git
@@ -356,11 +347,6 @@ packages:
     - mathematica
     - ttf-ms-win11
     - xss-lock-session
-
-    # Only for samus.
-    # Use chromebook_redirect_key branch:
-    # https://github.com/dhead666/archlinux-pkgbuilds/tree/chromebook_redirect_key/xkeyboard-config-chromebook
-    - xkeyboard-config-chromebook
 
     # For Redshift, but must be installed manually as there is an AUR package with the same name.
     - python-xdg

@@ -35,10 +35,6 @@ if (pacman -Q bumblebee &>/dev/null); then
   enabled+=('bumblebeed')
 fi
 
-if (pacman -Q linux-samus4 &>/dev/null); then
-  enabled+=('chromeos-kbd_backlight')
-fi
-
 if (pacman -Q open-vm-tools &>/dev/null); then
   enabled+=('vmtoolsd')
 fi
