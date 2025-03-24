@@ -18,6 +18,7 @@ enabled+=('bluetooth')
 enabled+=('paccache.timer')
 enabled+=('fstrim')
 enabled+=('fstrim.timer')
+enabled+=('systemd-timesyncd')
 
 if [[ -e /etc/ddclient/ddclient.conf ]]; then
   enabled+=('ddclient')
