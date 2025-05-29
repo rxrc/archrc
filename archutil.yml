@@ -140,6 +140,7 @@ packages:
     - dos2unix
     - hunspell
     - jq
+    - moreutils
     - man-db
     - mlocate
     - inetutils
