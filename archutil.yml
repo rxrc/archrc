@@ -270,6 +270,7 @@ packages:
     - xdotool
     - xscreensaver-arch-logo
     - xsecurelock
+    - xss-lock
 
   audio:
     - alsa-utils
@@ -348,7 +349,6 @@ packages:
   build:
     - mathematica
     - ttf-ms-win11
-    - xss-lock-session
 
     # For Redshift, but must be installed manually as there is an AUR package with the same name.
     - python-xdg
