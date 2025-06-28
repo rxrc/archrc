@@ -19,6 +19,7 @@ enabled+=('paccache.timer')
 enabled+=('fstrim')
 enabled+=('fstrim.timer')
 enabled+=('systemd-timesyncd')
+enabled+=('systemd-oomd')
 
 if [[ -e /etc/ddclient/ddclient.conf ]]; then
   enabled+=('ddclient')
