@@ -91,6 +91,9 @@ const files = [{
 }, {
   src: 'etc/udev/rules.d/50-zsa.rules',
 }, {
+  src: 'etc/xdg/reflector/reflector.conf',
+  pkgs: ['reflector']
+}, {
   src: 'etc/udev/rules.d/99-lowbat.rules',
   hosts: ['gungnir']
 }, {
