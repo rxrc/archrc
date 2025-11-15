@@ -157,6 +157,8 @@ packages:
     - wol
     - words
     - zip
+    - shellcheck
+    - dynocsv
 
   terminal:
     - asciinema
