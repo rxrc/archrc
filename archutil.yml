@@ -64,7 +64,7 @@ sets:
 # List the packages with their categories below.
 packages:
   archutil:
-    - python
+      - python
     - python-yaml
 
   system:
@@ -72,15 +72,15 @@ packages:
     - tlp
     - bluez
     - bluez-utils
-    - gptfdisk
-    - lsof
-    - nftables
+      - gptfdisk
+      - lsof
     - ntfs-3g
     - smbclient
     - sshfs
-    - linux-firmware
+      - nftables
+    # - linux-firmware
     - lvm2
-    - util-linux
+    # - util-linux
 
   intel:
     - libva-intel-driver
@@ -127,38 +127,37 @@ packages:
     - mesa
 
   core:
-    - openssh
-    - sudo
-    - zsh
+        - openssh
+      - sudo
+        - zsh
 
   tools:
-    - ack
+      - curl
+      - inetutils # openbsd-netcat
+      - jq
+      - moreutils
+      - rclone
+      - ripgrep
+      - rsync
+      - unrar # unrar-free
+      - unzip
+      - wget
+      - zip
+      - p7zip # 7zip
+
+      - reflector
+      - pacman-contrib
+      - man-db
+    # - the_silver_searcher
+    # - ack
     - aspell-en
     - colordiff
-    - curl
     - dialog
     - dos2unix
     - hunspell
-    - jq
-    - moreutils
-    - man-db
     - mlocate
-    - inetutils
-    - p7zip
-    - pacman-contrib
-    - reflector
-    - ripgrep
-    - rsync
-    - rclone
-    - the_silver_searcher
-    - unrar
-    - unzip
-    - wget
     - wol
     - words
-    - zip
-    - shellcheck
-    - dynocsv
 
   terminal:
     - asciinema
@@ -197,58 +196,56 @@ packages:
     - ttf-firacode-nerd
 
   devel:
-    - base-devel
-    - blas
-    - ctags
-    - gcc-fortran
-    - lapack
-    - libffi
-    - libgit2
-    - libyaml
-    - linux-headers
-    - npm
-    - openssl
-    - perl-libwww
-    - python-pandocfilters
-    - python-pygments
-    - python-poetry
-    - r
-    - rust
-    - php
-    - composer
-    - sqlite
-    - watchman-bin
-    - yarn
-    - zlib
+      - base-devel
+      - composer
+      - openssl
+      - php
+      - r
+      - rust
+      - sqlite
+      - blas # blas-openblas
+      - ctags
+      - gcc-fortran
+      - lapack # blas-openblas
+      - libffi
+      - libgit2
+      - libyaml
+      - linux-headers
+      - perl-libwww
+      - zlib
+    # - npm
+    # - python-poetry
+    # - python-pygments
+    # - yarn
+    # - python-pandocfilters
+    - watchman-bin # watchman
 
   development:
+      - cabal-install
+      - ghc
+      - git
+      - git-lfs
+      - go
+      - jdk-openjdk
+      - leiningen
+      - github-cli
+    # - dbeaver
+    # - docker-buildx
+    # - docker-desktop
+    # - golangci-lint-bin
+    # - goreleaser
+    # - gradle
+    # - helm
+    # - hugo
+    # - kubectl
+    # - kubectx
+    # - postgresql
+    # - terraform
+    # - vagrant
     - android-tools
     - android-udev
     - aws-cli-v2
-    - cabal-install
-    - dbeaver
     - doppler-cli-bin
-    - docker-desktop
-    - docker-buildx
-    - ghc
-    - git
-    - git-lfs
-    - go
-    - golangci-lint-bin
-    - goreleaser
-    - github-cli
-    - gradle
-    - kubectl
-    - helm
-    - hugo
-    - kubectx
-    - leiningen
-    - postgresql
-    - jdk-openjdk
-    - terraform
-    - vagrant
-    - virtualbox
-    - virtualbox-host-dkms
     - visual-studio-code-bin
 
   print:
