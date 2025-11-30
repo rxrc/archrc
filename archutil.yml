@@ -460,6 +460,23 @@ packages:
   - github-cli
   - mise
 
+  next-deps:
+    - python-matplotlib
+    - python-scipy
+    - chafa
+    - imagemagick
+    - poppler
+    - prettier
+    - python-black
+    - python-jedi
+    - python-watchdog
+    - resvg
+    - rlwrap
+    - ruby-docs
+    - shfmt
+    - usage
+    - entr
+
   # Must be built manually.
   build:
     - mathematica
