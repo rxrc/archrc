@@ -349,6 +349,117 @@ packages:
     - nginx
     - samba
 
+  next:
+    - fish
+    - fisher
+    - zsh
+    - zellij
+    - neovim
+    - yazi
+    - xh
+    - ouch
+    - bat
+    - broot
+    - dust
+    - eza
+    - fd
+    - fx
+    - fzf
+    - git-delta
+    - gitui
+    - go-yq
+    - hyperfine
+    - just
+    - procs
+    - sd
+    - zenith
+    - zoxide
+    - nushell
+    - shellcheck
+    - dua-cli
+    - presenterm
+    - ripgrep-all
+    - wiki-tui
+    - chezmoi
+    - efivar
+    - lsof
+    - usbutils
+    - pciutils
+    - gptfdisk
+    - bind
+    - dnssec-tools
+    - inetutils
+    - openbsd-netcat
+    - openssl
+    - traceroute
+    - whois
+    - curl
+    - jq
+    - less
+    - man-db
+    - man-pages
+    - moreutils
+    - pkgfile
+    - rclone
+    - ripgrep
+    - rsync
+    - strace
+    - tree
+    - wget
+    - which
+    - git
+    - git-lfs
+    - gnupg
+    - pinentry
+    - zip
+    - unzip
+    - 7zip
+    - unrar-free
+    - zlib
+
+  next-devel:
+  - blas-openblas
+  - libffi
+  - libgit2
+  - libyaml
+  - perl-libwww
+  - sqlite
+  - gcc
+  - gcc-fortran
+  - clang
+  - clojure
+  - leiningen
+  - go
+  - jdk-openjdk
+  - ghc
+  - cabal-install
+  - lua
+  - lua-sec
+  - stylua
+  - selene
+  - luarocks
+  - nodejs
+  - npm
+  - pnpm
+  - yarn
+  - php
+  - composer
+  - python
+  - python-numpy
+  - bpython
+  - ruff
+  - python-pip
+  - python-poetry
+  - uv
+  - ruby
+  - ruby-stdlib
+  - ruby-pry
+  - r
+  - rust
+  - ctags
+  - github-cli
+  - mise
+
   # Must be built manually.
   build:
     - mathematica
