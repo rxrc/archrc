@@ -20,6 +20,7 @@ enabled+=('fstrim')
 enabled+=('fstrim.timer')
 enabled+=('systemd-timesyncd')
 enabled+=('systemd-oomd')
+enabled+=('tailscaled')
 
 if [[ -e /etc/xdg/reflector/reflector.conf ]]; then
   enabled+=('reflector')
