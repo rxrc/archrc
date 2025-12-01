@@ -61,6 +61,11 @@ sets:
   fenrir:
     - vmware
 
+  next:
+    - next-tools
+    - next-deps
+    - next-devel
+
 # List the packages with their categories below.
 packages:
   archutil:
@@ -349,7 +354,7 @@ packages:
     - nginx
     - samba
 
-  next:
+  next-tools:
     - fish
     - fisher
     - zsh
