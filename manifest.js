@@ -50,6 +50,8 @@ const files = [{
 }, {
   src: 'etc/locale.conf'
 }, {
+  src: 'etc/security/pam_env.conf'
+}, {
   src: 'etc/security/faillock.conf'
 }, {
   src: 'etc/sysctl.d/99-sysctl.conf'
