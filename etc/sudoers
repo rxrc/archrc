@@ -1,3 +1,4 @@
+Defaults timestamp_timeout=15
 root   ALL = (ALL) ALL
 %wheel ALL = (ALL) ALL
 %wheel ALL = (root) NOPASSWD: /usr/bin/poweroff
