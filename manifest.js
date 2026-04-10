@@ -96,6 +96,9 @@ const files = [{
   src: 'etc/xdg/reflector/reflector.conf',
   pkgs: ['reflector']
 }, {
+  src: 'etc/php/conf.d/extensions.ini',
+  pkgs: ['php']
+}, {
   src: 'etc/udev/rules.d/99-lowbat.rules',
   hosts: ['gungnir']
 }, {
