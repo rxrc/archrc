@@ -346,6 +346,7 @@ packages:
     - zathura-djvu
     - zathura-pdf-poppler
     - zathura-ps
+    - foliate
 
   wifi:
     - iwd
