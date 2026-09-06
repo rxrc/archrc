@@ -67,6 +67,22 @@ const files = [{
   dst: 'boot/loader/entries/arch.conf',
   hosts: ['gungnir', 'freyja', 'fenrir', 'sleipnir', 'frigg']
 }, {
+  src: `${rxrc}/archrc-private/etc/systemd/network/99-wg0.netdev`,
+  dst: 'etc/systemd/network/99-wg0.netdev',
+  hosts: ['gungnir']
+}, {
+  src: `${rxrc}/archrc-private/etc/systemd/network/99-wg0.network`,
+  dst: 'etc/systemd/network/99-wg0.network',
+  hosts: ['gungnir']
+}, {
+  src: `${rxrc}/archrc-private/etc/systemd/network/99-wg1.netdev`,
+  dst: 'etc/systemd/network/99-wg1.netdev',
+  hosts: ['gungnir']
+}, {
+  src: `${rxrc}/archrc-private/etc/systemd/network/99-wg1.network`,
+  dst: 'etc/systemd/network/99-wg1.network',
+  hosts: ['gungnir']
+}, {
   src: 'etc/pacman.conf',
   pkgs: ['pacman']
 }, {

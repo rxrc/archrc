@@ -52,6 +52,7 @@ elif [[ $(hostname) == 'Freyja' || $(hostname) == 'Sleipnir' ]]; then
   enabled+=('dhcpcd')
 elif [[ $(hostname) == 'Gungnir' ]]; then
   enabled+=('iwd')
+  enabled+=('systemd-networkd')
 fi
 
 for unit in $enabled; do
